@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Theme { private init() {} }
 
+// MARK: Colors
 extension Theme {
     struct Colors {
         // TODO: change to follow design system
@@ -17,6 +18,7 @@ extension Theme {
     }
 }
 
+// MARK: Font Size
 extension Theme {
     struct FontSize {
         // TODO: change to follow design system
@@ -24,6 +26,7 @@ extension Theme {
     }
 }
 
+// MARK: Corner Radius
 extension Theme {
     struct CornerRadius {
         // TODO: change to follow design system
