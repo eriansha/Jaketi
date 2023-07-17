@@ -12,20 +12,21 @@ struct Theme { private init() {} }
 
 extension Theme {
     struct Colors {
-        static let primary = Color.blue // TODO: change to follow design system
+        // TODO: change to follow design system
+        static let primary = Color.blue
     }
 }
 
 extension Theme {
     struct FontSize {
-        static let large = Font.system(size: 56)
-        static let xlarage = Font.system(size: 72)
-        static let xxlarge = Font.system(size: 96)
+        // TODO: change to follow design system
+        static let base = Font.system(size: 56)
     }
 }
 
 extension Theme {
     struct CornerRadius {
+        // TODO: change to follow design system
         static let large: Double = 16
     }
 }
