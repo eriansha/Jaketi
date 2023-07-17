@@ -11,6 +11,14 @@
 		2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3142A655F2B004A5A05 /* ContentView.swift */; };
 		2C79D3172A655F2C004A5A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C79D3162A655F2C004A5A05 /* Assets.xcassets */; };
 		2C79D31A2A655F2C004A5A05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C79D3192A655F2C004A5A05 /* Preview Assets.xcassets */; };
+		2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3242A655FCD004A5A05 /* Theme.swift */; };
+		2C79D32D2A656078004A5A05 /* Example+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D32C2A656078004A5A05 /* Example+Extension.swift */; };
+		2C79D32F2A6560A1004A5A05 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D32E2A6560A1004A5A05 /* ExampleModel.swift */; };
+		2C79D3312A6560AE004A5A05 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3302A6560AE004A5A05 /* ExampleViewModel.swift */; };
+		2C79D3332A6560BC004A5A05 /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3322A6560BC004A5A05 /* ExampleComponent.swift */; };
+		2C79D3352A656129004A5A05 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3342A656129004A5A05 /* Prompt.swift */; };
+		2C79D3372A6561B9004A5A05 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3362A6561B9004A5A05 /* Error.swift */; };
+		2C79D33B2A656280004A5A05 /* ExamplePresenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D33A2A656280004A5A05 /* ExamplePresenterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		2C79D3142A655F2B004A5A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C79D3162A655F2C004A5A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C79D3192A655F2C004A5A05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C79D3242A655FCD004A5A05 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2C79D32C2A656078004A5A05 /* Example+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+Extension.swift"; sourceTree = "<group>"; };
+		2C79D32E2A6560A1004A5A05 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		2C79D3302A6560AE004A5A05 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
+		2C79D3322A6560BC004A5A05 /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
+		2C79D3342A656129004A5A05 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		2C79D3362A6561B9004A5A05 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		2C79D33A2A656280004A5A05 /* ExamplePresenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +67,9 @@
 		2C79D3112A655F2B004A5A05 /* Jaketi */ = {
 			isa = PBXGroup;
 			children = (
-				2C79D3122A655F2B004A5A05 /* JaketiApp.swift */,
-				2C79D3142A655F2B004A5A05 /* ContentView.swift */,
-				2C79D3162A655F2C004A5A05 /* Assets.xcassets */,
+				2C79D3202A655F8D004A5A05 /* Application */,
+				2C79D3212A655F95004A5A05 /* Core */,
+				2C79D3222A655F9A004A5A05 /* Features */,
 				2C79D3182A655F2C004A5A05 /* Preview Content */,
 			);
 			path = Jaketi;
@@ -65,6 +81,110 @@
 				2C79D3192A655F2C004A5A05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C79D3202A655F8D004A5A05 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3122A655F2B004A5A05 /* JaketiApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2C79D3212A655F95004A5A05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3382A65620B004A5A05 /* Resources */,
+				2C79D32B2A656067004A5A05 /* Extensions */,
+				2C79D3232A655FBF004A5A05 /* Constant */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2C79D3222A655F9A004A5A05 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3262A656010004A5A05 /* Models */,
+				2C79D3272A656017004A5A05 /* ViewModels */,
+				2C79D3282A65601D004A5A05 /* Presenters */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2C79D3232A655FBF004A5A05 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3242A655FCD004A5A05 /* Theme.swift */,
+				2C79D3342A656129004A5A05 /* Prompt.swift */,
+				2C79D3362A6561B9004A5A05 /* Error.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		2C79D3262A656010004A5A05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D32E2A6560A1004A5A05 /* ExampleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C79D3272A656017004A5A05 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3302A6560AE004A5A05 /* ExampleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2C79D3282A65601D004A5A05 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3392A65622B004A5A05 /* Extensions */,
+				2C79D3292A656045004A5A05 /* View */,
+				2C79D32A2A65604A004A5A05 /* Components */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2C79D3292A656045004A5A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3142A655F2B004A5A05 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C79D32A2A65604A004A5A05 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3322A6560BC004A5A05 /* ExampleComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2C79D32B2A656067004A5A05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D32C2A656078004A5A05 /* Example+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C79D3382A65620B004A5A05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D3162A655F2C004A5A05 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C79D3392A65622B004A5A05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C79D33A2A656280004A5A05 /* ExamplePresenterExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +257,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */,
+				2C79D3352A656129004A5A05 /* Prompt.swift in Sources */,
+				2C79D3312A6560AE004A5A05 /* ExampleViewModel.swift in Sources */,
+				2C79D32F2A6560A1004A5A05 /* ExampleModel.swift in Sources */,
 				2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */,
+				2C79D32D2A656078004A5A05 /* Example+Extension.swift in Sources */,
 				2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */,
+				2C79D33B2A656280004A5A05 /* ExamplePresenterExtension.swift in Sources */,
+				2C79D3372A6561B9004A5A05 /* Error.swift in Sources */,
+				2C79D3332A6560BC004A5A05 /* ExampleComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
