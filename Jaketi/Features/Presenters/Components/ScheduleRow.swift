@@ -25,6 +25,17 @@ struct ScheduleRow: View {
     public var stops: Int
     public var estimateTimeInMinute: Int
     
+    private let isArrived: Bool
+    
+    init(time: String, destination: DestinationType, stops: Int, estimateTimeInMinute: Int) {
+        self.time = time
+        self.destination = destination
+        self.stops = stops
+        self.estimateTimeInMinute = estimateTimeInMinute
+        
+        self.isArrived = estimateTimeInMinute <= 0
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -44,7 +55,7 @@ struct ScheduleRow: View {
                 
                 Spacer()
             
-                Text(estimateTimeInMinute <= 0 ? "Tiba di Peron" : "\(estimateTimeInMinute) menit")
+                Text(isArrived ? "Tiba di Peron" : "\(estimateTimeInMinute) menit")
                     .font(.title3)
             }
         }
@@ -52,7 +63,7 @@ struct ScheduleRow: View {
         .cornerRadius(4.0)
         .overlay(
             RoundedRectangle(cornerRadius: 6)
-                .stroke(.gray, lineWidth: 1)
+                .stroke(isArrived ? .pink : .gray, lineWidth: 1)
         )
         .padding(.horizontal)
     }

@@ -17,7 +17,7 @@ struct ScheduleList: View {
                     time: schedule.time,
                     destination: DestinationType.bundaranHI,
                     stops: 6,
-                    estimateTimeInMinute: 0
+                    estimateTimeInMinute: 2
                 )
             }
         }
