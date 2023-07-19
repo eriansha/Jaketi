@@ -22,6 +22,8 @@
 		2C8E1D852A6784310043FC1F /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D842A6784310043FC1F /* ScheduleRow.swift */; };
 		2C8E1D892A6786AA0043FC1F /* TrainStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D882A6786AA0043FC1F /* TrainStation.swift */; };
 		2C8E1D8B2A67873F0043FC1F /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D8A2A67873F0043FC1F /* ScheduleList.swift */; };
+		2C8E1D8D2A678E420043FC1F /* LiveScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D8C2A678E420043FC1F /* LiveScheduleView.swift */; };
+		2C8E1D8F2A678F430043FC1F /* CurrentStationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D8E2A678F430043FC1F /* CurrentStationText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		2C8E1D842A6784310043FC1F /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		2C8E1D882A6786AA0043FC1F /* TrainStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStation.swift; sourceTree = "<group>"; };
 		2C8E1D8A2A67873F0043FC1F /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
+		2C8E1D8C2A678E420043FC1F /* LiveScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScheduleView.swift; sourceTree = "<group>"; };
+		2C8E1D8E2A678F430043FC1F /* CurrentStationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStationText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				2C79D3322A6560BC004A5A05 /* ExampleComponent.swift */,
 				2C8E1D842A6784310043FC1F /* ScheduleRow.swift */,
 				2C8E1D8A2A67873F0043FC1F /* ScheduleList.swift */,
+				2C8E1D8E2A678F430043FC1F /* CurrentStationText.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2C79D3142A655F2B004A5A05 /* ContentView.swift */,
+				2C8E1D8C2A678E420043FC1F /* LiveScheduleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,11 +280,13 @@
 				2C8E1D892A6786AA0043FC1F /* TrainStation.swift in Sources */,
 				2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */,
 				2C79D32D2A656078004A5A05 /* Example+Extension.swift in Sources */,
+				2C8E1D8F2A678F430043FC1F /* CurrentStationText.swift in Sources */,
 				2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */,
 				2C79D33B2A656280004A5A05 /* ExamplePresenter+Extension.swift in Sources */,
 				2C79D3372A6561B9004A5A05 /* Error.swift in Sources */,
 				2C79D3332A6560BC004A5A05 /* ExampleComponent.swift in Sources */,
 				2C8E1D8B2A67873F0043FC1F /* ScheduleList.swift in Sources */,
+				2C8E1D8D2A678E420043FC1F /* LiveScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
