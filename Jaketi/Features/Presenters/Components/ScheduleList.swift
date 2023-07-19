@@ -12,11 +12,12 @@ struct ScheduleList: View {
     
     var body: some View {
         VStack {
-            ForEach(trainStation.schedules, id: \.self) { schedule in
+            ForEach(trainStation.departureSchedules, id: \.self) { schedule in
                 ScheduleRow(
-                    time: schedule.time,
-                    destination: DestinationType.bundaranHI,
-                    stops: 6,
+                    timeDeparture: schedule.timeDeparture,
+                    destination: schedule.destinationStation,
+                    // TODO: uncomment once it's fixed
+                    // stops: 6,
                     estimateTimeInMinute: 2
                 )
             }
@@ -27,10 +28,22 @@ struct ScheduleList: View {
 struct ScheduleList_Previews: PreviewProvider {
     static let trainStation: TrainStation = .init(
         name: "Dukuh Atas",
-        schedules: [
-            .init(time: "08:00"),
-            .init(time: "08:05"),
-            .init(time: "08:10"),
+        departureSchedules: [
+            .init(
+                timeDeparture: Date.now,
+                destinationStation: DestinationType.bundaranHI,
+                isWeekend: false
+            ),
+            .init(
+                timeDeparture: Date.now,
+                destinationStation: DestinationType.lebakBulus,
+                isWeekend: false
+            ),
+            .init(
+                timeDeparture: Date.now,
+                destinationStation: DestinationType.bundaranHI,
+                isWeekend: false
+            )
         ]
     )
     

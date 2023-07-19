@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct LiveScheduleView: View {
-    private let trainStation: TrainStation = .init(
-        name: "Dukuh Atas",
-        schedules: [
-            .init(time: "08:00"),
-            .init(time: "08:05"),
-            .init(time: "08:10"),
-        ]
-    )
+    private let trainStation: TrainStation
+    
+    init() {
+        self.trainStation = .init(
+            name: "Dukuh Atas",
+            departureSchedules: [
+                .init(
+                    timeDeparture: Date.now,
+                    destinationStation: DestinationType.bundaranHI,
+                    isWeekend: false
+                ),
+                .init(
+                    timeDeparture: Date.now,
+                    destinationStation: DestinationType.lebakBulus,
+                    isWeekend: false
+                ),
+                .init(
+                    timeDeparture: Date.now,
+                    destinationStation: DestinationType.bundaranHI,
+                    isWeekend: false
+                )
+            ]
+        )
+    }
     
     var body: some View {
         ScrollView {

@@ -7,30 +7,21 @@
 
 import SwiftUI
 
-enum DestinationType {
-    case bundaranHI
-    case lebakBulus
-    
-    func getLabel() -> String {
-        switch(self) {
-        case .bundaranHI: return "Bundaran HI"
-        case .lebakBulus: return "Lebak Bulus"
-        }
-    }
-}
 
 struct ScheduleRow: View {
-    public var time: String
+    public var timeDeparture: Date
     public var destination: DestinationType
-    public var stops: Int
+    // TODO: uncomment once it's fixed
+    // public var stops: Int
     public var estimateTimeInMinute: Int
     
     private let isArrived: Bool
     
-    init(time: String, destination: DestinationType, stops: Int, estimateTimeInMinute: Int) {
-        self.time = time
+    init(timeDeparture: Date, destination: DestinationType, estimateTimeInMinute: Int) {
+        self.timeDeparture = timeDeparture
         self.destination = destination
-        self.stops = stops
+        // TODO: uncomment once it's fixed
+        // self.stops = stops
         self.estimateTimeInMinute = estimateTimeInMinute
         
         self.isArrived = estimateTimeInMinute <= 0
@@ -44,12 +35,13 @@ struct ScheduleRow: View {
                 
                 Spacer()
                 
-                Text("\(stops) Perhentian")
-                    .font(.subheadline)
+                // TODO: uncomment once it's fixed
+                // Text("\(stops) Perhentian")
+                //    .font(.subheadline)
             }
             
             HStack {
-                Text(time)
+                Text(timeDeparture, style: .time)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
@@ -72,9 +64,10 @@ struct ScheduleRow: View {
 struct ScheduleRow_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleRow(
-            time: "08:00",
+            timeDeparture: Date.now,
             destination: DestinationType.bundaranHI,
-            stops: 6,
+            // TODO: uncomment once it's fixed
+            // stops: 6,
             estimateTimeInMinute: 0
         )
     }
