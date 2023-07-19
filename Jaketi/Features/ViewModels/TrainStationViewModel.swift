@@ -76,4 +76,17 @@ class TrainStationViewModel {
         
         return timeDepartures
     }
+    
+    func filterDepartureSchedule(trainStation: TrainStation) -> [TrainStation.DepartureSchedule] {
+        let currentDate = Date()
+        
+        var filteredDepartureSchedules: [TrainStation.DepartureSchedule] {
+            trainStation.departureSchedules.filter { schedule in
+                return schedule.timeDeparture > currentDate && schedule.isWeekend == isWeekend()
+            }
+        }
+        
+        let limitedFilteredSchedules = Array(filteredDepartureSchedules[0...3])
+        return limitedFilteredSchedules
+    }
 }

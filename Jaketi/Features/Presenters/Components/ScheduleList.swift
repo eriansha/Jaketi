@@ -9,10 +9,18 @@ import SwiftUI
 
 struct ScheduleList: View {
     public var trainStation: TrainStation
+    private var departureSchedules: [TrainStation.DepartureSchedule]
+    
+    init(trainStation: TrainStation) {
+        let viewModel = TrainStationViewModel()
+        
+        self.trainStation = trainStation
+        self.departureSchedules = viewModel.filterDepartureSchedule(trainStation: trainStation)
+    }
     
     var body: some View {
         VStack {
-            ForEach(trainStation.departureSchedules, id: \.self) { schedule in
+            ForEach(departureSchedules, id: \.self) { schedule in
                 ScheduleRow(
                     timeDeparture: schedule.timeDeparture,
                     destination: schedule.destinationStation,
