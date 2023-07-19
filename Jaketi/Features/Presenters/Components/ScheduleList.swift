@@ -26,25 +26,28 @@ struct ScheduleList: View {
 }
 
 struct ScheduleList_Previews: PreviewProvider {
+    static let departureSchedules: [TrainStation.DepartureSchedule] = [
+        .init(
+            timeDeparture: Date.now,
+            destinationStation: DestinationType.bundaranHI,
+            isWeekend: false
+        ),
+        .init(
+            timeDeparture: Date.now,
+            destinationStation: DestinationType.lebakBulus,
+            isWeekend: false
+        ),
+        .init(
+            timeDeparture: Date.now,
+            destinationStation: DestinationType.bundaranHI,
+            isWeekend: false
+        )
+    ]
+    
     static let trainStation: TrainStation = .init(
+        stationId: 1,
         name: "Dukuh Atas",
-        departureSchedules: [
-            .init(
-                timeDeparture: Date.now,
-                destinationStation: DestinationType.bundaranHI,
-                isWeekend: false
-            ),
-            .init(
-                timeDeparture: Date.now,
-                destinationStation: DestinationType.lebakBulus,
-                isWeekend: false
-            ),
-            .init(
-                timeDeparture: Date.now,
-                destinationStation: DestinationType.bundaranHI,
-                isWeekend: false
-            )
-        ]
+        departureSchedules: departureSchedules
     )
     
     static var previews: some View {
