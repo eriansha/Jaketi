@@ -48,6 +48,13 @@ struct ScheduleRow: View {
                     .font(.title3)
             }
         }
+        .padding()
+        .cornerRadius(4.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 6)
+                .stroke(.gray, lineWidth: 1)
+        )
+        .padding(.horizontal)
     }
 }
 
