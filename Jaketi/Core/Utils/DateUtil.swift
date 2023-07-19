@@ -16,7 +16,7 @@ func convertDateToString(date: Date, format: String) -> String {
 
 func convertStringToDate(dateString: String, format: String) -> Date? {
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = format // Set the date format
+    dateFormatter.dateFormat = format
 
     return dateFormatter.date(from: dateString)
 }

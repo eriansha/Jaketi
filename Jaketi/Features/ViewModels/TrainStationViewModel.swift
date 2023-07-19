@@ -8,6 +8,7 @@
 import Foundation
 
 class TrainStationViewModel {
+    /** merged decoded schedule into single data-type */
     func mergeDepartureSchedule(
         scheduleLBWeekday: String,
         scheduleLBWeekend: String,
@@ -41,17 +42,17 @@ class TrainStationViewModel {
         return mergedTimeDeparture
     }
     
+    /** parse string-based schedule into Model */
     func transformDepartureSchedule(
         schduleInString: String,
         destinationStation: DestinationType,
         isWeekend: Bool = false
     ) -> [TrainStation.DepartureSchedule] {
-        let formatter = DateFormatter()
         let schedules = schduleInString.split(separator: ",")
         var timeDepartures: [TrainStation.DepartureSchedule] = []
         
         
-        var currentDateString: String = convertDateToString(
+        let currentDateString: String = convertDateToString(
             date: Date(),
             format: "yyyy-MM-dd"
         )
