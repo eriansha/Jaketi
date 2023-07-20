@@ -10,30 +10,45 @@ import Foundation
 class TrainStationViewModel {
     /** merged decoded schedule into single data-type */
     func mergeDepartureSchedule(
-        scheduleLBWeekday: String,
-        scheduleLBWeekend: String,
-        scheduleHIWeekday: String,
-        scheduleHIWeekend: String
+        scheduleLBWeekday: String?,
+        scheduleLBWeekend: String?,
+        scheduleHIWeekday: String?,
+        scheduleHIWeekend: String?
     ) -> [TrainStation.DepartureSchedule] {
-        let destinationLBWeekday = transformDepartureSchedule(
-            schduleInString: scheduleLBWeekday,
-            destinationStation: DestinationType.lebakBulus
-        )
-        let destinationLBWeekend = transformDepartureSchedule(
-            schduleInString: scheduleLBWeekend,
-            destinationStation: DestinationType.lebakBulus,
-            isWeekend: true
-        )
+        var destinationLBWeekday: [TrainStation.DepartureSchedule] = []
+        var destinationLBWeekend: [TrainStation.DepartureSchedule] = []
+        var destinationHIWeekday: [TrainStation.DepartureSchedule] = []
+        var destinationHIWeekend: [TrainStation.DepartureSchedule] = []
         
-        let destinationHIWeekday = transformDepartureSchedule(
-            schduleInString: scheduleHIWeekday,
-            destinationStation: DestinationType.bundaranHI
-        )
-        let destinationHIWeekend = transformDepartureSchedule(
-            schduleInString: scheduleHIWeekend,
-            destinationStation: DestinationType.bundaranHI,
-            isWeekend: true
-        )
+        if let scheduleString = scheduleLBWeekday {
+            destinationLBWeekday = transformDepartureSchedule(
+                schduleInString: scheduleString,
+                destinationStation: DestinationType.lebakBulus
+            )
+        }
+        
+        if let scheduleString = scheduleLBWeekend {
+            destinationLBWeekend = transformDepartureSchedule(
+                schduleInString: scheduleString,
+                destinationStation: DestinationType.lebakBulus,
+                isWeekend: true
+            )
+        }
+        
+        if let scheduleString = scheduleHIWeekday {
+            destinationHIWeekday = transformDepartureSchedule(
+                schduleInString: scheduleString,
+                destinationStation: DestinationType.bundaranHI
+            )
+        }
+        
+        if let scheduleString = scheduleHIWeekend {
+            destinationHIWeekend = transformDepartureSchedule(
+                schduleInString: scheduleString,
+                destinationStation: DestinationType.bundaranHI,
+                isWeekend: true
+            )
+        }
         
         var mergedTimeDeparture: [TrainStation.DepartureSchedule] {
             return destinationLBWeekday + destinationLBWeekend + destinationHIWeekday + destinationHIWeekend
@@ -94,7 +109,7 @@ class TrainStationViewModel {
             }
         }
         
-        let limitedFilteredSchedules = Array(filteredDepartureSchedules[0...3])
-        return limitedFilteredSchedules
+        // let limitedFilteredSchedules = Array(filteredDepartureSchedules[0...3])
+        return filteredDepartureSchedules
     }
 }

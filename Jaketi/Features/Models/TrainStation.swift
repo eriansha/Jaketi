@@ -63,24 +63,24 @@ struct TrainStation: Hashable, Decodable {
         // Decode value from JSON
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let stationName = try container.decode(String.self, forKey: .title)
-        let stationId = try container.decode(Int.self, forKey: .stationId)
+        let stationId = try container.decode(String.self, forKey: .stationId)
         let scheduleLebakBulusWeekday = try container.decode(
-            String.self,
+            String?.self,
             forKey: .scheduleLBWeekday
         )
         let scheduleLebakBulusWeekend = try container.decode(
-            String.self,
+            String?.self,
             forKey: .scheduleLBWeekend
         )
-        let scheduleHIWeekday = try container.decode(String.self, forKey: .scheduleHIWeekday)
-        let scheduleHIWeekend = try container.decode(String.self, forKey: .scheduleHIWeekend)
+        let scheduleHIWeekday = try container.decode(String?.self, forKey: .scheduleHIWeekday)
+        let scheduleHIWeekend = try container.decode(String?.self, forKey: .scheduleHIWeekend)
         
         let viewModel = TrainStationViewModel()
         
         // Assign and transform each value into Train station properties
         self.id = UUID()
         self.name = stationName
-        self.stationId = stationId
+        self.stationId = Int(stationId)!
         self.departureSchedules = viewModel.mergeDepartureSchedule(
             scheduleLBWeekday: scheduleLebakBulusWeekday,
             scheduleLBWeekend: scheduleLebakBulusWeekend,

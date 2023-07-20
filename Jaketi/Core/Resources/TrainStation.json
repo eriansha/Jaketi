@@ -1,10 +1,2196 @@
 [
     {
-        "nid": 38,
+        "nid": "20",
+        "title": "Stasiun Lebak Bulus Grab",
+        "urutan": "1",
+        "isbig": "1",
+        "path": "/id/stasiun/stasiun-lebak-bulus-grab",
+        "catatan": null,
+        "antarmodas": "Metromini\r\nB85, S72\r\n\r\nKWK\r\nS03, S04, S08, S11, S12, S17",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%201%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_LBB_020920_Seha.png",
+        "jadwal_lb_biasa": null,
+        "jadwal_lb_libur": null,
+        "jadwal_hi_biasa": "05:00, 05:12, 05:24, 05:36, 05:46, 05:55, 06:03, 06:10, 06:17, 06:24, 06:31, 06:38, 06:44, 06:49, 06:54, 06:59, 07:04, 07:09, 07:14, 07:19, 07:24, 07:29, 07:34, 07:39, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:51, 08:58, 09:05, 09:12, 09:19, 09:27, 09:35, 09:42, 09:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:50, 12:00, 12:10, 12:20, 12:30, 12:40, 12:50, 13:00, 13:10, 13:20, 13:30, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:09, 15:17, 15:26, 15:34, 15:41, 15:48, 15:55, 16:00, 16:06, 16:11, 16:16, 16:21, 16:26, 16:31, 16:36, 16:41, 16:46, 16:51, 16:56, 17:01, 17:06, 17:11, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:18, 18:25, 18:33, 18:41, 18:50, 19:00, 19:10, 19:20, 19:30, 19:40, 19:50, 20:00, 20:10, 20:20, 20:30, 20:40, 20:50, 21:00, 21:10, 21:20, 21:30, 21:40, 21:50, 22:00, 22:10, 22:21, 22:33, 22:45, 22:57, 23:12, 23:27",
+        "jadwal_hi_libur": "05:00, 05:12, 05:24, 05:36, 05:48, 05:59, 06:10, 06:20, 06:30, 06:40, 06:50, 07:00, 07:10, 07:20, 07:30, 07:40, 07:50, 08:00, 08:10, 08:20, 08:30, 08:40, 08:50, 09:00, 09:10, 09:20, 09:30, 09:40, 09:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:50, 12:00, 12:10, 12:20, 12:30, 12:40, 12:50, 13:00, 13:10, 13:20, 13:30, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:10, 15:20, 15:30, 15:40, 15:50, 16:00, 16:10, 16:20, 16:30, 16:40, 16:50, 17:00, 17:10, 17:20, 17:30, 17:40, 17:50, 18:00, 18:10, 18:20, 18:30, 18:40, 18:50, 19:00, 19:10, 19:20, 19:30, 19:40, 19:50, 20:00, 20:10, 20:20, 20:30, 20:40, 20:50, 21:00, 21:10, 21:20, 21:30, 21:40, 21:50, 22:00, 22:10, 22:21, 22:33, 22:45, 22:57, 23:12, 23:27",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Lebak%20Bulus.jpg",
+        "retails": [
+            {
+                "nid": "1010",
+                "title": "Alfee",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514222196_af0e5c6d9a_k.jpg",
+                "path": "/id/retail/alfee"
+            },
+            {
+                "nid": "1011",
+                "title": "Aremie Hj. Rully",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514224306_7796c10cdd_k.jpg",
+                "path": "/id/retail/aremie-hj-rully"
+            },
+            {
+                "nid": "552",
+                "title": "ATM BCA",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2021-07/50995829682_be4331f57f_b.jpg",
+                "path": "/id/retail/atm-bca"
+            },
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "776",
+                "title": "ATM Mandiri",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514508709_a070a55156_k.jpg",
+                "path": "/id/retail/atm-mandiri"
+            },
+            {
+                "nid": "59",
+                "title": "Broodmet",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/48752615591_0f8be6a827_c.jpg",
+                "path": "/id/retail/broodmet"
+            },
+            {
+                "nid": "158",
+                "title": "Darkao Chocolate",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/50221622481_efef097f3b_c.jpg",
+                "path": "/id/retail/darkao-chocolate"
+            },
+            {
+                "nid": "48",
+                "title": "FamilyMart",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/49983405802_ac4a986b48_b.jpg",
+                "path": "/id/retail/familymart"
+            },
+            {
+                "nid": "1009",
+                "title": "Kebab Mungilqu",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514496794_8d79510719_k.jpg",
+                "path": "/id/retail/kebab-mungilqu"
+            },
+            {
+                "nid": "1012",
+                "title": "Kebuli Abu Walad",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514497194_825f5b4bc2_k.jpg",
+                "path": "/id/retail/kebuli-abu-walad"
+            },
+            {
+                "nid": "1005",
+                "title": "Multidaya ",
+                "jenis_retail": "mesin top up ",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514229096_31f5593f99_k.jpg",
+                "path": "/id/retail/multidaya"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "61",
+                "title": "Restu Anggraini",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/48752809577_1f7cbd0924_c.jpg",
+                "path": "/id/retail/restu-anggraini"
+            },
+            {
+                "nid": "1113",
+                "title": "Roti O'",
+                "jenis_retail": "makanan ",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2023-05/52850144771_aa7a176ed4_k.jpg",
+                "path": "/id/retail/roti-o"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            },
+            {
+                "nid": "115",
+                "title": "Wande Jajan",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/49515453751_21e01e8f16_c.jpg",
+                "path": "/id/retail/wande-jajan"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "21",
+                "tarif": "4000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "5000",
+                "waktu": "6"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "6000",
+                "waktu": "8"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "7000",
+                "waktu": "10"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "8000",
+                "waktu": "13"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "9000",
+                "waktu": "15"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "10000",
+                "waktu": "17"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "11000",
+                "waktu": "19"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "12000",
+                "waktu": "22"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "13000",
+                "waktu": "24"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "14000",
+                "waktu": "26"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "14000",
+                "waktu": "29"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "204",
+                "title": "GS Ciputat",
+                "jenis_fasilitas": "Coworking Space",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/gs-ciputat.jpg",
+                "path": "/id/fasilitas/gs-ciputat"
+            },
+            {
+                "nid": "166",
+                "title": "WeWork Sinarmas MSIG Tower",
+                "jenis_fasilitas": "Coworking Space",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/health-safety.jpg",
+                "path": "/id/fasilitas/wework-sinarmas-msig-tower"
+            },
+            {
+                "nid": "205",
+                "title": "Swiss-Belinn Hotel TB Simatupang",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/swiss-bellin-tb-simatupang.jpg",
+                "path": "/id/fasilitas/swiss-belinn-hotel-tb-simatupang"
+            },
+            {
+                "nid": "207",
+                "title": "Grand Whiz Poins TB Simatupang",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/Grand_Whiz_Poins_Square_Simatupang-Ciputat.jpg",
+                "path": "/id/fasilitas/grand-whiz-poins-tb-simatupang"
+            },
+            {
+                "nid": "211",
+                "title": "Swiss-Belhotel Pondok Indah",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/hotel-exterior-swiss-belhotel.jpeg",
+                "path": "/id/fasilitas/swiss-belhotel-pondok-indah"
+            },
+            {
+                "nid": "168",
+                "title": "Sawana Suites",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/1171089_17040904440052233464.jpg",
+                "path": "/id/fasilitas/sawana-suites"
+            },
+            {
+                "nid": "203",
+                "title": "Nom Nom Nom  ",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/nom-nom-nom.jpg",
+                "path": "/id/fasilitas/nom-nom-nom"
+            },
+            {
+                "nid": "206",
+                "title": "Imperial Kitchen & Dimsum",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/imperial-kitchen-dimsum-x400.jpg",
+                "path": "/id/fasilitas/imperial-kitchen-dimsum"
+            },
+            {
+                "nid": "210",
+                "title": "Pizza Hut - Lebak Bulus",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/pizza-hut-x1000.jpg",
+                "path": "/id/fasilitas/pizza-hut-lebak-bulus"
+            },
+            {
+                "nid": "169",
+                "title": "FIRE TIGER",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/img_8486.jpg",
+                "path": "/id/fasilitas/fire-tiger"
+            },
+            {
+                "nid": "170",
+                "title": "TOAST BOX",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/dscf5600.jpg",
+                "path": "/id/fasilitas/toast-box"
+            }
+        ]
+    },
+    {
+        "nid": "21",
+        "title": "Stasiun Fatmawati Indomaret",
+        "urutan": "2",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-fatmawati-indomaret",
+        "catatan": null,
+        "antarmodas": "Kopaja\r\nP06, S605\r\n\r\nBianglala\r\nAC143",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%202%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_FTM_020920_Seha.png",
+        "jadwal_lb_biasa": "05:32, 05:47, 05:59, 06:11, 06:23, 06:35, 06:46, 06:56, 07:05, 07:13, 07:20, 07:27, 07:34, 07:40, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:41, 08:46, 08:51, 08:56, 09:01, 09:06, 09:11, 09:16, 09:21, 09:26, 09:31, 09:36, 09:41, 09:46, 09:52, 09:57, 10:04, 10:11, 10:19, 10:26, 10:34, 10:42, 10:50, 10:59, 11:09, 11:19, 11:29, 11:39, 11:49, 11:59, 12:09, 12:19, 12:29, 12:39, 12:49, 12:59, 13:09, 13:19, 13:29, 13:39, 13:49, 13:59,\t14:09, 14:19, 14:29, 14:39, 14:49, 14:59, 15:09,15:19, 15:29, 15:39, 15:39, 15:49, 15:59, 16:08, 16:17, 16:25, 16:32, 16:40, 16:48, 16:55, 17:01, 17:07, 17:12, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:08, 18:13, 18:18, 18:23, 18:28, 18:33, 18:38, 18:43, 18:48, 18:53, 18:58, 19:03, 19:08, 19:14, 19:21, 19:28, 19:36, 19:43, 19:51, 19:59, 20:09, 20:19, 20:29, 20:39, 20:49, 20:59, 21:09, 21:19, 21:29, 21:39, 21:49, 21:59, 22:09, 22:19, 22:29, 22:39, 22:49, 22:59, 23:10, 23:21, 23:33, 23:45, 23:57",
+        "jadwal_lb_libur": "05:31, 05:46, 05:58, 06:10, 06:22, 06:34, 06:46, 06:57, 07:08, 07:18, 07:28, 07:38, 07:48, 07:58, 08:08, 08:18, 08:28, 08:38, 08:48, 08:58, 09:08, 09:18, 09:28, 09:38, 09:48, 09:58, 10:08, 10:18, 10:28, 10:38, 10:48, 10:58, 11:08, 11:18, 11:28, 11:38, 11:48, 11:58, 12:08, 12:18, 12:28, 12:38, 12:48, 12:58, 13:08, 13:18, 13:28, 13:38, 13:48, 13:58, 14:08, 14:18, 14:28, 14:38, 14:48, 14:58, 15:08, 15:18, 15:28, 15:38, 15:48, 15:58, 16:08, 16:18, 16:28, 16:38, 16:48, 16:58, 17:08, 17:18, 17:28, 17:38, 17:48, 17:58, 18:08, 18:18, 18:28, 18:38, 18:48, 18:58, 19:08, 19:18, 19:28, 19:38, 19:48, 19:58, 20:08, 20:18, 20:28, 20:38, 20:48, 20:58, 21:08, 21:18, 21:28, 21:38, 21:48, 21:58, 22:08, 22:18, 22:28, 22:38, 22:48, 22:58, 23:09, 23:20, 23:32, 23:44, 23:56",
+        "jadwal_hi_biasa": "05:03, 05:15, 05:27, 05:39, 05:49, 05:58, 06:06, 06:13, 06:20, 06:27, 06:34, 06:41, 06:47, 06:52, 06:57, 07:02, 07:07, 07:12, 07:17, 07:22, 07:27, 07:32, 07:38, 07:43, 07:48, 07:53, 07:58, 08:03, 08:08, 08:13, 08:18, 08:23, 08:28, 08:33, 08:38, 08:43, 08:48, 08:54, 09:01, 09:08, 09:15, 09:22, 09:30, 09:38, 09:45, 09:53, 10:03, 10:13, 10:23, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, 13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:12, 15:20, 15:29, 15:37, 15:44, 15:51, 15:58, 16:03, 16:09, 16:14, 16:19, 16:24, 16:29, 16:34, 16:39, 16:44, 16:49, 16:54, 16:59, 17:04, 17:09, 17:15, 17:20, 17:25, 17:30, 17:35, 17:40, 17:45, 17:50, 17:55, 18:00, 18:05, 18:10, 18:15, 18:21, 18:28, 18:36, 18:44, 18:53, 19:03, 19:13, 19:23, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:24, 21:33, 21:43, 21:53, 22:03, 22:13, 22:24, 22:36, 22:48, 23:00, 23:15, 23:30",
+        "jadwal_hi_libur": "05:02, 05:14, 05:26, 05:38, 05:50, 06:01, 06:12, 06:22, 06:32, 06:42, 06:52, 07:02, 07:12, 07:22, 07:32, 07:42, 07:52, 08:02, 08:12, 08:22, 08:32, 08:42, 08:52, 09:02, 09:12, 09:22, 09:32, 09:42, 09:52, 10:02, 10:12, 10:22, 10:32, 10:42, 10:52, 11:02, 11:12, 11:22, 11:32, 11:42, 11:52, 12:02, 12:12, 12:22, 12:32, 12:42, 12:52, 13:02, 13:12, 13:22, 13:32, 13:42, 13:52, 14:02, 14:12, 14:22, 14:32, 14:42, 14:52, 15:02, 15:12, 15:22, 15:32, 15:42, 15:52, 16:02, 16:12, 16:22, 16:32, 16:42, 16:52, 17:02, 17:12, 17:22, 17:32, 17:42, 17:52, 18:02, 18:12, 18:22, 18:32, 18:42, 18:52, 19:02, 19:12, 19:22, 19:32, 19:42, 19:52, 20:02, 20:12, 20:22, 20:32, 20:42, 20:52, 21:02, 21:12, 21:22, 21:32, 21:42, 21:52, 22:02, 22:12, 22:23, 22:35, 22:47, 22:59,23:14, 23:29",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2022-06/WEBBANNER_Fatmawati.jpg",
+        "retails": [
+            {
+                "nid": "90",
+                "title": "APIKMEN",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/48752625116_187dcc37e8_c.jpg",
+                "path": "/id/retail/apikmen"
+            },
+            {
+                "nid": "552",
+                "title": "ATM BCA",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2021-07/50995829682_be4331f57f_b.jpg",
+                "path": "/id/retail/atm-bca"
+            },
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "1041",
+                "title": "Dapur Bang Doel",
+                "jenis_retail": "makanan dan minuman",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2023-01/FFACD6DB-63D2-41E4-A117-B6524652EA12_1_201_a.jpeg",
+                "path": "/id/retail/dapur-bang-doel"
+            },
+            {
+                "nid": "106",
+                "title": "KOI Thé",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/49982652838_d92a749b03_c.jpg",
+                "path": "/id/retail/koi"
+            },
+            {
+                "nid": "108",
+                "title": "Lemper Purnama",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/48752817282_2dd29edec0_c.jpg",
+                "path": "/id/retail/lemper-purnama"
+            },
+            {
+                "nid": "1008",
+                "title": "Marem ",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514545294_54a4030104_k.jpg",
+                "path": "/id/retail/marem"
+            },
+            {
+                "nid": "1005",
+                "title": "Multidaya ",
+                "jenis_retail": "mesin top up ",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514229096_31f5593f99_k.jpg",
+                "path": "/id/retail/multidaya"
+            },
+            {
+                "nid": "1007",
+                "title": "Ndelok",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514824423_5c6656734d_k.jpg",
+                "path": "/id/retail/ndelok"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            },
+            {
+                "nid": "1040",
+                "title": "ZAM Corner",
+                "jenis_retail": "Fesyen",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2023-01/9C5DB4ED-FB3D-4EA6-A76C-3ECE37940101_1_201_a.jpeg",
+                "path": "/id/retail/zam-corner"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "4000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "4000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "5000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "6000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "7000",
+                "waktu": "10"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "7000",
+                "waktu": "12"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "9000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "9000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "10000",
+                "waktu": "19"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "11000",
+                "waktu": "21"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "12000",
+                "waktu": "23"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "13000",
+                "waktu": "26"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "209",
+                "title": "GoWork Fatmawati - Coworking and Office Space",
+                "jenis_fasilitas": "Coworking Space",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/gowork-fatmawati.jpg",
+                "path": "/id/fasilitas/gowork-fatmawati-coworking-and-office-space"
+            },
+            {
+                "nid": "212",
+                "title": "Mutiara Suites Fatmawati",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/mutiara-suites-02.jpg",
+                "path": "/id/fasilitas/mutiara-suites-fatmawati"
+            },
+            {
+                "nid": "214",
+                "title": "Ibis Style Jakarta TB Simatupang",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/ibis-style-tb-simatupang.jpg",
+                "path": "/id/fasilitas/ibis-style-jakarta-tb-simatupang"
+            },
+            {
+                "nid": "216",
+                "title": "Park 5 Cilandak",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/park5.jpg",
+                "path": "/id/fasilitas/park-5-cilandak"
+            },
+            {
+                "nid": "208",
+                "title": "LOF Kitchen and Plants",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/ezgif.com-webp-to-jpg.jpg",
+                "path": "/id/fasilitas/lof-kitchen-and-plants"
+            },
+            {
+                "nid": "213",
+                "title": "White Tree Cafe",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/white-tree-cafe.jpg",
+                "path": "/id/fasilitas/white-tree-cafe"
+            },
+            {
+                "nid": "215",
+                "title": "Bebek BKB",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/bebek-bkb.jpg",
+                "path": "/id/fasilitas/bebek-bkb"
+            }
+        ]
+    },
+    {
+        "nid": "29",
+        "title": "Stasiun Cipete Raya",
+        "urutan": "3",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-cipete-raya",
+        "catatan": null,
+        "antarmodas": null,
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%203%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_CPR_020920_Seha.png",
+        "jadwal_lb_biasa": "05:29, 05:44, 05:56, 06:08, 06:20, 06:32, 06:43, 06:53, 07:01, 07:09, 07:17, 07:24, 07:31, 07:37, 07:42, 07:47, 07:52, 07:57, 08:02, 08:07, 08:12, 08:17, 08:22, 08:27, 08:32, 08:37, 08:42, 08:47, 08:52, 08:57, 09:02, 09:07, 09:13, 09:18, 09:23, 09:28, 09:33, 09:38, 09:43, 09:48, 09:53, 10:00, 10:07, 10:15, 10:23, 10:30, 10:38, 10:47, 10:56, 11:06, 11:16, 11:26, 11:36, 11:46, 11:56, 12:06, 12:16, 12:26, 12:36, 12:46, 12:56, 13:06, 13:16, 13:26, 13:36, 13:46, 13:56, 14:06, 14:16, 14:26, 14:36, 14:46, 14:56, 15:06, 15:16, 15:26, 15:36, 15:46, 15:56, 16:05, 16:13, 16:21, 16:29, 16:36, 16:44, 16:52, 16:58, 17:03, 17:09, 17:14, 17:19, 17:24, 17:29, 17:34, 17:39, 17:44, 17:49, 17:54, 17:59, 18:04, 18:09, 18:14, 18:19, 18:24, 18:29, 18:34, 18:39, 18:44, 18:49, 18:54, 18:59, 19:04, 19:10, 19:17, 19:25, 19:32, 19:40, 19:47, 19:56, 20:06, 20:16, 20:26, 20:36, 20:46, 20:56, 21:06, 21:16, 21:26, 21:36, 21:46, 21:56, 22:06, 22:16, 22:26, 22:36, 22:46, 22:56, 23:07, 23:18, 23:30, 23:42, 23:54",
+        "jadwal_lb_libur": "05:28, 05:43, 05:55, 06:07, 06:19, 06:31, 06:43, 06:54, 07:05, 07:15, 07:25, 07:35, 07:45, 07:55, 08:05, 08:15, 08:25, 08:35, 08:45, 08:55, 09:05, 09:15, 09:25, 09:35, 09:45, 09:55, 10:05, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 11:35, 11:45, 11:55, 12:05, 12:15, 12:25, 12:35, 12:45, 12:55, 13:05, 13:15, 13:25, 13:35, 13:45, 13:55, 14:05, 14:15, 14:25, 14:35, 14:45, 14:55, 15:05, 15:15, 15:25, 15:35, 15:45, 15:55, 16:05, 16:15, 16:25, 16:35, 16:45, 16:55, 17:05, 17:15, 17:25, 17:35, 17:45, 17:55, 18:05, 18:15, 18:25, 18:35, 18:45, 18:55, 19:05, 19:15, 19:25, 19:35, 19:45, 19:55, 20:05, 20:15, 20:25, 20:35, 20:45, 20:55, 21:05, 21:15, 21:25, 21:35, 21:45, 21:55, 22:05, 22:15, 22:25, 22:35, 22:45, 22:55, 23:06, 23:17, 23:29, 23:41, 23:53",
+        "jadwal_hi_biasa": "05:06, 05:18, 05:30, 05:42, 05:52, 06:01, 06:09, 06:16, 06:23, 06:30, 06:37, 06:44, 06:50, 06:55, 07:00, 07:05, 07:10, 07:15, 07:20, 07:25, 07:30, 07:35, 07:41, 07:46, 07:51, 07:56, 08:01, 08:06, 08:11, 08:16, 08:21, 08:26, 08:31, 08:36, 08:41, 08:46, 08:51, 08:57, 09:04, 09:11, 09:18, 09:25, 09:33, 09:41, 09:48, 09:56, 10:06, 10:16, 10:26, 10:36, 10:46, 10:56, 11:06, 11:16, 11:26, 11:36, 11:46, 11:56, 12:06, 12:16, 12:26, 12:36, 12:46, 12:56, 13:06, 13:16, 13:26, 13:36, 13:46, 13:56, 14:06, 14:16, 14:26, 14:36, 14:46, 14:56, 15:06, 15:15, 15:23, 15:32, 15:40, 15:47, 15:54, 16:01, 16:06, 16:12, 16:17, 16:22, 16:27, 16:32, 16:37, 16:42, 16:47, 16:52, 16:57, 17:02, 17:07, 17:12, 17:18, 17:23, 17:28, 17:33, 17:38, 17:43, 17:48, 17:53, 17:58, 18:03, 18:08, 18:13, 18:18, 18:24, 18:31, 18:39, 18:47, 18:56, 19:06, 19:16, 19:26, 19:36, 19:46, 19:56, 20:06, 20:16, 20:26, 20:36, 20:46, 20:56, 21:06, 21:16, 21:27, 21:36, 21:46, 21:56, 22:06, 22:16, 22:27, 22:39, 22:51, 23:03, 23:18, 23:33",
+        "jadwal_hi_libur": "05:05, 05:17, 05:29, 05:41, 05:53, 06:04, 06:15, 06:25, 06:35, 06:45, 06:55, 07:05, 07:15, 07:25, 07:35, 07:45, 07:55, 08:05, 08:15, 08:25, 08:35, 08:45, 08:55, 09:05, 09:15, 09:25, 09:35, 09:45, 09:55, 10:05, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 11:35, 11:45, 11:55, 12:05, 12:15, 12:25, 12:35, 12:45, 12:55, 13:05, 13:15, 13:25, 13:35, 13:45, 13:55, 14:05, 14:15, 14:25, 14:35, 14:45, 14:55, 15:05, 15:15, 15:25, 15:35, 15:45, 15:55, 16:05, 16:15, 16:25, 16:35, 16:45, 16:55, 17:05, 17:15, 17:25, 17:35, 17:45, 17:55, 18:05, 18:15, 18:25, 18:35, 18:45, 18:55, 19:05, 19:15, 19:25, 19:35, 19:45, 19:55, 20:05, 20:15, 20:25, 20:35, 20:45, 20:55, 21:05, 21:15, 21:25, 21:35, 21:45, 21:55, 22:05, 22:15, 22:26, 22:38, 22:50, 23:02, 23:17, 23:32",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_CipeteRaya.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "5000",
+                "waktu": "6"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "4000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "4000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "7000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "8000",
+                "waktu": "13"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "9000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "9000",
+                "waktu": "18"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "10000",
+                "waktu": "20"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "11000",
+                "waktu": "23"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "253",
+                "title": "Kristal Hotel Jakarta",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/hotel-kristal.jpg",
+                "path": "/id/fasilitas/kristal-hotel-jakarta"
+            },
+            {
+                "nid": "218",
+                "title": "Cilandak Mansion",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/cilandak-mansion.jpg",
+                "path": "/id/fasilitas/cilandak-mansion"
+            },
+            {
+                "nid": "252",
+                "title": "Dapur Sunda",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/dapur-sunda-cipete.jpg",
+                "path": "/id/fasilitas/dapur-sunda"
+            },
+            {
+                "nid": "217",
+                "title": "Ko'Ju",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/koju-fatmawati.jpg",
+                "path": "/id/fasilitas/koju"
+            }
+        ]
+    },
+    {
+        "nid": "30",
+        "title": "Stasiun Haji Nawi",
+        "urutan": "4",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-haji-nawi",
+        "catatan": null,
+        "antarmodas": null,
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%204%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_HJN_020920_Seha.png",
+        "jadwal_lb_biasa": "05:27, 05:42, 05:54, 06:06, 06:18, 06:30, 06:41, 06:51, 06:59, 07:07, 07:14, 07:22, 07:29, 07:35, 07:40, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:50, 08:55, 09:00, 09:05, 09:11, 09:16, 09:21, 09:26, 09:31, 09:36, 09:41, 09:46, 09:51, 09:58, 10:05, 10:13, 10:21, 10:28, 10:36, 10:45, 10:54, 11:04, 11:14, 11:24, 11:34, 11:44, 11:54, 12:04, 12:14, 12:24, 12:34, 12:44, 12:54, 13:04, 13:14, 13:24, 13:34, 13:44, 13:54, 14:04, 14:14, 14:24, 14:34, 14:44, 14:54, 15:04, 15:14, 15:24, 15:34, 15:44, 15:54, 16:03, 16:11, 16:19, 16:27, 16:34, 16:42, 16:50, 16:56, 17:01, 17:07, 17:12, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:17, 18:22, 18:27, 18:32, 18:37, 18:42, 18:47, 18:52, 18:57, 19:02, 19:08, 19:15, 19:23, 19:30, 19:38, 19:45, 19:54, 20:04, 20:14, 20:24, 20:34, 20:44, 20:55, 21:04, 21:14, 21:24, 21:34, 21:44, 21:54, 22:04, 22:14, 22:24, 22:34, 22:44, 22:54, 23:05, 23:16, 23:28, 23:40, 23:52",
+        "jadwal_lb_libur": "05:26, 05:41, 05:53, 06:05, 06:17, 06:29, 06:41, 06:52 07:03, 07:13, 07:23, 07:33, 07:43, 07:53,  08:03, 08:13, 08:23, 08:33, 08:43, 08:53, 09:03, 09:13, 09:23, 09:33, 09:43, 09:53, 10:03, 10:13, 10:23, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, 13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:13, 15:23, 15:33, 15:43, 15:53, 16:03, 16:13, 16:23, 16:33, 16:43, 16:53, 17:03, 17:13, 17:23, 17:33, 17:43, 17:53, 18:03, 18:13, 18:23, 18:33, 18:43, 18:53, 19:03, 19:13, 19:23, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:23, 21:33, 21:43, 21:53, 22:03, 22:13, 22:23, 22:33, 22:43, 22:53, 23:04, 23:15, 23:27, 23:39, 23:51",
+        "jadwal_hi_biasa": "05:08, 05:20, 05:32, 05:44, 05:54, 06:03, 06:11, 06:18, 06:25, 06:32, 06:39, 06:46, 06:52, 06:57, 07:02, 07:07, 07:12, 07:17, 07:22, 07:27, 07:32, 07:38, 07:43, 07:48, 07:53, 07:58, 08:03, 08:08, 08:13, 08:18, 08:23, 08:28, 08:33, 08:38, 08:43, 08:48, 08:53, 08:59, 09:06, 09:13, 09:20, 09:27, 09:35, 09:43, 09:50, 09:58, 10:08, 10:18, 10:28, 10:38, 10:48, 10:58, 11:08, 11:18, 11:28, 11:38, 11:48, 11:58, 12:08, 12:18, 12:28, 12:38, 12:48, 12:58, 13:08, 13:18, 13:28, 13:38, 13:48, 13:58, 14:08, 14:18, 14:28, 14:38, 14:48, 14:58, 15:08, 15:17, 15:25, 15:34, 15:42, 15:49, 15:56, 16:03, 16:08, 16:14, 16:19, 16:24, 16:29, 16:34, 16:39, 16:44, 16:49, 16:54, 16:59, 17:04, 17:09, 17:15, 17:20, 17:25, 17:30, 17:35, 17:40, 17:45, 17:50, 17:55, 18:00, 18:05, 18:10, 18:15, 18:20, 18:26, 18:33, 18:41, 18:49, 18:58, 19:08, 19:18, 19:28, 19:38, 19:48, 19:58, 20:08, 20:18, 20:28, 20:38, 20:48, 20:58, 21:08, 21:18, 21:29, 21:38, 21:48, 21:58, 22:08, 22:18, 22:29, 22:41, 22:53, 23:05, 23:20, 23:35",
+        "jadwal_hi_libur": "05:07, 05:19, 05:31, 05:43, 05:55, 06:06, 06:17, 06:27, 06:37, 06:47, 06:57, 07:07, 07:17, 07:27, 07:37, 07:47, 07:57, 08:07, 08:17, 08:27, 08:37, 08:47, 08:57, 09:07, 09:17, 09:27, 09:37, 09:47, 09:57, 10:07, 10:17, 10:27, 10:37, 10:47, 10:57, 11:07, 11:17, 11:27, 11:37, 11:47, 11:57, 12:07, 12:17, 12:27, 12:37, 12:47, 12:57, 13:07, 13:17, 13:27, 13:37, 13:47, 13:57, 14:07, 14:17, 14:27, 14:37, 14:47, 14:57, 15:07, 15:17, 15:27, 15:37, 15:47, 15:57, 16:07, 16:17, 16:27, 16:37, 16:47, 16:57, 17:07, 17:17, 17:27, 17:37, 17:47, 17:57, 18:07, 18:17, 18:27, 18:37, 18:47, 18:57, 19:07, 19:17, 19:27, 19:37, 19:47, 19:57, 20:07, 20:17, 20:27, 20:37, 20:47, 20:57, 21:07, 21:17, 21:27, 21:37, 21:47, 21:57, 22:07, 22:17, 22:28, 22:40, 22:52, 23:04, 23:19, 23:34",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Haji%20Nawi.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "97",
+                "title": "Chatime",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-03/51510622370_eca3a1b013_c.jpg",
+                "path": "/id/retail/chatime"
+            },
+            {
+                "nid": "999",
+                "title": "Indomaret Point",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514235761_e984b1a661_k.jpg",
+                "path": "/id/retail/indomaret-point"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "6000",
+                "waktu": "8"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "5000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "7000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "8000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "8000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "9000",
+                "waktu": "18"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "10000",
+                "waktu": "21"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "255",
+                "title": "Maven Fatmawati Hotel",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/maven-fatmawati.jpg",
+                "path": "/id/fasilitas/maven-fatmawati-hotel"
+            },
+            {
+                "nid": "257",
+                "title": "Hotel 88 ITC Fatmawati Panglima Polim",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/hotel-88.jpg",
+                "path": "/id/fasilitas/hotel-88-itc-fatmawati-panglima-polim"
+            },
+            {
+                "nid": "259",
+                "title": "White Tree Residence",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/white-tree-residence.jpg",
+                "path": "/id/fasilitas/white-tree-residence"
+            },
+            {
+                "nid": "254",
+                "title": "Santiga Seafood",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/santiga-seafood.jpeg",
+                "path": "/id/fasilitas/santiga-seafood"
+            },
+            {
+                "nid": "256",
+                "title": "Caswell's Coffee",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/kopikini-caswells-bukan-cuma-kedai-kopi.jpg",
+                "path": "/id/fasilitas/caswells-coffee"
+            },
+            {
+                "nid": "258",
+                "title": "Richeese Factory Fatmawati",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/Richeese-Factory-Fatmawati.jpg",
+                "path": "/id/fasilitas/richeese-factory-fatmawati"
+            }
+        ]
+    },
+    {
+        "nid": "31",
+        "title": "Stasiun Blok A",
+        "urutan": "5",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-blok",
+        "catatan": null,
+        "antarmodas": "Kopaja\r\nS614\r\n\r\nPPD\r\nNE3",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%205%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_BLA_020920_Seha.png",
+        "jadwal_lb_biasa": "05:24, 05:39, 05:51, 06:03, 06:15, 06:27, 06:38, 06:48, 06:57, 07:05, 07:12, 07;19, 07:26, 07:32, 07:37, 07:42, 07:47, 07:52, 07:57, 08:02, 08:07, 08:12, 08:17, 08:22, 08:27, 08:33, 08:38, 08:43, 08:48, 08:53, 08:58, 09:03, 09:08, 09:13, 09:18, 09:23, 09:28, 09:33, 09:38, 09:44, 09:49, 09:56, 10:03, 10:11, 10:18, 10:26, 10:34, 10:42, 10:51, 11:01, 11:11, 11:21, 11:31, 11:41, 11:51, 12:01, 12:11, 12:21, 12:31, 12:41, 12:51, 13:01, 13:11, 13:21, 13:31, 13:41, 13:51, 14:01, 14:11, 14:21, 14:31, 14:41, 14:51\t15:01, 15:11, 15:21, 15:31, 15:41, 15:51, 16:00, 16:09, 16:17, 16:24, 16:32, 16:40, 16:47, 16:53, 16:59, 17:04, 17:09, 17:14, 17:19, 17:24, 17:29, 17:34, 17:39, 17:44, 17:49, 17:54, 18:00, 18:05, 18:10, 18:15, 18:20, 18:25, 18:30, 18:35, 18:40, 18:45, 18:50, 18:55, 19:00, 19:06, 19:13, 19:20, 19:28, 19:35, 19:43, 19:51, 20:01, 20:11, 20:21, 20:31, 20:41, 20:51, 21:01, 21:11, 21:21, 21:31, 21:41, 21:51, 22:01, 22:11, 22:21, 22:31, 22:41, 22:51, 23:02, 23:13, 23:25, 23:37, 23:49",
+        "jadwal_lb_libur": "05:24, 05:39, 05:51, 06:03, 06:15, 06:27, 06:39, 06:50, 07:01, 07:11, 07:21, 07:31, 07:41, 07:51, 08:01, 08:11, 08:21, 08:31, 08:41, 08:51, 09:01, 09:11, 09:21, 09:31, 09:41, 09:51, 10:01, 10:11, 10:21, 10:31, 10:41, 10:51, 11:01, 11:11, 11:21, 11:31, 11:41, 11:51, 12:01, 12:11, 12:21, 12:31, 12:41, 12:51, 13:01, 13:11, 13:21, 13:31, 13:41, 13:51, 14:01, 14:11, 14:21, 14:31, 14:41, 14:51, 15:01, 15:11, 15:21, 15:31, 15:41, 15:51, 16:01, 16:11, 16:21, 16:31, 16:41, 16:51, 17:01, 17:11, 17:21, 17:31, 17:41, 17:51, 18:01, 18:11, 18:21, 18:31, 18:41, 18:51, 19:01, 19:11, 19:21, 19:31, 19:41, 19:51, 20:01, 20:11, 20:21, 20:31, 20:41, 20:51, 21:01, 21:11, 21:21, 21:31, 21:41, 21:51, 22:01, 22:11, 22:21, 22:31, 22:41, 22:51, 23:02, 23:13, 23:25, 23:37, 23:49",
+        "jadwal_hi_biasa": "05:10, 05:22, 05:34, 05:46, 05:56, 06:05, 06:13, 06:20, 06:28, 06:35, 06:42, 06:49, 06:55, 07:00, 07:05, 07:10, 07:15, 07:20, 07:25, 07:30, 07:35, 07:40, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:50, 08:55, 09:01, 09:08, 09:16, 09:23, 09:30, 09:37, 09:45, 09:53, 10:01, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:50, 12:00, 12:10, 12:20, 12:30, 12:40, 12:50, 13:00, 13:10, 13:20, 13:30, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:10, 15:19, 15:28, 15:36, 15:44, 15:52, 15:59, 16:05, 16:11, 16:16, 16:22, 16:27, 16:32, 16:37, 16:42, 16:47, 16:52, 16:57, 17:02, 17:07, 17:12, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:17, 18:22, 18:29, 18:36, 18:43, 18:51, 19:01, 19:10, 19:20,19:30, 19:40, 19:50, 20:00, 20:10, 20:20, 20:30, 20:40, 20:50, 21:00, 21:10, 21:20, 21:31, 21:40, 21:50, 22:00, 22:10, 22:20, 22:31, 22:43, 22:55, 23:07, 23:22, 23:37",
+        "jadwal_hi_libur": "05:10, 05:22, 05:34, 05:46, 05:58, 06:09, 06:20, 06:30, 06:40, 06:50, 07:07, 07:19, 07:30, 07:40, 07:50, \r\n08:00, 08:10, 08:20, 08:30, 08:40, 08:50, 09:00, 09:10, 09:20, 09:30, 09:40, 09:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:50, 12:00, 12:10, 12:20, 12:30, 12:40, 12:50, \r\n13:00, 13:10, 13:20, 13:30, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:10, 15:20, 15:30, 15:40, 15:50, 16:00, 16:10, 16:20, 16:30, 16:40, 16:50, 17:00, 17:10, 17:20, 17:30, 17:40, 17:50, \r\n18:00, 18:10, 18:20, 18:30, 18:40, 18:50, 19:00, 19:10, 19:20, 19:30, 19:40, 19:50, 20:00, 20:10, 20:20, 20:30, 20:40, 20:50, 21:00, 21:10, 21:20, 21:30, 21:40, 21:50, 22:00, 22:10, 22:20, 22:31, 22:43, 22:55, \r\n23:07, 23:22, 23:37",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Blok%20A.jpg",
+        "retails": [
+            {
+                "nid": "89",
+                "title": "Alfa Express",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-03/51508883557_722f7cdd95_c.jpg",
+                "path": "/id/retail/alfa-express"
+            },
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "7000",
+                "waktu": "10"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "6000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "4000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "3000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "7000",
+                "waktu": "12"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "7000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "8000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "9000",
+                "waktu": "19"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "261",
+                "title": "Amos Cozy Hotel Melawai",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/hotel-amos-cozy.jpg",
+                "path": "/id/fasilitas/amos-cozy-hotel-melawai"
+            },
+            {
+                "nid": "263",
+                "title": "Amaris Hotel Panglima Polim",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/Amaris-Hotel-Panglima-Polim.jpg",
+                "path": "/id/fasilitas/amaris-hotel-panglima-polim"
+            },
+            {
+                "nid": "265",
+                "title": "Win Hotel Blok M",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/win-hotel-blok-m.jpg",
+                "path": "/id/fasilitas/win-hotel-blok-m"
+            },
+            {
+                "nid": "260",
+                "title": "Paviliun 28",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/paviliun-28.jpg",
+                "path": "/id/fasilitas/paviliun-28"
+            },
+            {
+                "nid": "262",
+                "title": "Chinese Food Bak Mie Pelangi",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/bak-mie-pelangi.jpg",
+                "path": "/id/fasilitas/chinese-food-bak-mie-pelangi"
+            },
+            {
+                "nid": "264",
+                "title": "Bakso Lestari",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/bakso-lestari-blok-a.jpg",
+                "path": "/id/fasilitas/bakso-lestari"
+            }
+        ]
+    },
+    {
+        "nid": "32",
+        "title": "Stasiun Blok M BCA",
+        "urutan": "6",
+        "isbig": "1",
+        "path": "/id/stasiun/stasiun-blok-m-bca",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 1C, 6M, 7B, S21, S22\r\n\r\nMetromini\r\nS69, S70, S71, S74,S75,S77, S78, S610, S611, S619\r\n\r\nPPD\r\n38, 11, 12, 45, P36, P37, P38, P53, P67, P68, BS02, BT01, AC08, P45, AC21, AC80\r\n\r\nKopaja\r\nS613, S609, S605A, S608, S616, S620, S63, S66, T57\r\n\r\nMayasari Bakti\r\nAC05, P4, C925, C57, C107, C300, P13, P13A, P15, P27, AC06, AC28, AC34, AC49, AC121, AC134, AC137A, AC05A\r\n\r\nBianglala\r\n924\r\n\r\nSteady Safe\r\n921, 938, 939, AC30, AC32, AC65, AC66, AC89, P128, P129, P134\r\n\r\nHimpurna\r\n926\r\n\r\nPahala Kencana\r\nP116\r\n\r\nAgung Bhakti\r\n954, P98, AC120\r\n\r\nSinar Jaya ML\r\nP158\r\n\r\nARH\r\nAC138\r\n\r\nSJML\r\nAPTB09\r\n\r\nMB\r\nAPTB10\r\n\r\nMegah Langgeng\r\nAC151",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%206%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_BLM_020920_Seha.png",
+        "jadwal_lb_biasa": "05:22, 05:37, 05:49, 06:01, 06:13, 06:25, 06:36, 06:46, 06:54, 07:02, 07:09, 07:17, 07:24, 07:30, 07:35, 07:40, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:50, 08:55, 09:00, 09:06, 09:11, 09:16, 09:21, 09:26, 09:31, 09:36, 09:41, 09:46, 09:53, 10:00, 10:08, 10:16, 10:23, 10:31, 10:40, 10:49, 10:59, 11:09, 11:19, 11:29, 11:39. 11:49, 11:59, 12:09, 12:19, 12:29, 12:39, 12:49, 12:59, 13:09, 13:19, 13:29, 13:39, 13:49, 13:59, 14:09, 14:19, 14:29, 14:39, 14:49, 14:59, 15:09, 15:19, 15:29, 15:39, 15:49, 15:58, 16:06, 16:14, 16:22, 16:29, 16:37, 16:45, 16:51, 16:56, 17:02, 17:07, 17:12, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:17, 18:22, 18:27, 18:32, 18:37, 18:42, 18:47, 18:52, 18:57, 19:03, 19:10, 19:18, 19:25, 19:33, 19:40, 19:49. 19:59, 20:09, 20:19, 20:29, 20:39, 20:49, 20:59, 21:09, 21:19, 21:29, 21:39, 21:49, 21:59, 22:09, 22:19, 22:29, 22:39, 22:49, 23:00, 23:11, 23:23, 23:35, 23:47",
+        "jadwal_lb_libur": "05:21, 05:36, 05:48, 06:00, 06:12, 06:24, 06:36, 06:47, 06:58, 07:08, 07:18, 07:28, 07:38, 07:48, 07:58, \r\n08:08, 08:18, 08:28, 08:38, 08:48, 08:58, 09:08, 09:18, 09:28, 09:38, 09:48, 09:58, 10:08, 10:18, 10:28, 10:38, 10:48, 10:58, 11:08, 11:18, 11:28, 11:38, 11:48, 11:58, 12:08, 12:18, 12:28, 12:38, 12:48, 12:58, \r\n13:08, 13:18, 13:28, 13:38, 13:48, 13:58, 14:08, 14:18, 14:28, 14:38, 14:48, 14:58, 15:08, 15:18, 15:28, 15:38, 15:48, 15:58, 16:08, 16:18, 16:28, 16:38, 16:48, 16:58, 17:08, 17:18, 17:28, 17:38, 17:48, 17:58, \r\n18:08, 18:18, 18:28, 18:38, 18:48, 18:58, 19:08, 19:18, 19:28, 19:38, 19:48, 19:58, 20:08, 20:18, 20:28, 20:38, 20:48, 20:58, 21:08, 21:18, 21:28, 21:38, 21:48, 21:58, 22:08, 22:18, 22:28, 22:38, 22:48, 22:59,\r\n23:10, 23:22, 23:34, 23:46",
+        "jadwal_hi_biasa": "05:00, 05:13, 05:25, 05:37, 05:49, 05:59, 06:08, 06:16, 06:23, 06:30, 06:37, 06:44, 06:51, 06:57, 07:02, 07:07, 07:12, 07:17, 07:22, 07:27, 07:32, 07:37, 07:43, 07:48, 07:53, 07:58, 08:03, 08:08, 08:13, 08:18, 08:23, 08:28, 08:33, 08:38, 08:43, 08:48, 08:53, 08:58, 09:04, 09:11, 09:18, 09:25, 09:32, 09:40, 09:48, 09:55, 10:03, 10:13, 10:23, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, 13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:13, 15:22, 15:30, 15:39, 15:47, 15:54, 16:01, 16:08, 16:13, 16:19, 16:24, 16:29, 16:34, 16:39, 16:44, 16:49, 16:54, 16:59, 17:04, 17:09, 17:14, 17:20, 17:25, 17:30, 17:35, 17:40, 17:45, 17:50, 17:55, 18:00, 18:05, 18:10, 18:15, 18:20, 18:25, 18:31, 18:38, 18:46, 18:54, 19:03, 19:13, 19:23, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:23, 21:34, 21:43, 21:53, 22:03, 22:13, 22:23, 22:34, 22:46, 22:58, 23:10, 23:25",
+        "jadwal_hi_libur": "05:00, 05:12, 05:24, 05:36, 05:48, 06:00, 06:11, 06:22, 06:32, 06:42, 06:52, 07:02, 07:12, 07:22, 07:32, 07:42, 07:52, 08:02, 08:12, 08:22, 08:32, 08:42, 08:52, 09:02, 09:12, 09:22, 09:32, 09:42, 09:52, 10:02, 10:12, 10:22, 10:32, 10:42, 10:52, 11:02, 11:12, 11:22, 11:32, 11:42, 11:52, 12:02, 12:12, 12:22, 12:32, 12:42, 12:52, 13:02, 13:12, 13:22, 13:32, 13:42, 13:52, 14:02, 14:12, 14:22, 14:32, 14:42, 14:52, 15:02, 15:12, 15:22, 15:32, 15:42, 15:52, 16:02, 16:12, 16:22, 16:32, 16:42, 16:52, 17:02, 17:12, 17:22, 17:32, 17:42, 17:52, 18:02, 18:12, 18:22, 18:32, 18:42, 18:52, 19:02, 19:12, 19:22, 19:32, 19:42, 19:52, 20:02, 20:12, 20:22, 20:32, 20:42, 20:52, 21:02, 21:12, 21:22, 21:32, 21:42, 21:52, 22:02, 22:12, 22:22, 22:33, 22:45, 22:57, 23:09, 23:24, 23:40",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Blok%20M%20BCA.jpg",
+        "retails": [
+            {
+                "nid": "89",
+                "title": "Alfa Express",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-03/51508883557_722f7cdd95_c.jpg",
+                "path": "/id/retail/alfa-express"
+            },
+            {
+                "nid": "552",
+                "title": "ATM BCA",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2021-07/50995829682_be4331f57f_b.jpg",
+                "path": "/id/retail/atm-bca"
+            },
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "92",
+                "title": "ATM Danamon",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514523284_6b241020ac_k.jpg",
+                "path": "/id/retail/atm-danamon"
+            },
+            {
+                "nid": "776",
+                "title": "ATM Mandiri",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514508709_a070a55156_k.jpg",
+                "path": "/id/retail/atm-mandiri"
+            },
+            {
+                "nid": "49",
+                "title": "Bakmi GM",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-05/retail-4.jpg",
+                "path": "/id/retail/bakmi-gm"
+            },
+            {
+                "nid": "777",
+                "title": "BCA Express",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-03/50995713606_bb32f928e7_c.jpg",
+                "path": "/id/retail/bca-express"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "8000",
+                "waktu": "13"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "7000",
+                "waktu": "10"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "3000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "4000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "5000",
+                "waktu": "6"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "6000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "7000",
+                "waktu": "13"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "8000",
+                "waktu": "16"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "267",
+                "title": "Blok M Office Space",
+                "jenis_fasilitas": "Coworking Space",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/sponge.jpg",
+                "path": "/id/fasilitas/blok-m-office-space"
+            },
+            {
+                "nid": "268",
+                "title": "Neo Hotel Melawai",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/hotel-neo-melawai.jpg",
+                "path": "/id/fasilitas/neo-hotel-melawai"
+            },
+            {
+                "nid": "270",
+                "title": "D'prima hotel Melawai",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/dprima-hotel.jpg",
+                "path": "/id/fasilitas/dprima-hotel-melawai"
+            },
+            {
+                "nid": "272",
+                "title": " Golden Boutique Hotel Melawai",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/golden-boutique-melawai.jpg",
+                "path": "/id/fasilitas/golden-boutique-hotel-melawai"
+            },
+            {
+                "nid": "266",
+                "title": "Kashiwa",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/kashiwa-blok-m.jpg",
+                "path": "/id/fasilitas/kashiwa"
+            },
+            {
+                "nid": "269",
+                "title": "Ichiban Sushi",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/ichiban-sushi.jpg",
+                "path": "/id/fasilitas/ichiban-sushi"
+            },
+            {
+                "nid": "271",
+                "title": "Hoka-Hoka Bento",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/HokBen_new_logo.png",
+                "path": "/id/fasilitas/hoka-hoka-bento"
+            }
+        ]
+    },
+    {
+        "nid": "33",
+        "title": "Stasiun ASEAN",
+        "urutan": "7",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-asean",
+        "catatan": null,
+        "antarmodas": "Kopaja\r\nS13\r\n\r\nMayasari Bakti\r\nC300",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%207%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_PETA%20LOKALITAS_ASN_020920_Seha.png",
+        "jadwal_lb_biasa": "05:19, 05:34, 05:46, 05:58, 06:10, 06:22, 06:33, 06:43, 06:52, 07:00, 07:07, 07:14, 07:21, 07:27, 07:32, 07:37, 07:42, 07:47, 07:52, 07:57, 08:02, 08:07, 08:12, 08:17, 08:22, 08:28, 08:33, 08:38, 08:43, 08:48, 08:53, 08:58, 09:03, 09:08, 09:13, 09:18, 09:23, 09:28, 09:33, 09:39, 09:44, 09:51, 09:58, 10:06, 10:13, 10:21, 10:29, 10:37, 10:46, 10:56, 11:06, 11:16, 11:26, 11:36, 11:46, 11:56, 12:06, 12:16, 12:26, 12:36, 12:46, 12:56, 13:06, 13:16, 13:26, 13:36, 13:46, 13:56, 14:06, 14:16, 14:26, 14:36, 14:46, 14:56, 15:06, 15:16, 15:26, 15:36, 15:46, 15:55, 16:04, 16:12, 16:19, 16:27, 16:35, 16:42, 16:48, 16:54, 16:59, 17:04, 17:09, 17:14, 17:19, 17:24, 17:29, 17:34, 17:39, 17:44, 17:50, 17:55, 18:00, 18:05, 18:10, 18:15, 18:20, 18:25, 18:30, 18:35, 18:40, 18:45, 18:50, 18:55, 19:01, 19:08, 19:15, 19:23, 19:30, 19:38, 19:46, 19:56, 20:06, 20:16, 20:26, 20:36, 20:46, 20:56\t, 21:06, 21:16, 21:26, 21:36, 21:46, 21:56, 22:06, 22:16, 22:26, 22:36, 22:46, 22:57, 23:08, 23:20, 23:32, 23:44",
+        "jadwal_lb_libur": "05:19, 05:34, 05:46, 05:58, 06:10, 06:22, 06:34, 06:45, 06:56, 07:06, 07:16, 07:26, 07:36, 07:46, 07:56,\r\n08:06, 08:16, 08:26, 08:36, 08:46, 08:56, 09:06, 09:16, 09:26, 09:36, 09:46, 09:56, 10:06, 10:16, 10:26, 10:36, 10:46, 10:56, 11:06, 11:16, 11:26, 11:36, 11:46, 11:56, 12:06, 12:16, 12:26, 12:36, 12:46, 12:56, \r\n13:06, 13:16, 13:26, 13:36, 13:46, 13:56, 14:06, 14:16, 14:26, 14:36, 14:46, 14:56, 15:06, 15:16, 15:26, 15:36, 15:46, 15:56, 16:06, 16:16, 16:26, 16:36, 16:46, 16:56, 17:06, 17:16, 17:26, 17:36, 17:46, 17:56, \r\n18:06, 18:16, 18:26, 18:36, 18:46, 18:56, 19:06, 19:16, 19:26, 19:36, 19:46, 19:56, 20:06, 20:16, 20:26, 20:36, 20:46, 20:56, 21:06, 21:16, 21:26, 21:36, 21:46, 21:56, 22:06, 22:16, 22:26, 22:36, 22:46, 22:57, \r\n23:08, 23:20, 23:32, 23:44",
+        "jadwal_hi_biasa": "05:02, 05:15, 05:27, 05:39, 05:51, 06:01, 06:10, 06:18, 06:25, 06:32, 06:39, 06:46, 06:53, 06:59, 07:04, 07:09, 07:14, 07:19, 07:24, 07:29, 07:34, 07:39, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:50, 08:55, 09:00, 09:06, 09:13, 09:20, 09:27, 09:34, 09:42, 09:50, 09:57, 10:05, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 11:35, 11:45, 11:55, 12:05,12:15, 12:25, 12:35, 12:45, 12:55, 13:05, 13:15, 13:25, 13:35, 13:45, 13:55, 14:05, 14:15, 14:25, 14:35, 14:45, 14:55, 15:05, 15:15, 15:24, 15:32, 15:41, 15:49, 15:56, 16:03, 16:10, 16:15, 16:21, 16:26, 16:31, 16:36, 16:41, 16:46, 16:51, 16:56, 17:01, 17:06, 17:11, 17:16, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:00, 18:05, 18:10, 18:15, 18:20, 18:25, 18:30, 18:36, 18:43, 18:50, 18:58, 19:05, 19:15, 18:25, 19:35, 19:45, 19:55, 20:05, 20:15, 20:25, 20:35, 20:45, 20:55, 21:05, 21:15, 21:25, 21:36, 21:45, 21:55, 22:05, 22:15, 22:25, 22:36, 22:48, 23:00, 23:12, 23:27",
+        "jadwal_hi_libur": "05:02, 05:14, 05:26, 05:38, 05:50, 06:02, 06:13, 06:24, 06:34, 06:44, 06:54, 07:04, 07:14, 07:24, 07:34, 07:44, 07:54, 08:04, 08:14, 08:24, 08:34, 08:44, 08:54, 09:04, 09:14, 09:24, 09:34, 09:44, 09:54, 10:04, 10:14, 10:24, 10:34, 10:44, 10:54, 11:04, 11:14, 11:24, 11:34, 11:44, 11:54, 12:04, 12:14, 12:24, 12:34, 12:44, 12:54, 13:04, 13:14, 13:24, 13:34, 13:44, 13:54, 14:04, 14:14, 14:24, 14:34, 14:44, 14:54, 15:04, 15:14, 15:24, 15:34, 15:44, 15:54, 16:04, 16:14, 16:24, 16:34, 16:44, 16:54, 17:04, 17:14, 17:24, 17:34, 17:44, 17:54, 18:04, 18:14, 18:24, 18:34, 18:44, 18:54, 19:04, 19:14, 19:24, 19:34, 19:44, 19:54, 20:04, 20:14, 20:24, 20:34, 20:44, 20:54, 21:04, 21:14, 21:24, 21:34, 21:44, 21:54, 22:04, 22:14, 22:24, 22:35, 22:47, 22:59, 23:11, 23:26",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_ASEAN.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "9000",
+                "waktu": "15"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "7000",
+                "waktu": "12"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "4000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "7000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "7000",
+                "waktu": "14"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "274",
+                "title": "Sare Hotel",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/sare-hotel.jpg",
+                "path": "/id/fasilitas/sare-hotel"
+            },
+            {
+                "nid": "273",
+                "title": "Oeang Restaurant Roastery and Bar",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-10/oeang-mbloc.png",
+                "path": "/id/fasilitas/oeang-restaurant-roastery-and-bar"
+            }
+        ]
+    },
+    {
+        "nid": "34",
+        "title": "Stasiun Senayan",
+        "urutan": "8",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-senayan",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 4C, 6M, 9C, T11, S21, BW4, GR1\r\n\r\nMetromini\r\nP15, S640\r\n\r\nAPB\r\nJP03A\r\n\r\nPPD\r\n210, 213, P43, AC10, AC11, AC15, P43, AC17, AC78, ACB02, APTB08\r\n\r\nKopaja\r\nP19, S13, DAN S602\r\n\r\nMayasari Bakti\r\nP16, P50, P51, AC35, AC50, AC52, AC61, AC62, AC70, AC133\r\n\r\nBianglala\r\nAC44, AC102, C100B\r\n\r\nSteady Safe\r\nAC46, AC86\r\n\r\nHimpurna\r\nP64, P72, P77, P94\r\n\r\nKWK\r\nT20\r\n\r\nJasa Utama\r\nP125\r\n\r\nTasima\r\nP153\r\n\r\nDSU\r\nP157\r\n\r\nARH\r\nAC139\r\n\r\nMB\r\nAPTB07, APTB13\r\n\r\nSJML\r\nAPRB11",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%208%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_Peta%20Lokalitas_SNY%20020920%20Novita-02.png",
+        "jadwal_lb_biasa": "05:17, 05:32, 05:44, 05:56, 06:08, 06:20, 06:31, 06:41, 06:49, 06:57, 07:05, 07:12, 07:19, 07:25, 07:30, 07:35, 07:35, 07:40, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:50, 08:55, 09:01, 09:06, 09:11, 09:16, 09:21, 09:26. 09:31, 09:36, 09:41, 09:48, 09:55, 10:03, 10:11, 10:18, 10:26, 10:35, 10:44, 10:54, 11:04, 11:14, 11:24, 11:34, 11:44, 11:54, 12:04, 12:14, 12:24, 12:34, 12:44, 12:54, 13:04, 13:14, 13:24, 13:34, 13:44, 13:54, 14:04, 14:14, 14:24, 14:34, 14:44, 14:54, 15:04, 15:14, 15:24, 15:34, 15:44, 15:53, 16:01, 16:09, 16:17, 16:24, 16:32, 16:40, 16:46, 16:51, 16:57, 17:02, 17:07, 17:12, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:17, 18:22, 18:27, 18:32, 18:37, 18:42, 18:47, 18:52, 18:58, 19:05, 19:13, 19:20, 19:28, 19:35, 19:44, 19:54, 20:04, 20:14, 20:24, 20:34, 20:44, 20:54, 21:04, 21:14, 21:24, 21:34, 21:44, 21:54, 22:04, 22:14, 22:24, 22:34, 22:44, 22:54, 23:06, 23:18, 23:30, 23:42",
+        "jadwal_lb_libur": "05:16, 05:31, 05:43, 05:55, 06:07, 06:19, 06:31, 06:42, 06:53, 07:03, 07:13, 07:23, 07:33, 07:43, 07:53, \r\n08:03, 08:13, 08:23, 08:33, 08:43, 08:53, 09:03, 09:13, 09:23, 09:33, 09:43, 09:53, 10:03, 10:13, 10:23, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, \r\n13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:13, 15:23, 15:33, 15:43, 15:53, 16:03, 16:13, 16:23, 16:33, 16:43, 16:53, 17:03, 17:13, 17:23, 17:33, 17:43, 17:53, \r\n18:03, 18:13, 18:23, 18:33, 18:43, 18:53, 19:03, 19:13, 19:23, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:23, 21:33, 21:43, 21:53, 22:03, 22:13, 22:23, 22:33, 22:53, 23:05, 23:17, 23:29, 23:41",
+        "jadwal_hi_biasa": "05:05, 05:17, 05:29, 05:41, 05:53, 06:03, 06:12, 06:20, 06:27, 06:35, 06:42, 06:49 06:56, 07:02, 07:07, 07:12, 07:17, 07:22, 07:27, 07:32, 07:37, 07:42, 07:47, 07:52, 07:57, 08:03, 08:08, 08:13, 08:18, 08:23, 08:28, 08:33, 08:38, 08:43, 08:48, 08:53, 08:58, 09:03, 09:08, 09:15, 09:23, 09:30, 09:37, 09:44, 09:52, 10:00, 10:08, 10:17, 10:27, 10:37, 10:47, 10:57, 11:07, 11:17, 11:27, 11:37, 11:47, 11:57, 12:07, 12:17, 12:27, 12:37, 12:47, 12:57, 12:07, 12:17, 12:27, 12:37, 12:47, 12:57, 13:07, 13:17, 13:27, 13:37, 13:47, 13:57, 14:07, 14:17, 14:27, 14:37, 14:47, 14:57, 15:07, 15:17, 15:26, 15:35, 15:43, 15:51, 15:59, 16:06, 16:12, 16:18, 16:23, 16:29, 16:34, 16:39, 16:44, 16:49, 16:54, 16:59, 17:04, 17:09, 17:14, 17:19, 17:24, 17:29, 17:35, 17:40, 17:45, 17:50, 17:55, 18:00, 18:05, 18:10, 18:15, 18:20, 18:25, 18:30, 18:36, 18:43, 18:50, 18:58, 19:08, 19:17, 19:27, 19:37, 19:47, 19:57, 20:07, 20:17, 20:27, 20:37, 20:47, 20:57, 21:07, 21:17, 21:27, 21:38, 21:47, 21:57, 22:07, 22:17, 22:27, 22:38, 22:50, 23:02, 23:14, 23:29",
+        "jadwal_hi_libur": "05:04, 05:17, 05:29, 05:41, 05:53, 06:05, 06:16, 06:27, 06:37, 06:47, 06:57, 07:07, 07:17, 07:27, 07:37, 07:47, 07:57, 08:07, 08:17, 08:27, 08:37, 08:47, 08:57, 09:07, 09:17, 09:27, 09:37, 09:47, 09:57, 10:07, 10:17, 10:27, 10:37, 10:47, 10:57, 11:07, 11:17, 11:27, 11:37, 11:47, 11:57, 12:07, 12:17, 12:27, 12:37, 12:47, 12:57, 13:07, 13:17, 13:27, 13:37, 13:47, 13:57, 14:07, 14:17, 14:27, 14:37, 14:47, 14:57, 15:07, 15:17, 15:27, 15:37, 15:47, 15:57, 16:07, 16:17, 16:27, 16:37, 16:47, 16:57, 17:07, 17:17, 17:27, 17:37, 17:47, 17:57, 18:07, 18:17, 18:27, 18:37, 18:47, 18:57, 19:07, 19:17, 19:27, 19:37, 19:47, 19:57, 20:07, 20:17, 20:27, 20:37, 20:47, 20:57, 21:07, 21:17, 21:27, 21:37, 21:47, 21:57, 22:07, 22:17, 22:27, 22:38, 22:50, 23:02, 23:14, 23:29",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Senayan.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "92",
+                "title": "ATM Danamon",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514523284_6b241020ac_k.jpg",
+                "path": "/id/retail/atm-danamon"
+            },
+            {
+                "nid": "1000",
+                "title": "Jago Coffee",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514520369_f5ac2da984_k.jpg",
+                "path": "/id/retail/jago-coffee"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "10000",
+                "waktu": "17"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "9000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "7000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "4000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "4000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "5000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "6000",
+                "waktu": "12"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "316",
+                "title": "Hotel Fairmont",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600154696_c8b63d64f9_b.jpg",
+                "path": "/id/fasilitas/hotel-fairmont"
+            },
+            {
+                "nid": "314",
+                "title": "fX Sudirman",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50599405253_1b97a120a9_b.jpg",
+                "path": "/id/fasilitas/fx-sudirman"
+            },
+            {
+                "nid": "315",
+                "title": "Plaza Senayan",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600155641_5cab60fd2c_b.jpg",
+                "path": "/id/fasilitas/plaza-senayan"
+            },
+            {
+                "nid": "320",
+                "title": "Senayan City",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600273222_dcd50bf75e_b.jpg",
+                "path": "/id/fasilitas/senayan-city"
+            },
+            {
+                "nid": "321",
+                "title": "Ratu Plaza",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50599405703_b29c149c8b_b.jpg",
+                "path": "/id/fasilitas/ratu-plaza"
+            },
+            {
+                "nid": "324",
+                "title": "Starbucks",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600269992_a4a307a195_b.jpg",
+                "path": "/id/fasilitas/starbucks"
+            }
+        ]
+    },
+    {
+        "nid": "35",
+        "title": "Stasiun Istora Mandiri",
+        "urutan": "9",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-istora-mandiri",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 4C, 6M, 9C, T11, S21, BW4, GR1\r\n\r\nMetromini\r\nP15, S640\r\n\r\nAPB\r\nJP03A\r\n\r\nPPD\r\n210, 213, P43, AC10, AC11, AC15, P43, AC17, AC78, ACB02, APTB08\r\n\r\nKopaja\r\nP19, S13, S602\r\n\r\nMayasari Bakti\r\nP16, P50, P51, AC35, AC50, AC52, AC61, AC62, AC70, AC133\r\n\r\nBianglala\r\nAC44, AC102, C100B\r\n\r\nSteady Safe\r\nAC46, AC86\r\n\r\nHimpurna\r\nP64, P72, P77, P94\r\n\r\nKWK\r\nT20\r\n\r\nJasa Utama\r\nP125\r\n\r\nTasima\r\nP153\r\n\r\nDSU\r\nP157\r\n\r\nARH\r\nAC139\r\n\r\nMB\r\nAPTB07, APTB13\r\n\r\nSJML\r\nAPRB11",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%209%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_Peta%20Lokalitas_IST%20020920%20Novita-02.png",
+        "jadwal_lb_biasa": "05:15, 05:30, 05:42, 05:54, 06:06, 06:18, 06:29, 06:39, 06:48, 06:55, 07:03, 07:10, 07:17, 07:23, 07:28, 07:33, 07:38, 07:43, 07:48, 07:53, 07:58, 08:03, 08:08, 08:13, 08:18, 08:23, 08:29, 08:34, 08:39, 08:44, 08:49, 08:54, 08:59, 09:04, 09:09, 09:14, 09:19, 09:24, 09:29, 09:35, 09:40, 09:47, 09:54, 10:02, 10:09, 10:17, 10:25, 10:33, 10:42, 10:52, 11:02, 11:12, 11:22, 11:32, 11:42, 11:52, 12:02, 12:12, 12:22, 12:32, 12:42, 12:52, 13:02, 13:12, 13:22, 13:32, 13:42, 13:52, 14:02, 14:12, 14:22, 14:32, 14:42, 14:52, 15:02, 15:12, 15:22, 15:32, 15:42, 15:51, 16:00, 16:08, 16:15, 16:23, 16:31, 16:38, 16:44, 16:50,\t16:55, 17:00, 17:05, 17:10, 17:15, 17:20, 17:25, 17:30, 17:35, 17:40, 17:45, 17:50, 17:56, 18:01, 18:06, 18:11, 18:21, 18:26, 18:31, 18:36, 18:41, 18:46, 18:51, 18:57, 19:04, 19:11, 19:19, 19:26, 19:34, 19:42, 19:52, 20:02, 20:12, 20:22, 20:32, 20:42, 20:52, 21:02, 21:12, 21:22, 21:32, 21:42, 21:52, 22:02, 22:12, 22:22, 22:32, 22:42, 22:53, 23:04, 23:16, 23:28, 23:40",
+        "jadwal_lb_libur": "05:15, 05:30, 05:42, 05:54, 06:06, 06:18, 06:30, 06:41, 06:52, 07:02, 07:12, 07:22, 07:32, 07:42, 07:52,\r\n08:02, 08:12, 08:22, 08:32, 08:42, 08:52, 09:02, 09:12, 09:22, 09:32, 09:42, 09:52, 10:02, 10:12, 10:22, 10:32, 10:42, 10:52, 11:02, 11:12, 11:22, 11:32, 11:42, 11:52, 12:02, 12:12, 12:22, 12:32, 12:42, 12:52, \r\n13:02, 13:12, 13:22, 13:32, 13:42, 13:52, 14:02, 14:12, 14:22, 14:32, 14:42, 14:52, 15:02, 15:12, 15:22, 15:32, 15:42, 15:52, 16:02, 16:12, 16:22, 16:32, 16:42, 16:52, 17:02, 17:12, 17:22, 17:32, 17:42, 17:52, \r\n18:02, 18:12, 18:22, 18:32, 18:42, 18:52, 19:02, 19:12, 19:22, 19:32, 19:42, 19:52, 20:02, 20:12, 20:22, 20:32, 20:42, 20:52, 21:02, 21:12, 21:22, 21:32, 21:42, 21:52, 22:02, 22:12, 22:22, 22:32, 22:42, 22:53, \r\n23:04, 23:16, 23:28, 23:40",
+        "jadwal_hi_biasa": "05:07, 05:19, 05:31, 05:43, 05:55, 06:05, 06:14, 06:22, 06:29, 06:37, 06:44, 06:51, 06:58, 07:04, 07:09, 07:14, 07:19, 07:24, 07:29, 07:34, 07:39, 07:44, 07:49, 07:54, 07:59, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:50, 08:55, 09:00, 09:05, 09:10, 09:17, 09:25, 09:32, 09:39, 09:46, 09:54, 10:02, 10:10, 10:19, 10:29, 10:39, 10:49, 10:59, 11:09, 11:19, 11:29, 11:39, 11:49, 11:59, 12:09, 12:19, 12:29, 12:39, 12:49, 12:59, 13:09, 13:19, 13:29, 13:15, 13:39, 13:49, 13:59, 14:09, 14:19, 14:29, 14:39, 14:49, 14:59, 15:09, 15:19, 15:28, 15:37, 15:45, 15:53  16:01, 16:08, 16:14, 16:20, 16:25, 16:31, 16:36, 16:41, 16:46, 16:51, 16:56, 17:01, 17:06, 17:11, 17:16, 17:21, 17:26, 17:31, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:17, 18:22, 18:27, 18:32, 18:38, 18:45, 18:52, 19:00, 19:10, 19:19, 19:29, 19:39, 19:49, 19:59, 20:09, 20:19, 20:29, 20:39, 20:49, 20:59, 21:09, 21:19, 21:29, 21:40, 21:49, 21:59, 22:09, 22:19, 22:29, 22:40, 22:52, 23:04, 23:16, 23:31",
+        "jadwal_hi_libur": "05:06, 05:19, 05:31, 05:43, 05:55, 06:07, 06:18, 06:29, 06:39, 06:49, 06:59, 07:09, 07:19, 07:29, 07:39, 07:49, 07:59, 08:09, 08:19, 08:29, 08:39, 08:49, 08:59, 09:09, 09:19, 09:29, 09:39, 09:49, 09:59, 10:09, 10:19, 10:29, 10:39, 10:49, 10:59, 11:09, 11:19, 11:29, 11:39, 11:49, 11:59, 12:09, 12:19, 12:29, 12:39, 12:49, 12:59, 13:09, 13:19, 13:29, 13:39, 13:49, 13:59, 14:09, 14:19, 14:29, 14:39, 14:49, 14:59, 15:09, 15:19, 15:29, 15:39, 15:49, 15:59, 16:09, 16:19, 16:29, 16:39, 16:49, 16:59, 17:09, 17:19, 17:29, 17:39, 17:49, 17:59, 18:09, 18:19, 18:29, 18:39, 18:49, 18:59, 19:09, 19:19, 19:29, 19:39, 19:49, 19:59, 20:09, 20:19, 20:29, 20:39, 20:49, 20:59, 21:09, 21:19, 21:29, 21:39, 21:49, 21:59, 22:09, 22:19, 22:29, 22:40, 22:52, 23:04, 23:16, 23:31",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Istora%20Mandiri.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "776",
+                "title": "ATM Mandiri",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514508709_a070a55156_k.jpg",
+                "path": "/id/retail/atm-mandiri"
+            },
+            {
+                "nid": "999",
+                "title": "Indomaret Point",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514235761_e984b1a661_k.jpg",
+                "path": "/id/retail/indomaret-point"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "11000",
+                "waktu": "19"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "9000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "8000",
+                "waktu": "13"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "7000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "5000",
+                "waktu": "6"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "4000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "3000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "3000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "4000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "5000",
+                "waktu": "10"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "323",
+                "title": "The Ritz Carlton-Jakarta, Pacific Place",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50599403188_bcbdb62790_b.jpg",
+                "path": "/id/fasilitas/ritz-carlton-jakarta-pacific-place"
+            },
+            {
+                "nid": "322",
+                "title": "Pacific Place",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600266907_2242c27312_b.jpg",
+                "path": "/id/fasilitas/pacific-place"
+            }
+        ]
+    },
+    {
+        "nid": "36",
+        "title": "Stasiun Bendungan Hilir",
+        "urutan": "10",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-bendungan-hilir",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 4C, 6M, 9C, T11, S21, BW4, GR1\r\n\r\nMetromini\r\nP15 dan S640\r\n\r\nAPB\r\nJP03A\r\n\r\nPPD\r\n210, 213, P43, AC10, AC11, AC15, P43, AC17, AC78, ACB02, APTB08\r\n\r\nKopaja\r\nP19, S13, S602\r\n\r\nMayasari Bakti\r\nP16, P50, P51, AC35, AC50, AC52, AC61, AC62, AC70, AC133\r\n\r\nBianglala\r\nAC44, AC102, C100B\r\n\r\nSteady Safe\r\nAC46, AC86\r\n\r\nHimpurna\r\nP64, P72, P77, P94\r\n\r\nKWK\r\nT20\r\n\r\nJasa Utama\r\nP125\r\n\r\nTasima\r\nP153\r\n\r\nDSU\r\nP157\r\n\r\nARH\r\nAC139\r\n\r\nMB\r\nAPTB07, APTB13\r\n\r\nSJML\r\nAPRB11",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%2010%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_Peta%20Lokalitas_BNH%20020920%20Novita-02.png",
+        "jadwal_lb_biasa": "05:13, 05:28, 05:40, 05:52, 06:04, 06:16, 06:27, 06:37, 06:45, 06:53, 07:00, 07:08, 07:15, 07:21, 07:26, 07:31, 07:36, 07:41, 07:46, 07:51, 07:56, 08:01, 08:06, 08:11, 08:16, 08:21, 08:26, 08:31, 08:36, 08:42, 08:46, 08:51, 08:57, 09:02, 09:07, 09:12, 09:22, 09:27, 09:32, 09:37, 09:44, 09:51, 09:59, 10:07, 10:14, 10:22, 10:31, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:50, 12:00, 12:10, 12:20, 12:30, 12:40, 12:50, 13:00, 13:10, 13:20, 13:30, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:10, 15:20, 15:30, 15:49: 15:57, 16:05, 16:13, 16:20, 16:28, 16:36, 16:42, 16:47, 16:53, 16:58, 17:03, 17:08, 17:13, 17:18, 17:23, 17:28, 17:33, 17:38, 17:43, 17:48, 17:53, 17:58, 18:03, 18:08, 18:13, 18:18, 18:23, 18:28, 18:33, 18:38,18:43, 18:48, 18:54,  19:01, 19:09, 19:16, 19:24, 19:31, 19:40, 19:50, 20:00, 20:10, 20:20, 20:30, 20:40, 20:50, 21:00, 21:10, 21:20, 21:30, 21:40, 21:50, 22:00, 22:10, 22:20, 22:30, 22:40, 22:51, 23:02, 23:14, 23:26, 23:38",
+        "jadwal_lb_libur": "05:12, 05:27, 05:39, 05:51, 06:03, 06:15, 06:27, 06:38, 06:49, 06:59, 07:09, 07:19, 07:29, 07:39, 07:49, 07:59, 08:09, 08:19, 08:29, 08:39, 08:49, 08:59, 09:09, 09:19, 09:29, 09:39, 09:49, 09:59, 10:09, 10:19, 10:29, 10:39, 10:49, 10:59, 11:09, 11:19, 11:29, 11:39, 11:49, 11:59, 12:09, 12:19, 12:29, 12:39, 12:49, 12:59, 13:09, 13:19, 13:29, 13:39, 13:49, 13:59, 14:09, 14:19, 14:29, 14:39, 14:49, 14:59, 15:09, 15:19, 15:29, 15:39, 15:49: 15:59, 16:09, 16:19, 16:29, 16:39, 16:49, 16:59, 17:09, 17:19, 17:29, 17:39, 17:49, 17:59, 18:09, 18:19, 18:29, 18:39, 18:49, 18:59, 19:09, 19:19, 19:29, 19:39, 19:49, 19:59, 20:09, 20:19, 20:29, 20:39, 20:49, 20:59, 21:09, 21:19, 21:29, 21:39, 21:49, 21:59, 22:09, 22:19, 22:29, 22:39, 22:50, \r\n23:01, 23:13, 23:25, 23:37",
+        "jadwal_hi_biasa": "05:09, 05:22, 05:34, 05:46, 05:58, 06:08, 06:17, 06:25, 06:32, 06:39, 06:46, 06:53, 07:00, 07:06, 07:12, 07:17, 07:22, 07:27, 07:32, 07:37, 07:42, 07:47, 07:52, 07:57, 08:02, 08:07, 08:12, 08:17, 08:22, 08:27, 08:32, 08:37, 08:42, 08:47, 08:52, 08:57, 09:02, 09:07, 09:13, 09:20, 09:27, 09:34, 09:41, 09:49, 09:57, 10:04, 10:12, 10:22, 10:32, 10:37, 10:42, 10:52, 11:02, 11:12, 11:22, 11:32, 11:42, 11:52, 12:02, 12:12, 12:32, 12:42, 12:52, 13:02, 13:12, 13:22, 13:32, 13:42, 13:52, 14:02, 14:12, 14:22, 14:32, 14:42, 14:52, 15:02, 15:12, 15:22, 15:31, 15:39, 15:48, 15:56, 16:03, 16:10, 16:17, 16:22, 16:28, 16:33, 16:39, 16:44, 16:49, 16:54, 16:59, 17:04, 17:09, 17:14, 17:19, 17:24, 17:29, 17:34, 17:39, 17:44, 17:49, 17:54, 17:59, 18:04, 18:09, 18:14, 18:19, 18:24, 18:29, 18:34, 18:40, 18:47, 18:55, 19:03, 19:12, 19:22, 19:32, 19:42, 19:52, 20:02, 20:12, 20:22, 20:32, 20:42, 20:52, 21:02, 21:12, 21:22, 21:32, 21:43, 21:52, 22:02, 22:12, 22:22, 22:32, 22:43, 22:55, 23:07, 23:19, 23:34",
+        "jadwal_hi_libur": "05:08, 05:21, 05:33, 05:45, 05:57, 06:09, 06:20, 06:31, 06:41, 06:51, 07:01, 07:11, 07:21, 07:31, 07:41, \r\n08:01, 08:11, 08:21, 08:31, 08:41, 08:51, 09:01, 09:11, 09:21, 09:31, 09:41, 09:51, 10:01, 10:11, 10:21, 10:31, 10:41, 10:51, 11:01, 11:11, 11:21, 11:31, 11:41, 11:51, 12:01, 12:11, 12:21, 12:31, 12:41, 12:51, \r\n13:01, 13:11, 13:21, 13:31, 13:41, 13:51, 14:01, 14:11, 14:21, 14:31, 14:41, 14:51, 15:01, 15:11, 15:21, 15:31, 15:41, 15:51, 16:01, 16:11, 16:21, 16:31, 16:41, 16:51, 17:01, 17:11, 17:21, 17:31, 17:41, 17:51, \r\n18:01, 18:11, 18:21, 18:31, 18:41, 18:51, 19:01, 19:11, 19:21, 19:31, 19:41, 19:51, 20:01, 20:11, 20:21, 20:31, 20:41, 20:51, 21:01, 21:11, 21:21, 21:31, 21:41, 21:51, 22:01, 22:11, 22:21, 22:31, 22:42, 22:54, \r\n23:06, 23:18, 23:33",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Bendungan%20Hilir.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "48",
+                "title": "FamilyMart",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/49983405802_ac4a986b48_b.jpg",
+                "path": "/id/retail/familymart"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "12000",
+                "waktu": "22"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "10000",
+                "waktu": "19"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "9000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "8000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "7000",
+                "waktu": "12"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "5000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "3000",
+                "waktu": "3"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "3000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "4000",
+                "waktu": "7"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "318",
+                "title": "Hotel Grand Sahid Jaya",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50599398243_d21ed2aa89_b.jpg",
+                "path": "/id/fasilitas/hotel-grand-sahid-jaya"
+            },
+            {
+                "nid": "327",
+                "title": "Sampoerna Kayoe",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/49520136577_b42c08a494_b.jpg",
+                "path": "/id/fasilitas/sampoerna-kayoe"
+            }
+        ]
+    },
+    {
+        "nid": "37",
+        "title": "Stasiun Setiabudi Astra",
+        "urutan": "11",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-setiabudi-astra",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 4C, 6M, 9C, T11, S21, BW4, GR1\r\n\r\nMetromini\r\nP15, S640\r\n\r\nAPB\r\nJP03A\r\n\r\nPPD\r\n210, 213, P43, AC10, AC11, AC15, P43, AC17, AC78, ACB02, APTB08\r\n\r\nKopaja\r\nP19, S13, S602\r\n\r\nMayasari Bakti\r\nP16, P50, P51, AC35, AC50, AC52, AC61, AC62, AC70, AC133\r\n\r\nBianglala\r\nAC44, AC102, C100B\r\n\r\nSteady Safe\r\nAC46, AC86\r\n\r\nHimpurna\r\nP64, P72, P77, P94\r\n\r\nKWK\r\nT20\r\n\r\nJasa Utama\r\nP125\r\n\r\nTasima\r\nP153\r\n\r\nDSU\r\nP157\r\n\r\nARH\r\nAC139\r\n\r\nMB\r\nAPTB07 dan APTB13\r\n\r\nSJML\r\nAPRB11",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%2011%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_Peta%20Lokalitas_SBA%20020920%20Novita-02.png",
+        "jadwal_lb_biasa": "05:11, 05:26, 05:38, 05:50, 06:02, 06:14, 06:25, 06:35, 06:43, 06:51, 06:58, 07:06, 07:13, 07:19, 07:24, 07:29, 07:34, 07:39, 07:44, 07:49, 07:54, 07:59, 08:04, 08:09, 08:14, 08:19, 08:24, 08:29, 08:34, 08:39, 08:44, 08:49, 08:55, 09:00, 09:05, 09:10, 09:15, 09:20, 09:25, 09:30, 09:35, 09:42, 09:49, 09:57, 10:05, 10:12, 10:20, 10:29, 10:38, 10:48, 10:58, 11:08, 11:18, 11:28, 11:38, 11:48, 11:58, 12:08, 12:18, 12:28, 12:38, 12:48, 12:58, 13:08, 13:18, 13:28, 13:38, 13:48, 13:58, 14:08, 14:18, 14:28, 14:38, 14:48, 14:58, 15:08, 15:18, 15:28, 15:38, 15:47, 15:55, 16:03, 16:11, 16:18, 16:26, 16:34, 16:40, 16:45, 16:51, 16:56, 17:01, 17:06, 17:11, 17:16, 17:21, 17:26, 17:31, 17:36, 17:41, 17:46, 17:51, 17:56, 18:01, 18:06, 18:11, 18:16, 18:21, 18:26, 18:31, 18:36, 18:41, 18:46, 18:52, 18:59, 19:07, 19:14, 19:22, 19:29, 19:38, 19:48, 19:58, 20:08, 20:18, 20:28, 20:38, 20:48, 20:58, 21:08, 21:18, 21:28, 21:38, 21:48, 21:58, 22:08, 22:18, 22:28, 22:38, 22:49, 23:00, 23:12, 23:24, 23:36",
+        "jadwal_lb_libur": "05:10, 05:25, 05:37, 05:49, 06:01, 06:13, 06:25, 06:36, 06:47, 06:57, 07:07, 07:17, 07:27, 07:37, 07:47, 07:57, 08:07, 08:17, 08:27, 08:37, 08:47, 08:57, 09:07, 09:17, 09:27, 09:37, 09:47, 09:57, 10:07, 10:17, 10:27, 10:37, 10:47, 10:57, 11:07, 11:17, 11:27, 11:37, 11:47, 11:57, 12:07, 12:17, 12:27, 12:37, 12:47, 12:57, 13:07, 13:17, 13:27, 13:37, 13:47, 13:57, 14:07, 14:17, 14:27, 14:37, 14:47, 14:57, 15:07, 15:17, 15:27, 15:37, 15:47, 15:57, 16:07, 16:17, 16:27, 16:37, 16:47, 16:57, 17:07, 17:17, 17:27, 17:37, 17:47, 17:57, 18:07, 18:17, 18:27, 18:37, 18:47, 18:57, 19:07, 19:17, 19:27, 19:37, 19:47, 19:57, 20:07, 20:17, 20:27, 20:37, 20:47, 20:57, 21:07, 21:17, 21:27, 21:37, 21:47, 21:57, 22:07, 22:17, 22:27, 22:37, 22:48, 22:59, 23:11, 23:23 23:35",
+        "jadwal_hi_biasa": "05:11, 05:24, 05:36, 05:48, 06:00, 06:10, 06:19, 06:27, 06:34, 06:41, 06:48, 06:55, 07:02, 07:08, 07:14, 07:19, 07:24, 07:29, 07:34, 07:39, 07:44, 07:49, 07:54, 07:59, 08:04, 08:09, 08:14, 08:19, 08:24, 08:29, 08:34, 08:39, 08:44, 08:49, 08:54, 08:59, 09:04, 09:09, 09:15, 09:22, 09:29, 09:36, 09:43, 09:51, 09:59, 10:06, 10:14, 10:24, 10:34, 10:44, 10:44, 10:54, 11:04, 11:14, 11:24, 11:34, 11:44, 11:54, 12:04, 12:14, 12:24, 12:34, 12:44, 12:54, 13:04, 13:14, 13:24, 13:34, 13:44, 13:54, 14:04, 14:14, 14:24, 14:34, 14:44, 14:54, 15:04, 15:14, 15:24, 15:33, 15:41, 15:50, 15:58, 16:05, 16:12, 16:19, 16:24, 16:30, 16:35, 16:41, 16:46, 16:51, 16:56, 17:01, 17:06, 17:11, 17:16, 17:21, 17:26, 17:31, 17:36, 17:41, 17:46, 17:51, 17:56, 18:01, 18:06, 18:11, 18:16, 18:21, 18:26, 18:26, 18:31, 18:36, 18:42, 18:49, 18:57, 19:05, 19:14, 19:24, 19:34, 19:44, 19:54, 20:04, 20:14, 20:24, 20:34, 20:44, 20:54, 21:04, 21:14, 21:24, 21:34, 21:44, 21:54, 22:04, 22:14, 22:24, 22:34, 22:45, 22:57, 23:09, 23:21, 23:36",
+        "jadwal_hi_libur": "05:10, 05:23, 05:35, 05:47, 05:59, 06:11, 06:22, 06:33, 06:43, 06:53, 07:03, 07:13, 07:23, 07:33, 07:43, 07:53, 08:03, 08:13, 08:23, 08:33, 08:43, 08:53, 09:03, 09:13, 09:23, 09:33, 09:43, 09:53, 10:03, 10:13, 10:23, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, 13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:13, 15:23, 15:33, 15:43, 15:53, 16:03, 16:13, 16:23, 16:33, 16:43, 16:53, 17:03, 17:13, 17:23, 17:33, 17:43, 17:53, 18:03, 18:13, 18:23, 18:33, 18:43, 18:53, 19:03, 19:13, 19:23, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:23, 21:33, 21:43, 21:53, 22:03, 22:13, 22:23, 22:33, 22:44, 22:56, 23:08, 23:20, 23:35",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Setiabudi%20Astra.jpg",
+        "retails": [
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "999",
+                "title": "Indomaret Point",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514235761_e984b1a661_k.jpg",
+                "path": "/id/retail/indomaret-point"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "13000",
+                "waktu": "24"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "11000",
+                "waktu": "21"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "9000",
+                "waktu": "18"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "8000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "7000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "6000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "6000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "4000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "3000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "4000",
+                "waktu": "5"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "295",
+                "title": "Mie Aceh Bang Iwan",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/Mie%20Aceh%20Bang%20Iwan.jpg",
+                "path": "/id/fasilitas/mie-aceh-bang-iwan"
+            },
+            {
+                "nid": "296",
+                "title": "Depot Soto Gebraak",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/Depot%20Soto%20Gebrakaak.jpg",
+                "path": "/id/fasilitas/depot-soto-gebraak"
+            },
+            {
+                "nid": "297",
+                "title": "Caffeine Solutions",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/Caffeine%20Solutions.jpg",
+                "path": "/id/fasilitas/caffeine-solutions"
+            },
+            {
+                "nid": "298",
+                "title": "Bakmi Djowo Tuman Jogjakarta",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/Bakmi%20Djawa%20Tuman%20Jogjakarta.jpg",
+                "path": "/id/fasilitas/bakmi-djowo-tuman-jogjakarta"
+            },
+            {
+                "nid": "299",
+                "title": "Warung MJS",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/Warung%20MJS.jpg",
+                "path": "/id/fasilitas/warung-mjs"
+            },
+            {
+                "nid": "300",
+                "title": "Mie Aceh Jakarta",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/MIe%20Aceh%20Jakarta.jpg",
+                "path": "/id/fasilitas/mie-aceh-jakarta"
+            }
+        ]
+    },
+    {
+        "nid": "38",
         "title": "Stasiun Dukuh Atas BNI",
+        "urutan": "12",
+        "isbig": "1",
+        "path": "/id/stasiun/stasiun-dukuh-atas-bni",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 4C, 6M, 9C, T11, S21, BW4, GR1\r\n\r\nMetromini\r\nP15, S640\r\n\r\nAPB\r\nJP03A\r\n\r\nPPD\r\n210, 213, P43, AC10, AC11, AC15, P43, AC17, AC78, ACB02, APTB08\r\n\r\nKopaja\r\nP19, S13, S602\r\n\r\nMayasari Bakti\r\nP16, P50, P51, AC35, AC50, AC52, AC61, AC62, AC70, AC133\r\n\r\nBianglala\r\nAC44, AC102, C100B\r\n\r\nSteady Safe\r\nAC46 dan AC86\r\n\r\nHimpurna\r\nP64, P72, P77, P94\r\n\r\nKWK\r\nT20\r\n\r\nJasa Utama\r\nP125\r\n\r\nTasima\r\nP153\r\n\r\nDSU\r\nP157\r\n\r\nARH\r\nAC139\r\n\r\nMB\r\nAPTB07, APTB13\r\n\r\nSJML\r\nAPRB11",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%2012%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_Peta%20Lokalitas_DKA%20020920%20Novita_-02.png",
         "jadwal_lb_biasa": "05:09, 05:24, 05:36, 05:48, 06:00, 06:12, 06:23, 06:33, 06:41, 06:49, 06:56, 07:04, 07:11, 07:17, 07:22, 07:27, 07:32, 07:37, 07:42, 07:47, 07:52, 07:57, 08:02, 08:07, 08:12, 08:17, 08:22, 08:27, 08:32, 08:37, 08:42, 08:47, 08:53, 08:58, 09:03, 09:08, 09:13, 09:18, 09:23, 09:28, 09:33, 09:40, 09:47, 09:47, 09:55, 10:03, 10:10, 10:18, 10:27, 10:36, 10:46, 10:56, 11:06, 11:16, 11:26, 11:36, 11:46, 11:56, 12:06, 12:16, 12:26, 12:36, 12:46, 12:56, 13:06, 13:16, 13:26, 13:36, 13:46, 13:56, 14:06, 14:16, 14:26, 14:36, 14:46, 14:56, 15:06, 15:16, 15:26, 15:36, 15:45, 15:53, 16:01, 16:09, 16:16, 16:24, 16:32, 16:38, 16:43, 16:49, 16:54, 16:59, 17:04, 17:09, 17:14, 17:19, 17:24, 17:29, 17:34, 17:39, 17:44, 17:49, 17:54, 17:59, 18:04, 18:09, 18:14, 18:19, 18:24, 18:29, 18:34, 18:39, 18:44, 18:50, 18:57, 19:05, 19:12, 19:20, 19:27, 19:36, 19:46, 19:56, 20:06, 20:16, 20:26, 20:36, 20:46, 20:56, 21:06, 21:16, 21:26, 21:36, 21:46, 21:56, 22:06, 22:16, 22:26, 22:36, 22:47, 22:58, 23:10, 23:22, 23:34",
         "jadwal_lb_libur": "05:08, 05:23, 05:35, 05:47, 05:59, 06:11, 06:23, 06:34, 06:45, 06:55, 07:05, 07:15, 07:25, 07:35, 07:45, 07:55, 08:05, 08:15, 08:25, 08:35, 08:45, 08:55, 09:05, 09:15, 09:25, 09:35, 09:45, 09:55, 10:05, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 11:35, 11:45, 11:55, 12:05, 12:15, 12:25, 12:35, 12:45, 12:55, 13:05, 13:15, 13:25, 13:35, 13:45, 13:55, 14:05, 14:15, 14:25, 14:35, 14:45, 14:55, 15:05, 15:15, 15:25, 15:35, 15:45, 15:55, 16:05, 16:15, 16:25, 16:35, 16:45, 16:55, 17:05, 17:15, 17:25, 17:35, 17:45, 17:55, 18:05, 18:15, 18:25, 18:35, 18:45, 18:55, 19:05, 19:15, 19:25, 19:35, 19:45, 19:55, 20:05, 20:15, 20:25, 20:35, 20:45, 20:55, 21:05, 21:15, 21:25, 21:35, 21:45, 21:55, 22:05, 22:15, 22:25, 22:35, 22:46, 22:57, 23:09, 23:21, 23:33",
         "jadwal_hi_biasa": "05:00, 05:12, 05:24, 05:36, 05:46, 05:55, 06:03, 06:10, 06:17, 06:24, 06:31, 06:38, 06:44, 06:49, 06:54, 06:59, 07:04, 07:09, 07:14, 07:19, 07:24, 07:29, 07:34, 07:39, 07:45, 07:50, 07:55, 08:00, 08:05, 08:10, 08:15, 08:20, 08:25, 08:30, 08:35, 08:40, 08:45, 08:51, 08:58, 09:05, 09:05, 09:12, 09:19, 09:27, 09:35, 09:42, 09:50, 10:00, 10:10, 10:20, 10:30, 10:40, 10:50, 11:00, 11:10, 11:20, 11:30, 11:40, 11:50, 12:00, 12:10, 12:20, 12:30, 12:40, 12:50, 13:00, 13:10, 13:20, 13:30, 13:40, 13:50, 14:00, 14:10, 14:20, 14:30, 14:40, 14:50, 15:00, 15:09, 15:17, 15:26, 15:34, 15:41, 15:48, 15:55, 16:00, 16:06, 16:11, 16:16, 16:21, 16:26, 16:31, 16:36, 16:41, 16:46, 16:51, 16:56, 17:01, 17:06, 17:11, 17:17, 17:22, 17:27, 17:32, 17:37, 17:42, 17:47, 17:52, 17:57, 18:02, 18:07, 18:12, 18:18, 18:25, 18:33, 18:41, 18:50, 19:00, 19:10, 19:20,  19:30, 19:40, 19:50, 20:00, 20:10, 20:20, 20:30, 20:40, 20:50, 21:00, 21:10, 21:21, 21:30, 21:40, 21:50, 22:00, 22:10, 22:21, 22:33, 22:45, 22:57, 23:12, 23:27",
-        "jadwal_hi_libur": "05:13, 05:25, 05:37, 05:49, 06:01, 06:13, 06:24, 06:35, 06:45, 06:55, 07:05, 07:15, 07:25, 07:35, 07:45, 07:55, 08:05, 08:15, 08:25, 08:35, 08:45, 08:55, 09:05, 09:15, 09:25, 09:35, 09:45, 09:55, 10:05, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 11:35, 11:45, 11:55, 12:05, 12:15, 12:25, 12:35, 12:45, 12:55, 13:05, 13:15, 13:25, 13:35, 13:45, 13:55, 14:05, 14:15, 14:25, 14:35, 14:45, 14:55, 15:05, 15:15, 15:25, 15:35, 15:45, 15:55, 16:05, 16:15, 16:25, 16:35, 16:45, 16:55, 17:05, 17:15, 17:25, 17:35, 17:45, 17:55, 18:05, 18:15, 18:25, 18:35, 18:45, 18:55, 19:05, 19:15, 19:25, 19:35, 19:45, 19:55, 20:05, 20:15, 20:25, 20:35, 20:45, 20:55, 21:05, 21:15, 21:25, 21:35, 21:45, 21:55, 22:05, 22:15, 22:25, 22:35, 22:46, 22:58, 23:10, 23:22, 23:37"
+        "jadwal_hi_libur": "05:13, 05:25, 05:37, 05:49, 06:01, 06:13, 06:24, 06:35, 06:45, 06:55, 07:05, 07:15, 07:25, 07:35, 07:45, 07:55, 08:05, 08:15, 08:25, 08:35, 08:45, 08:55, 09:05, 09:15, 09:25, 09:35, 09:45, 09:55, 10:05, 10:15, 10:25, 10:35, 10:45, 10:55, 11:05, 11:15, 11:25, 11:35, 11:45, 11:55, 12:05, 12:15, 12:25, 12:35, 12:45, 12:55, 13:05, 13:15, 13:25, 13:35, 13:45, 13:55, 14:05, 14:15, 14:25, 14:35, 14:45, 14:55, 15:05, 15:15, 15:25, 15:35, 15:45, 15:55, 16:05, 16:15, 16:25, 16:35, 16:45, 16:55, 17:05, 17:15, 17:25, 17:35, 17:45, 17:55, 18:05, 18:15, 18:25, 18:35, 18:45, 18:55, 19:05, 19:15, 19:25, 19:35, 19:45, 19:55, 20:05, 20:15, 20:25, 20:35, 20:45, 20:55, 21:05, 21:15, 21:25, 21:35, 21:45, 21:55, 22:05, 22:15, 22:25, 22:35, 22:46, 22:58, 23:10, 23:22, 23:37",
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Dukuh%20Atas%20BNI.jpg",
+        "retails": [
+            {
+                "nid": "552",
+                "title": "ATM BCA",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2021-07/50995829682_be4331f57f_b.jpg",
+                "path": "/id/retail/atm-bca"
+            },
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "776",
+                "title": "ATM Mandiri",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514508709_a070a55156_k.jpg",
+                "path": "/id/retail/atm-mandiri"
+            },
+            {
+                "nid": "93",
+                "title": "Auntie Anne's",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-07/auntieannes.png",
+                "path": "/id/retail/auntie-annes"
+            },
+            {
+                "nid": "96",
+                "title": "Century Healthcare",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-07/Century%20Healthcare.jpg",
+                "path": "/id/retail/century-healthcare"
+            },
+            {
+                "nid": "1097",
+                "title": "Chocomory chocobar cashew",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2023-04/VM%20Cashew.jpg",
+                "path": "/id/retail/chocomory-chocobar-cashew"
+            },
+            {
+                "nid": "1006",
+                "title": "Honey Loaf",
+                "jenis_retail": "UMKM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514785438_ab71ab7c68_k.jpg",
+                "path": "/id/retail/honey-loaf"
+            },
+            {
+                "nid": "999",
+                "title": "Indomaret Point",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514235761_e984b1a661_k.jpg",
+                "path": "/id/retail/indomaret-point"
+            },
+            {
+                "nid": "106",
+                "title": "KOI Thé",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/49982652838_d92a749b03_c.jpg",
+                "path": "/id/retail/koi"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "1001",
+                "title": "Rich Juice",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514722075_ae8d746d1f_k.jpg",
+                "path": "/id/retail/rich-juice"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "14000",
+                "waktu": "26"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "12000",
+                "waktu": "23"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "10000",
+                "waktu": "20"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "9000",
+                "waktu": "18"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "8000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "7000",
+                "waktu": "13"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "7000",
+                "waktu": "11"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "5000",
+                "waktu": "9"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "4000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "3000",
+                "waktu": "4"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "3000",
+                "waktu": "2"
+            },
+            {
+                "stasiun_nid": "39",
+                "tarif": "3000",
+                "waktu": "3"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "319",
+                "title": "Hotel All Seasons",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600142741_d5255b5441_b.jpg",
+                "path": "/id/fasilitas/hotel-all-seasons"
+            },
+            {
+                "nid": "325",
+                "title": "Metro Coffee",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600260042_d5b436bbb2_b.jpg",
+                "path": "/id/fasilitas/metro-coffee"
+            }
+        ]
+    },
+    {
+        "nid": "39",
+        "title": "Stasiun Bundaran HI",
+        "urutan": "13",
+        "isbig": "0",
+        "path": "/id/stasiun/stasiun-bundaran-hi",
+        "catatan": null,
+        "antarmodas": "Transjakarta\r\nKoridor 1, 4C, 6M, 9C, T11, S21, BW4, GR1\r\n\r\nMetromini\r\nP15, S640\r\n\r\nAPB\r\nJP03A\r\n\r\nPPD\r\n210, 213, P43, AC10, AC11, AC15, P43, AC17, AC78, ACB02, APTB08\r\n\r\nKopaja\r\nP19, S13, S602\r\n\r\nMayasari Bakti\r\nP16, P50, P51, AC35, AC50, AC52, AC61, AC62, AC70, AC133\r\n\r\nBianglala\r\nAC44, AC102, C100B\r\n\r\nSteady Safe\r\nAC46, AC86\r\n\r\nHimpurna\r\nP64, P72, P77, P94\r\n\r\nKWK\r\nT20\r\n\r\nJasa Utama\r\nP125\r\n\r\nTasima\r\nP153\r\n\r\nDSU\r\nP157\r\n\r\nARH\r\nAC139\r\n\r\nMB\r\nAPTB07, APTB13\r\n\r\nSJML\r\nAPRB11",
+        "peta_lokalitas": "https://jakartamrt.co.id/sites/default/files/2020-09/5%20-%2013%20-%20UI%20Kiosk%20-%20Fasilitas%2C%20Lokalitas%2C%20dan%20Ritel%20dalam%20Stasiun_Peta%20Lokalitas_BHI%20020920%20Novita-03.png",
+        "jadwal_lb_biasa": "05:06, 05:21, 05:33, 05:45, 05:57, 06:09, 06:20, 06:30, 06:39, 06:46, 06:53, 07:01, 07:08, 07:14, 07:19, 07:24, 07:29, 07:34, 07:39, 07:44, 07:49, 07:54, 07:59, 08:04, 08:09, 08:14, 08:19, 08:24, 08:29, 08:34, 08:39, 08:45, 08:50, 08:55, 09:00, 09:05, 09:10, 09:15, 09:20, 09:26, 09:31, 09:38, 09:45, 09:53, 10:00, 10:08, 10:16, 10:24, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, 13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:13, 15:23, 15:33, 15:42, 15:51, 15:56, 16:06, 16:14, 16:22, 16:29, 16:35, 16:41, 16:46: 16:51, 16:56, 17:01, 17:06, 17:11, 17:16, 17:21, 17:26, 17:26, 17:31, 17:36, 17:41, 17:46, 17:51, 17:56, 18:01, 18:06, 18:11, 18:16, 18:21, 18:26, 18:31, 18:36, 18:41, 18:48, 18:55, 19:02, 19:10, 19:17, 19:25, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:23, 21:33, 21:43, 21:53, 22:03, 22:13, 22:23, 22:33, 22:44, 22:55, 23:07, 23:19, 23:31",
+        "jadwal_lb_libur": "05:06, 05:21, 05:33, 05:45, 05:57, 06:09, 06:21, 06:32, 06:43, 06:53, 07:03, 07:13, 07:23, 07:33, 07:43, 07:53, 08:03, 08:13, 08:23, 08:33, 08:43, 08:53, 09:03, 09:13, 09:23, 09:33, 09:43, 09:53, 10:03, 10:13, 10:23, 10:33, 10:43, 10:53, 11:03, 11:13, 11:23, 11:33, 11:43, 11:53, 12:03, 12:13, 12:23, 12:33, 12:43, 12:53, 13:03, 13:13, 13:23, 13:33, 13:43, 13:53, 14:03, 14:13, 14:23, 14:33, 14:43, 14:53, 15:03, 15:13, 15:23, 15:33, 15:43, 15:53, 16:03, 16:13, 16:23, 16:33, 16:43, 16:53, 17:03, 17:13, 17:23, 17:33, 17:43, 17:53, 18:03, 18:13, 18:23, 18:33, 18:43, 18:53, 19:03, 19:13, 19:23, 19:33, 19:43, 19:53, 20:03, 20:13, 20:23, 20:33, 20:43, 20:53, 21:03, 21:13, 21:23, 21:33, 21:43, 21:55, 22:03, 22:13, 22:23, 22:33, 22:44, 22:55, 23:07, 23:19, 23:31",
+        "jadwal_hi_biasa": null,
+        "jadwal_hi_libur": null,
+        "banner": "https://jakartamrt.co.id/sites/default/files/2021-11/WEBBANNER_Bundaran%20HI.jpg",
+        "retails": [
+            {
+                "nid": "89",
+                "title": "Alfa Express",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-03/51508883557_722f7cdd95_c.jpg",
+                "path": "/id/retail/alfa-express"
+            },
+            {
+                "nid": "1096",
+                "title": "Alif",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2023-04/VM%20Alif_2.jpg",
+                "path": "/id/retail/alif"
+            },
+            {
+                "nid": "552",
+                "title": "ATM BCA",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2021-07/50995829682_be4331f57f_b.jpg",
+                "path": "/id/retail/atm-bca"
+            },
+            {
+                "nid": "91",
+                "title": "ATM CIMB Niaga",
+                "jenis_retail": "ATM",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514723220_6042a17ba0_k.jpg",
+                "path": "/id/retail/atm-cimb-niaga"
+            },
+            {
+                "nid": "1002",
+                "title": "Kosme Mask",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226836_b0a6bdd1de_k.jpg",
+                "path": "/id/retail/kosme-mask"
+            },
+            {
+                "nid": "1005",
+                "title": "Multidaya ",
+                "jenis_retail": "mesin top up ",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514229096_31f5593f99_k.jpg",
+                "path": "/id/retail/multidaya"
+            },
+            {
+                "nid": "1004",
+                "title": "Recharge",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513762607_b3e572325d_k.jpg",
+                "path": "/id/retail/recharge"
+            },
+            {
+                "nid": "112",
+                "title": "Starbucks",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514229851_307aa2e520_k.jpg",
+                "path": "/id/retail/starbucks"
+            },
+            {
+                "nid": "1003",
+                "title": "UBS Gold",
+                "jenis_retail": "Vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52514226626_d0cf5ee176_k.jpg",
+                "path": "/id/retail/ubs-gold"
+            },
+            {
+                "nid": "775",
+                "title": "V Office",
+                "jenis_retail": "Retail",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2022-11/52513764407_020887f4d9_k.jpg",
+                "path": "/id/retail/v-office"
+            },
+            {
+                "nid": "1098",
+                "title": "Wallts",
+                "jenis_retail": "vending machine",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2023-04/VM%20Wallts.jpg",
+                "path": "/id/retail/wallts"
+            }
+        ],
+        "estimasi": [
+            {
+                "stasiun_nid": "20",
+                "tarif": "14000",
+                "waktu": "29"
+            },
+            {
+                "stasiun_nid": "21",
+                "tarif": "13000",
+                "waktu": "26"
+            },
+            {
+                "stasiun_nid": "29",
+                "tarif": "11000",
+                "waktu": "23"
+            },
+            {
+                "stasiun_nid": "30",
+                "tarif": "10000",
+                "waktu": "21"
+            },
+            {
+                "stasiun_nid": "31",
+                "tarif": "9000",
+                "waktu": "19"
+            },
+            {
+                "stasiun_nid": "32",
+                "tarif": "8000",
+                "waktu": "16"
+            },
+            {
+                "stasiun_nid": "33",
+                "tarif": "7000",
+                "waktu": "14"
+            },
+            {
+                "stasiun_nid": "34",
+                "tarif": "6000",
+                "waktu": "12"
+            },
+            {
+                "stasiun_nid": "35",
+                "tarif": "5000",
+                "waktu": "10"
+            },
+            {
+                "stasiun_nid": "36",
+                "tarif": "4000",
+                "waktu": "7"
+            },
+            {
+                "stasiun_nid": "37",
+                "tarif": "4000",
+                "waktu": "5"
+            },
+            {
+                "stasiun_nid": "38",
+                "tarif": "3000",
+                "waktu": "3"
+            }
+        ],
+        "fasilitas": [
+            {
+                "nid": "165",
+                "title": "Concrete Coworking Space Pluit",
+                "jenis_fasilitas": "Coworking Space",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/7M4A26641.jpg",
+                "path": "/id/fasilitas/concrete-coworking-space-pluit"
+            },
+            {
+                "nid": "166",
+                "title": "WeWork Sinarmas MSIG Tower",
+                "jenis_fasilitas": "Coworking Space",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/health-safety.jpg",
+                "path": "/id/fasilitas/wework-sinarmas-msig-tower"
+            },
+            {
+                "nid": "167",
+                "title": "The Jayakarta SP Jakarta Hotel & Spa",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/f715aa2bb270e06a46a5b20582a33dbe.jpg",
+                "path": "/id/fasilitas/jayakarta-sp-jakarta-hotel-spa"
+            },
+            {
+                "nid": "309",
+                "title": "Hotel Mandarin Oriental",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600141031_437e607fdb_b.jpg",
+                "path": "/id/fasilitas/hotel-mandarin-oriental"
+            },
+            {
+                "nid": "310",
+                "title": "Hotel Indonesia Kempinski",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600138616_0462616d67_b.jpg",
+                "path": "/id/fasilitas/hotel-indonesia-kempinski"
+            },
+            {
+                "nid": "317",
+                "title": "Hotel Grand Hyatt",
+                "jenis_fasilitas": "Penginapan",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600254387_bffa10335d_b.jpg",
+                "path": "/id/fasilitas/hotel-grand-hyatt"
+            },
+            {
+                "nid": "169",
+                "title": "FIRE TIGER",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-09/img_8486.jpg",
+                "path": "/id/fasilitas/fire-tiger"
+            },
+            {
+                "nid": "311",
+                "title": "Plaza Indonesia",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50599393863_c6ee4b86c9_b.jpg",
+                "path": "/id/fasilitas/plaza-indonesia"
+            },
+            {
+                "nid": "312",
+                "title": "Grand Indonesia Shopping Town",
+                "jenis_fasilitas": "Restoran",
+                "cover": "https://jakartamrt.co.id/sites/default/files/2020-11/50600256567_71e5d97a74_b.jpg",
+                "path": "/id/fasilitas/grand-indonesia-shopping-town"
+            }
+        ]
     }
 ]
