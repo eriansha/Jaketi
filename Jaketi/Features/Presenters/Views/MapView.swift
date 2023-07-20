@@ -40,6 +40,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         checkIfLocationServicesIsEnabled()
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.distanceFilter = 8
+        locationManager.allowsBackgroundLocationUpdates = true
         circularRegion.notifyOnExit = true
         circularRegion.notifyOnEntry = true
         locationManager.startMonitoringSignificantLocationChanges()

@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269ADE3B2A68F31E003859FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C79D30F2A655F2B004A5A05 /* Jaketi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaketi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C79D3122A655F2B004A5A05 /* JaketiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaketiApp.swift; sourceTree = "<group>"; };
 		2C79D3142A655F2B004A5A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		2C79D3112A655F2B004A5A05 /* Jaketi */ = {
 			isa = PBXGroup;
 			children = (
+				269ADE3B2A68F31E003859FB /* Info.plist */,
 				2C79D3202A655F8D004A5A05 /* Application */,
 				2C79D3212A655F95004A5A05 /* Core */,
 				2C79D3222A655F9A004A5A05 /* Features */,
@@ -447,9 +449,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 3SC4Z3N76K;
+				DEVELOPMENT_TEAM = HABTZ65X44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jaketi/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app need location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,9 +481,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 3SC4Z3N76K;
+				DEVELOPMENT_TEAM = HABTZ65X44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jaketi/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app need location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
