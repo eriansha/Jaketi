@@ -9,12 +9,17 @@ import SwiftUI
 
 struct LiveScheduleView: View {
     @EnvironmentObject var modelData: ModelData
+    // TODO: change to user input
+    private var destinationStation: DestinationType = .bundaranHI
     
     var body: some View {
         ScrollView {
             CurrentStationText()
             
-            ScheduleList(trainStation: modelData.trainStations[12])
+            ScheduleList(
+                trainStation: modelData.trainStations[11],
+                destinationStation: destinationStation
+            )
         }
     }
 }
