@@ -28,6 +28,7 @@
 		2C8E1D932A67AB800043FC1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D922A67AB800043FC1F /* ModelData.swift */; };
 		2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */; };
 		2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D972A6814010043FC1F /* DateUtil.swift */; };
+		ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		2C8E1D922A67AB800043FC1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStationViewModel.swift; sourceTree = "<group>"; };
 		2C8E1D972A6814010043FC1F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				2C8E1D842A6784310043FC1F /* ScheduleRow.swift */,
 				2C8E1D8A2A67873F0043FC1F /* ScheduleList.swift */,
 				2C8E1D8E2A678F430043FC1F /* CurrentStationText.swift */,
+				ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */,
 				2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */,
 				2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */,
 				2C79D3352A656129004A5A05 /* Prompt.swift in Sources */,
