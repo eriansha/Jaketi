@@ -29,27 +29,51 @@ struct ScheduleRow: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Arah \(destination.getLabel())")
-                    .font(.subheadline)
-                
-                Spacer()
-                
-                // TODO: uncomment once it's fixed
-                // Text("\(stops) Perhentian")
-                //    .font(.subheadline)
-            }
-            
-            HStack {
-                Text(timeDeparture, style: .time)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                
-                Spacer()
-            
-                Text(isArrived ? "Tiba di Peron" : "\(estimateTimeInMinute) menit")
-                    .font(.title3)
-            }
+            DisclosureGroup(
+                content: {
+                    VStack(spacing: 0) {
+                        ForEach((1...5), id: \.self) {_ in
+                            VStack(spacing: 0) {
+                                HStack {
+                                    VerticalLine()
+                                        .stroke(Color.black, lineWidth: 2)
+                                        .frame(width: 16, height: 20)
+                                    Spacer()
+                                }
+                                HStack {
+                                    Circle()
+                                        .strokeBorder(Theme.Colors.blue,lineWidth: 2)
+                                        .frame(width: 16, height: 16)
+                                    Text("Dukuh Atas")
+                                    Spacer()
+                                }
+                            }
+                        }
+                    }
+                },
+                label: {
+                    VStack{
+                        HStack{
+                            Text("Arah \(destination.getLabel())")
+                                .font(.subheadline)
+                                .foregroundColor(Theme.Colors.blue)
+                            Spacer()
+                        }
+                        HStack{
+                            Text(timeDeparture, style: .time)
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(Theme.Colors.blue)
+                            
+                            Spacer()
+                        
+                            Text(isArrived ? "Tiba di Peron" : "\(estimateTimeInMinute) menit")
+                                .font(.title3)
+                                .foregroundColor(Theme.Colors.blue)
+                        }
+                    }
+                }
+            ).accentColor(Theme.Colors.blue)
         }
         .padding()
         .cornerRadius(4.0)

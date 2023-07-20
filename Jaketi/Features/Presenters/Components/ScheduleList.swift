@@ -46,6 +46,7 @@ struct ScheduleList: View {
 }
 
 struct ScheduleList_Previews: PreviewProvider {
+    
     static let departureSchedules: [TrainStation.DepartureSchedule] = [
         .init(
             timeDeparture: Date.now.addingTimeInterval(TimeInterval(2 * 60)),
