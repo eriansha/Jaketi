@@ -26,7 +26,7 @@ struct ScheduleList: View {
                     destination: schedule.destinationStation,
                     // TODO: uncomment once it's fixed
                     // stops: 6,
-                    estimateTimeInMinute: 2
+                    estimateTimeInMinute: schedule.estimateTimeInMinute
                 )
             }
         }

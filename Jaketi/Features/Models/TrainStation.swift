@@ -37,8 +37,19 @@ struct TrainStation: Hashable, Decodable {
     struct DepartureSchedule: Hashable {
         var id: UUID = UUID()
         var timeDeparture: Date
+        var estimateTimeInMinute: Int
         var destinationStation: DestinationType
         var isWeekend: Bool = false
+        
+        init(timeDeparture: Date, destinationStation: DestinationType, isWeekend: Bool) {
+            let viewModel = TrainStationViewModel()
+            
+            self.id = UUID()
+            self.timeDeparture = timeDeparture
+            self.estimateTimeInMinute = viewModel.getTimeDifferenceInMinute(timeDeparture)
+            self.destinationStation = destinationStation
+            self.isWeekend = isWeekend
+        }
     }
     
     init(stationId: Int, name: String, departureSchedules: [DepartureSchedule]) {

@@ -77,6 +77,14 @@ class TrainStationViewModel {
         return timeDepartures
     }
     
+    func getTimeDifferenceInMinute(_ anotherDate: Date) -> Int {
+        let currentDate = Date()
+        let timeInterval = anotherDate.timeIntervalSince(currentDate)
+        
+        let minuteDifference = Int(timeInterval / 60)
+        return minuteDifference
+    }
+    
     func filterDepartureSchedule(trainStation: TrainStation) -> [TrainStation.DepartureSchedule] {
         let currentDate = Date()
         

@@ -68,7 +68,7 @@ struct ScheduleRow_Previews: PreviewProvider {
             destination: DestinationType.bundaranHI,
             // TODO: uncomment once it's fixed
             // stops: 6,
-            estimateTimeInMinute: 0
+            estimateTimeInMinute: 1
         )
     }
 }
