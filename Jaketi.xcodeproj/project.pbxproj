@@ -28,7 +28,6 @@
 		2C8E1D932A67AB800043FC1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D922A67AB800043FC1F /* ModelData.swift */; };
 		2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */; };
 		2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D972A6814010043FC1F /* DateUtil.swift */; };
-		433499522A68F08F0034495A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499512A68F08F0034495A /* MapView.swift */; };
 		433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499532A68F0AB0034495A /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		2C8E1D922A67AB800043FC1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStationViewModel.swift; sourceTree = "<group>"; };
 		2C8E1D972A6814010043FC1F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
-		433499512A68F08F0034495A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		433499532A68F0AB0034495A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +215,6 @@
 			children = (
 				2C79D3142A655F2B004A5A05 /* ContentView.swift */,
 				2C8E1D8C2A678E420043FC1F /* LiveScheduleView.swift */,
-				433499512A68F08F0034495A /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,7 +314,6 @@
 				2C79D33B2A656280004A5A05 /* ExamplePresenter+Extension.swift in Sources */,
 				2C79D3372A6561B9004A5A05 /* Error.swift in Sources */,
 				2C79D3332A6560BC004A5A05 /* ExampleComponent.swift in Sources */,
-				433499522A68F08F0034495A /* MapView.swift in Sources */,
 				2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */,
 				2C8E1D8B2A67873F0043FC1F /* ScheduleList.swift in Sources */,
 				2C8E1D8D2A678E420043FC1F /* LiveScheduleView.swift in Sources */,
@@ -449,7 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = HABTZ65X44;
+				DEVELOPMENT_TEAM = 3SC4Z3N76K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Jaketi/Info.plist;
@@ -481,7 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = HABTZ65X44;
+				DEVELOPMENT_TEAM = 3SC4Z3N76K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Jaketi/Info.plist;

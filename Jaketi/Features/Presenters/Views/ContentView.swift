@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewModel = NotificationViewModel()
     var body: some View {
-//        NavigationStack {
-//            LiveScheduleView()
-//                .navigationTitle("Live Schedule")
-//        }
-        MapViewControllerWrapper(circularRegion: viewModel.geoFenceRegion)
-            .ignoresSafeArea()
+        NavigationStack {
+            LiveScheduleView()
+                .navigationTitle("Live Schedule")
+        }
+        .onAppear {
+            viewModel.requestPermissionNotifications()
+            viewModel.checkIfLocationServicesIsEnabled()
+        }
     }
 }
 
