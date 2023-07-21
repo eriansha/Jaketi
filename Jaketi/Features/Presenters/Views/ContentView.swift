@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = NotificationViewModel()
+    // var notifTimeVM = NotificationTimeViewModel()
+    
     var body: some View {
-//        NavigationStack {
-//            LiveScheduleView()
-//                .navigationTitle("Live Schedule")
-//        }
-        MapViewControllerWrapper(circularRegion: viewModel.geoFenceRegion)
-            .ignoresSafeArea()
+        NavigationStack {
+            LiveScheduleView()
+                .navigationTitle("Live Schedule")
+        }
+//        MapViewControllerWrapper(circularRegion: viewModel.geoFenceRegion)
+//            .ignoresSafeArea()
     }
 }
 

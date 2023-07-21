@@ -9,23 +9,23 @@ import Foundation
 import UserNotifications
 
 class NotificationTimeViewModel: NSObject, UNUserNotificationCenterDelegate {
+    static let shared: NotificationTimeViewModel = NotificationTimeViewModel()
+    
     let center = UNUserNotificationCenter.current()
     var modelData = ModelData()
     var currentSchedule: TrainStation.DepartureSchedule?
     var nextSchedule: TrainStation.DepartureSchedule?
-    var trainStation: TrainStation
     
-    init(trainStation: TrainStation) {
-        self.trainStation = trainStation
-        
+    override init() {
         super.init()
+        
         center.delegate = self
         requestPermission()
     }
     
     func getCurrentSchedule() {
         let currentDate = Date()
-        trainStation = modelData.trainStations[11]
+        let trainStation = modelData.trainStations[11]
         
         let currentSchedules = {
             trainStation.departureSchedules.filter { schedule in
@@ -51,7 +51,7 @@ class NotificationTimeViewModel: NSObject, UNUserNotificationCenterDelegate {
         
         guard let nextSchedule = nextSchedule else { return }
 //        guard let timeNotif = currentSchedule?.timeDeparture.adding(minutes: 1) else { return }
-        let timeNotif = Date().adding(minutes: 1)
+        let timeNotif = Date().adding(minutes: 5)
         let dateComponentNotif = Calendar.current.dateComponents([.hour, .minute], from: timeNotif)
         
         let content = UNMutableNotificationContent()
@@ -59,7 +59,8 @@ class NotificationTimeViewModel: NSObject, UNUserNotificationCenterDelegate {
         content.body = "Kereta selanjutnya akan tiba pukul \(Date.timeFormatter.string(from: nextSchedule.timeDeparture))"
         content.sound = .default
 
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponentNotif, repeats: false)
+        // let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponentNotif, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: true)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
 
         center.add(request)
@@ -70,5 +71,11 @@ class NotificationTimeViewModel: NSObject, UNUserNotificationCenterDelegate {
         print("masuk")
         
         completionHandler()
+    }
+    
+    // Delegate method to handle notification presentation while the app is in the foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // Customize the presentation options as desired
+        completionHandler([.badge, .sound])
     }
 }

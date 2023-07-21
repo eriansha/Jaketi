@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct JaketiApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var modelData = ModelData()
     
     var body: some Scene {

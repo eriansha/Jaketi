@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		269ADE3D2A68FDD5003859FB /* NotificationTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269ADE3C2A68FDD5003859FB /* NotificationTimeViewModel.swift */; };
+		26B712EA2A6A262700C96E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B712E92A6A262700C96E91 /* AppDelegate.swift */; };
 		2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3122A655F2B004A5A05 /* JaketiApp.swift */; };
 		2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3142A655F2B004A5A05 /* ContentView.swift */; };
 		2C79D3172A655F2C004A5A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C79D3162A655F2C004A5A05 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		269ADE3B2A68F31E003859FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269ADE3C2A68FDD5003859FB /* NotificationTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeViewModel.swift; sourceTree = "<group>"; };
+		26B712E92A6A262700C96E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C79D30F2A655F2B004A5A05 /* Jaketi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaketi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C79D3122A655F2B004A5A05 /* JaketiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaketiApp.swift; sourceTree = "<group>"; };
 		2C79D3142A655F2B004A5A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				2C79D3122A655F2B004A5A05 /* JaketiApp.swift */,
+				26B712E92A6A262700C96E91 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */,
 				2C8E1D8B2A67873F0043FC1F /* ScheduleList.swift in Sources */,
 				2C8E1D8D2A678E420043FC1F /* LiveScheduleView.swift in Sources */,
+				26B712EA2A6A262700C96E91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
