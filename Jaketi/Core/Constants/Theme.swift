@@ -14,8 +14,11 @@ struct Theme { private init() {} }
 extension Theme {
     struct Colors {
         // TODO: change to follow design system
-        static let primary = Color.blue
-        static let blue = Color(red: 0.173, green: 0.271, blue: 0.502) // #2c4580
+        static let primary = Color(red: 0.173, green: 0.271, blue: 0.502)
+        static let warning = Color(red: 0.95, green: 0.54, blue: 0)
+        static let lightBlue = Color(red: 0.84, green: 0.91, blue: 0.97)
+        static let green = Color(red: 0.26, green: 0.71, blue: 0.29)
+        static let greyBg = Color(red: 242 / 255.0, green: 242 / 255.0, blue: 247 / 255.0)
     }
 }
 

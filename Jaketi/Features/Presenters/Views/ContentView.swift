@@ -11,7 +11,12 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             LiveScheduleView()
-                .navigationTitle("Live Schedule")
+                .navigationTitle("Schedule")
+                .background(Theme.Colors.greyBg)
+                .toolbarColorScheme(.dark, for: .navigationBar)
+                .toolbarBackground(Theme.Colors.primary,
+                    for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
@@ -20,5 +25,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(ModelData())
+            
     }
 }

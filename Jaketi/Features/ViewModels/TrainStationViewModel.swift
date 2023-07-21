@@ -90,6 +90,25 @@ class TrainStationViewModel {
         return timeDepartures
     }
     
+    func transformEstimateDestinations(trainStations: inout [TrainStation]) {
+        for indexTrainStation in trainStations.indices {
+            var currentEstimateDestinations = trainStations[indexTrainStation].estimateDestinations
+            
+            for indexEstimate in currentEstimateDestinations.indices {
+                if let station = trainStations.first(where: {
+                    $0.stationId == currentEstimateDestinations[indexEstimate].stationId
+                }) {
+                    currentEstimateDestinations[indexEstimate].stationName = String(station.name.dropFirst(8))
+                    currentEstimateDestinations[indexEstimate].stationOrder = station.stationOrder
+                }else{
+                    currentEstimateDestinations[indexEstimate].stationName = "Transform Error"
+                }
+            }
+            
+            trainStations[indexTrainStation].estimateDestinations = currentEstimateDestinations
+        }
+    }
+    
     func getTimeDifferenceInMinute(_ anotherDate: Date) -> Int {
         let currentDate = Date()
         let timeInterval = anotherDate.timeIntervalSince(currentDate)
@@ -119,5 +138,27 @@ class TrainStationViewModel {
             : filteredDepartureSchedules
         
         return limitedFilteredSchedules
+    }
+    
+    func getDestinationTime(departureTime: Date, travelEstimation: Int) -> Date{
+        return departureTime.addingTimeInterval(TimeInterval(travelEstimation * 60))
+    }
+    
+    func filterEstimateDestination(
+        stationOrder: Int,
+        estimateDestinations: [TrainStation.EstimateDestinations],
+        destinationStation: DestinationType
+    ) -> [TrainStation.EstimateDestinations]{
+        var filteredEstimateDestination: [TrainStation.EstimateDestinations]{
+            estimateDestinations.filter { est in
+                if destinationStation == .bundaranHI{
+                    return est.stationOrder > stationOrder
+                }else{
+                    return est.stationOrder < stationOrder
+                }
+                
+            }
+        }
+        return destinationStation == .lebakBulus ? filteredEstimateDestination.reversed() : filteredEstimateDestination
     }
 }

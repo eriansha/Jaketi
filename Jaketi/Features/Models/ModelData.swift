@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
-    @Published var trainStations: [TrainStation] = load("TrainStation.json")
+    @Published var trainStations: [TrainStation] = prepareTrainStation()
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
@@ -32,4 +32,13 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
+}
+
+func prepareTrainStation() -> [TrainStation] {
+    let viewModel = TrainStationViewModel()
+    
+    var loadedTrainStations: [TrainStation] = load("TrainStation.json")
+    viewModel.transformEstimateDestinations(trainStations: &loadedTrainStations)
+    
+    return loadedTrainStations
 }

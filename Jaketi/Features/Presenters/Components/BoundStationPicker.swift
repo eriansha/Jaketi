@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct BoundStationPicker: View {
+    @Binding var selectedDestination: DestinationType
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Picker("Select Destination", selection: $selectedDestination) {
+            ForEach(DestinationType.allCases, id: \.self) { destination in
+                Text(destination.getLabel())
+                
+            }
+        }
+        .pickerStyle(.segmented)
     }
 }
 
 struct BoundStationPicker_Previews: PreviewProvider {
     static var previews: some View {
-        BoundStationPicker()
+        BoundStationPicker(selectedDestination: .constant(.bundaranHI))
     }
 }

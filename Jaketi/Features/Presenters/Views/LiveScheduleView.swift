@@ -9,17 +9,25 @@ import SwiftUI
 
 struct LiveScheduleView: View {
     @EnvironmentObject var modelData: ModelData
-    // TODO: change to user input
-    private var destinationStation: DestinationType = .bundaranHI
+    @State private var selectedDestination: DestinationType = .bundaranHI
     
     var body: some View {
-        ScrollView {
+        VStack{
+            // TODO: Revine custom picker for current station
             CurrentStationText()
             
-            ScheduleList(
-                trainStation: modelData.trainStations[11],
-                destinationStation: destinationStation
-            )
+            TrainBanner(trainStation: modelData.trainStations[11], destinationStation: selectedDestination)
+            
+            // TODO: Revine custom picker for bound station
+            BoundStationPicker(selectedDestination: $selectedDestination)
+            
+            ScrollView {
+                ScheduleList(
+                    trainStation: modelData.trainStations[11],
+                    destinationStation: selectedDestination
+                )
+                
+            }
         }
     }
 }
