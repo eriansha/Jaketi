@@ -51,6 +51,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                 return schedule.timeDeparture > currentDate && schedule.isWeekend == isWeekend()
             }
         }()
+        
+        currentSchedules = currentSchedules?.sorted(by: {$0.timeDeparture < $1.timeDeparture})
     }
     
     func requestPermission() {
