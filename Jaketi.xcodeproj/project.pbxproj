@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269ADE3D2A68FDD5003859FB /* NotificationTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269ADE3C2A68FDD5003859FB /* NotificationTimeViewModel.swift */; };
 		2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3122A655F2B004A5A05 /* JaketiApp.swift */; };
 		2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3142A655F2B004A5A05 /* ContentView.swift */; };
 		2C79D3172A655F2C004A5A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C79D3162A655F2C004A5A05 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		269ADE3B2A68F31E003859FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269ADE3C2A68FDD5003859FB /* NotificationTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeViewModel.swift; sourceTree = "<group>"; };
 		2C79D30F2A655F2B004A5A05 /* Jaketi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaketi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C79D3122A655F2B004A5A05 /* JaketiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaketiApp.swift; sourceTree = "<group>"; };
 		2C79D3142A655F2B004A5A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				2C79D3302A6560AE004A5A05 /* ExampleViewModel.swift */,
 				2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */,
 				433499532A68F0AB0034495A /* NotificationViewModel.swift */,
+				269ADE3C2A68FDD5003859FB /* NotificationTimeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				2C79D3352A656129004A5A05 /* Prompt.swift in Sources */,
 				2C79D3312A6560AE004A5A05 /* ExampleViewModel.swift in Sources */,
 				2C8E1D852A6784310043FC1F /* ScheduleRow.swift in Sources */,
+				269ADE3D2A68FDD5003859FB /* NotificationTimeViewModel.swift in Sources */,
 				2C79D32F2A6560A1004A5A05 /* ExampleModel.swift in Sources */,
 				2C8E1D932A67AB800043FC1F /* ModelData.swift in Sources */,
 				2C8E1D892A6786AA0043FC1F /* TrainStation.swift in Sources */,
