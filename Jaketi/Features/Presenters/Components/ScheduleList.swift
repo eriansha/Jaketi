@@ -32,10 +32,9 @@ struct ScheduleList: View {
                 ForEach(departureSchedules, id: \.self) { schedule in
                     ScheduleRow(
                         timeDeparture: schedule.timeDeparture,
-                        destination: schedule.destinationStation,
+                        destination: schedule.destinationStation
                         // TODO: uncomment once it's fixed
-                        // stops: 6,
-                        estimateTimeInMinute: schedule.estimateTimeInMinute
+                        // stops: 6
                     )
                 }
             } else {
