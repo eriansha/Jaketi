@@ -47,11 +47,12 @@ class NotificationTimeViewModel: NSObject, UNUserNotificationCenterDelegate {
     }
     
     func sendNotification() {
+        requestPermission()
         getCurrentSchedule()
         
         guard let nextSchedule = nextSchedule else { return }
 //        guard let timeNotif = currentSchedule?.timeDeparture.adding(minutes: 1) else { return }
-        let timeNotif = Date().adding(minutes: 5)
+        let timeNotif = Date().adding(minutes: 1)
         let dateComponentNotif = Calendar.current.dateComponents([.hour, .minute], from: timeNotif)
         
         let content = UNMutableNotificationContent()
@@ -73,9 +74,7 @@ class NotificationTimeViewModel: NSObject, UNUserNotificationCenterDelegate {
         completionHandler()
     }
     
-    // Delegate method to handle notification presentation while the app is in the foreground
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        // Customize the presentation options as desired
-        completionHandler([.badge, .sound])
+        completionHandler([.banner, .list, .sound])
     }
 }

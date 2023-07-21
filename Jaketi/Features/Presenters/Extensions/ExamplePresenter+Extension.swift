@@ -11,7 +11,7 @@ import Foundation
 
 extension Date {
     func adding(minutes: Int) -> Date {
-        return Calendar.current.date(byAdding: .second, value: minutes, to: self) ?? Date()
+        return Calendar.current.date(byAdding: .minute, value: minutes, to: self) ?? Date()
     }
     
     static let timeFormatter: DateFormatter = {
