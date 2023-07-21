@@ -14,7 +14,7 @@ struct LiveScheduleView: View {
         ScrollView {
             CurrentStationText()
             
-            ScheduleList(trainStation: modelData.trainStations[12])
+            ScheduleList(trainStation: modelData.trainStations[11])
         }
     }
 }

@@ -16,21 +16,104 @@ class NotificationViewModel: NSObject, ObservableObject, CLLocationManagerDelega
     // list station region to monitor
     private var geoFenceRegions: [CLCircularRegion] = [
         CLCircularRegion(
-            center: CLLocationCoordinate2D(latitude: -6.302358, longitude: 106.65224), // station coordinate (default GOP)
+            center: CLLocationCoordinate2D(latitude: -6.20078175640807, longitude: 106.8228013473299), // (GOP)
             radius: 40,
-            identifier: "Lebak Bulus Station"),
-        
+            identifier: "Dukuh Atas BNI"),
+        // DUKUH ATAS
+        CLCircularRegion(
+            center: CLLocationCoordinate2D(latitude: -6.20190, longitude: 106.822610), // station coordinate
+            radius: 20,
+            identifier: "Dukuh Atas BNI 1"),
+        CLCircularRegion(
+            center: CLLocationCoordinate2D(latitude: -6.20165, longitude: 106.822655), // station coordinate
+            radius: 20,
+            identifier: "Dukuh Atas BNI 2"),
+        CLCircularRegion(
+            center: CLLocationCoordinate2D(latitude: -6.20140, longitude: 106.822700), // station coordinate
+            radius: 20,
+            identifier: "Dukuh Atas BNI 3"),
+        CLCircularRegion(
+            center: CLLocationCoordinate2D(latitude: -6.20115, longitude: 106.822745), // station coordinate
+            radius: 20,
+            identifier: "Dukuh Atas BNI 4"),
+        CLCircularRegion(
+            center: CLLocationCoordinate2D(latitude: -6.20090, longitude: 106.822800), // station coordinate
+            radius: 20,
+            identifier: "Dukuh Atas BNI 5"),
+        CLCircularRegion(
+            center: CLLocationCoordinate2D(latitude: -6.20065, longitude: 106.822835), // station coordinate
+            radius: 20,
+            identifier: "Dukuh Atas BNI 6"),
     ]
     
+    private func postNearestScheduleNotification(region: CLRegion) {
+        let viewModel = TrainStationViewModel()
     
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        print("Entered: \(region.identifier)")
-        postLocalNotifications(eventTitle: "Jaketi Entered: \(region.identifier)")
+        // TODO: find currentStation using region.identifier
+        let currentStation = ModelData().trainStations[11] // dukuh atas bni
+        let departureSchedule = viewModel.filterDepartureSchedule(trainStation: currentStation)
+        let nearestSchedule = departureSchedule.first!
+        
+        let title = nearestSchedule.destinationStation == .bundaranHI
+            ? "Bundaran HI Train Arrival"
+            : "Lebak Bulus Train Arrival"
+        
+        let timeDepartureString: String = convertDateToString(
+            date: nearestSchedule.timeDeparture,
+            format: "HH:mm"
+        )
+        
+        let minutesInterval = Calendar.current.dateComponents([.minute], from: Date(), to: nearestSchedule.timeDeparture)
+        
+        postLocalNotifications(
+            title: title,
+            body: "Your train will arrive at \(timeDepartureString) (\(String(describing: minutesInterval.minute!)) minutes from now). Get ready on the platform. Safe journey!"
+        )
     }
     
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        print("Exited: \(region.identifier)")
-        postLocalNotifications(eventTitle: "Jaketi Exited: \(region.identifier)")
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            // Update the map's center with the user's current location.
+            if location.horizontalAccuracy <= 40 {
+                var inRegion = false
+                var getRegion = geoFenceRegions[0]
+                for region in geoFenceRegions {
+                    if region.contains(location.coordinate) {
+                        inRegion = true
+                        getRegion = region
+                        break
+                    } else {
+                        inRegion = false
+                        getRegion = region
+                    }
+                }
+                
+                let identifier = decodeIdentifier(regionIdentifier: getRegion.identifier)
+                if inRegion {
+                    //flag for user has entered that region or not
+                    let hasEntered = UserDefaults.standard.bool(forKey: identifier)
+                    if !hasEntered {
+                        // USER ENTERED REGION
+                        postNearestScheduleNotification(region: getRegion)
+                        UserDefaults.standard.set(true, forKey: identifier)
+                    }
+                } else {
+                    let hasEntered = UserDefaults.standard.bool(forKey: identifier)
+                    if hasEntered {
+                        UserDefaults.standard.set(false, forKey: identifier)
+                    }
+                }
+            }
+        }
+    }
+
+    
+    func decodeIdentifier(regionIdentifier: String) -> String {
+        if regionIdentifier.starts(with: "Dukuh Atas BNI") {
+            return "Dukuh Atas BNI"
+        }
+        return regionIdentifier
     }
     
     func checkIfLocationServicesIsEnabled() {
@@ -137,12 +220,12 @@ extension NotificationViewModel {
 
     
     
-    func postLocalNotifications(eventTitle:String){
+    func postLocalNotifications(title: String, body: String){
         let center = UNUserNotificationCenter.current()
         
         let content = UNMutableNotificationContent()
-        content.title = eventTitle
-        content.body = "You've entered a new region"
+        content.title = title
+        content.body = body
         content.sound = UNNotificationSound.default
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
