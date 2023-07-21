@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26B712EA2A6A262700C96E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B712E92A6A262700C96E91 /* AppDelegate.swift */; };
 		2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3122A655F2B004A5A05 /* JaketiApp.swift */; };
 		2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C79D3142A655F2B004A5A05 /* ContentView.swift */; };
 		2C79D3172A655F2C004A5A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C79D3162A655F2C004A5A05 /* Assets.xcassets */; };
@@ -28,10 +29,13 @@
 		2C8E1D932A67AB800043FC1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D922A67AB800043FC1F /* ModelData.swift */; };
 		2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */; };
 		2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D972A6814010043FC1F /* DateUtil.swift */; };
+		433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499532A68F0AB0034495A /* NotificationViewModel.swift */; };
 		ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269ADE3B2A68F31E003859FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B712E92A6A262700C96E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C79D30F2A655F2B004A5A05 /* Jaketi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaketi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C79D3122A655F2B004A5A05 /* JaketiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaketiApp.swift; sourceTree = "<group>"; };
 		2C79D3142A655F2B004A5A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 		2C8E1D922A67AB800043FC1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStationViewModel.swift; sourceTree = "<group>"; };
 		2C8E1D972A6814010043FC1F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		433499532A68F0AB0034495A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +92,7 @@
 		2C79D3112A655F2B004A5A05 /* Jaketi */ = {
 			isa = PBXGroup;
 			children = (
+				269ADE3B2A68F31E003859FB /* Info.plist */,
 				2C79D3202A655F8D004A5A05 /* Application */,
 				2C79D3212A655F95004A5A05 /* Core */,
 				2C79D3222A655F9A004A5A05 /* Features */,
@@ -107,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2C79D3122A655F2B004A5A05 /* JaketiApp.swift */,
+				26B712E92A6A262700C96E91 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 			children = (
 				2C79D3302A6560AE004A5A05 /* ExampleViewModel.swift */,
 				2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */,
+				433499532A68F0AB0034495A /* NotificationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -298,6 +306,7 @@
 			files = (
 				ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */,
 				2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */,
+				433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */,
 				2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */,
 				2C79D3352A656129004A5A05 /* Prompt.swift in Sources */,
 				2C79D3312A6560AE004A5A05 /* ExampleViewModel.swift in Sources */,
@@ -315,6 +324,7 @@
 				2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */,
 				2C8E1D8B2A67873F0043FC1F /* ScheduleList.swift in Sources */,
 				2C8E1D8D2A678E420043FC1F /* LiveScheduleView.swift in Sources */,
+				26B712EA2A6A262700C96E91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +453,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 63Z24W5HZV;
+				DEVELOPMENT_TEAM = 3SC4Z3N76K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jaketi/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,9 +485,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 63Z24W5HZV;
+				DEVELOPMENT_TEAM = 3SC4Z3N76K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jaketi/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
