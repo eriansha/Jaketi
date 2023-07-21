@@ -11,6 +11,9 @@ import UserNotifications
 import UIKit
 
 class NotificationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate, UNUserNotificationCenterDelegate {
+    let viewModel = TrainStationViewModel()
+    let currentStation = ModelData().trainStations[11]
+    let center = UNUserNotificationCenter.current()
     
     private var locationManager: CLLocationManager?
     // list station region to monitor
@@ -47,11 +50,14 @@ class NotificationViewModel: NSObject, ObservableObject, CLLocationManagerDelega
     ]
     
     private func postNearestScheduleNotification(region: CLRegion) {
-        let viewModel = TrainStationViewModel()
-    
-        // TODO: find currentStation using region.identifier
-        let currentStation = ModelData().trainStations[11] // dukuh atas bni
-        let departureSchedule = viewModel.filterDepartureSchedule(trainStation: currentStation)
+//        let viewModel = TrainStationViewModel()
+//
+//        // TODO: find currentStation using region.identifier
+//        let currentStation = ModelData().trainStations[11] // dukuh atas bni
+        
+//        let departureSchedule = viewModel.filterDepartureSchedule(trainStation: currentStation)
+        let departureSchedule = getCurrentSchedule()
+        
         let nearestSchedule = departureSchedule.first!
         
         let title = nearestSchedule.destinationStation == .bundaranHI
@@ -96,11 +102,15 @@ class NotificationViewModel: NSObject, ObservableObject, CLLocationManagerDelega
                     if !hasEntered {
                         // USER ENTERED REGION
                         postNearestScheduleNotification(region: getRegion)
+                        // TODO: post notif time-based
+                        sendNotification()
                         UserDefaults.standard.set(true, forKey: identifier)
                     }
                 } else {
                     let hasEntered = UserDefaults.standard.bool(forKey: identifier)
                     if hasEntered {
+                        // TODO: remove time based notif
+                        removeAllNotif()
                         UserDefaults.standard.set(false, forKey: identifier)
                     }
                 }
@@ -164,15 +174,16 @@ class NotificationViewModel: NSObject, ObservableObject, CLLocationManagerDelega
 
 // NOTIFICATION FEATURE
 extension NotificationViewModel {
+    
     func requestPermissionNotifications(){
         let application =  UIApplication.shared
         
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
-            UNUserNotificationCenter.current().delegate = self
+            center.delegate = self
             
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { (isAuthorized, error) in
+            center.requestAuthorization(options: authOptions) { (isAuthorized, error) in
                 if( error != nil ){
                     print(error!)
                 }
@@ -221,8 +232,6 @@ extension NotificationViewModel {
     
     
     func postLocalNotifications(title: String, body: String){
-        let center = UNUserNotificationCenter.current()
-        
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
@@ -246,12 +255,57 @@ extension NotificationViewModel {
     // Delegate method to handle notification presentation while the app is in the foreground
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         // Customize the presentation options as desired
-        completionHandler([.alert, .sound])
+        completionHandler([.banner, .list, .sound])
     }
     
     // Delegate method to handle user interaction with the notification
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         // Handle the user's response to the notification
         completionHandler()
+    }
+}
+
+
+// NOTIFICATION TIME-BASED FEATURE
+extension NotificationViewModel {
+    
+    func getCurrentSchedule() -> [TrainStation.DepartureSchedule] {
+        let currentDate = Date()
+        
+        var currentSchedules = {
+            currentStation.departureSchedules.filter { schedule in
+                return schedule.timeDeparture > currentDate && schedule.isWeekend == isWeekend()
+            }
+        }()
+        
+        currentSchedules = currentSchedules.sorted(by: {$0.timeDeparture < $1.timeDeparture})
+        return currentSchedules
+    }
+    
+    func sendNotification() {
+        let currentSchedules = getCurrentSchedule()
+        
+        for i in 0..<currentSchedules.count {
+            let nextSchedule = currentSchedules[i]
+            
+            let timeNotif = nextSchedule.timeDeparture.adding(minutes: 1)
+//            let timeNotif = Date().adding(minutes: 1)
+            let dateComponentNotif = Calendar.current.dateComponents([.hour, .minute], from: timeNotif)
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Kereta menuju \(nextSchedule.destinationStation.getLabel())"
+            content.body = "Kereta selanjutnya akan tiba pukul \(Date.timeFormatter.string(from: nextSchedule.timeDeparture))"
+            content.sound = .default
+
+            let notificationIdentifier = nextSchedule.id.uuidString
+             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponentNotif, repeats: false)
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let request = UNNotificationRequest(identifier: notificationIdentifier, content: content, trigger: trigger)
+            center.add(request)
+        }
+    }
+    
+    func removeAllNotif() {
+        center.removeAllPendingNotificationRequests()
     }
 }
