@@ -31,6 +31,7 @@
 		2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D972A6814010043FC1F /* DateUtil.swift */; };
 		433499522A68F08F0034495A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499512A68F08F0034495A /* MapView.swift */; };
 		433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499532A68F0AB0034495A /* NotificationViewModel.swift */; };
+		ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		2C8E1D972A6814010043FC1F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		433499512A68F08F0034495A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		433499532A68F0AB0034495A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				2C8E1D842A6784310043FC1F /* ScheduleRow.swift */,
 				2C8E1D8A2A67873F0043FC1F /* ScheduleList.swift */,
 				2C8E1D8E2A678F430043FC1F /* CurrentStationText.swift */,
+				ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */,
 				2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */,
 				433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */,
 				2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */,

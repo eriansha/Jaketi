@@ -66,7 +66,6 @@ class TrainStationViewModel {
         let schedules = schduleInString.split(separator: ",")
         var timeDepartures: [TrainStation.DepartureSchedule] = []
         
-        
         let currentDateString: String = convertDateToString(
             date: Date(),
             format: "yyyy-MM-dd"
@@ -77,8 +76,7 @@ class TrainStationViewModel {
                 dateString: "\(currentDateString)\(scheduleTimeString)",
                 format: "yyyy-MM-dd HH:mm"
             ) {
-             
-                print(parsedTimeDeparture)
+                
                 let obj = TrainStation.DepartureSchedule.init(
                     timeDeparture: parsedTimeDeparture,
                     destinationStation: destinationStation,
@@ -100,16 +98,26 @@ class TrainStationViewModel {
         return minuteDifference
     }
     
-    func filterDepartureSchedule(trainStation: TrainStation) -> [TrainStation.DepartureSchedule] {
-        let currentDate = Date()
-        
+    func filterDepartureSchedule(
+        trainStation: TrainStation,
+        destinationStation: DestinationType,
+        selectedDate: Date,
+        isWeekend: Bool
+    ) -> [TrainStation.DepartureSchedule] {
+        /** Filtering departure schedule based on certain criteria */
         var filteredDepartureSchedules: [TrainStation.DepartureSchedule] {
             trainStation.departureSchedules.filter { schedule in
-                return schedule.timeDeparture > currentDate && schedule.isWeekend == isWeekend()
+                return schedule.timeDeparture > selectedDate
+                    && schedule.isWeekend == isWeekend
+                    && schedule.destinationStation == destinationStation
             }
         }
         
-        // let limitedFilteredSchedules = Array(filteredDepartureSchedules[0...3])
-        return filteredDepartureSchedules
+        /** limiting the filter result by 3 items. if the total of data is less than threshold, we display as it is */
+        let limitedFilteredSchedules = filteredDepartureSchedules.count > 4
+            ? Array(filteredDepartureSchedules[0...3])
+            : filteredDepartureSchedules
+        
+        return limitedFilteredSchedules
     }
 }
