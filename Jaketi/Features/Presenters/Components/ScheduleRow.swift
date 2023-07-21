@@ -13,17 +13,18 @@ struct ScheduleRow: View {
     public var destination: DestinationType
     // TODO: uncomment once it's fixed
     // public var stops: Int
-    public var estimateTimeInMinute: Int
     
+    private var estimateTimeInMinute: Int = 0
     private let isArrived: Bool
     
-    init(timeDeparture: Date, destination: DestinationType, estimateTimeInMinute: Int) {
+    init(timeDeparture: Date, destination: DestinationType) {
+        let viewModel = TrainStationViewModel()
+        
         self.timeDeparture = timeDeparture
         self.destination = destination
         // TODO: uncomment once it's fixed
         // self.stops = stops
-        self.estimateTimeInMinute = estimateTimeInMinute
-        
+        self.estimateTimeInMinute = viewModel.getTimeDifferenceInMinute(timeDeparture)
         self.isArrived = estimateTimeInMinute <= 0
     }
     
@@ -89,10 +90,9 @@ struct ScheduleRow_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleRow(
             timeDeparture: Date.now,
-            destination: DestinationType.bundaranHI,
+            destination: DestinationType.bundaranHI
             // TODO: uncomment once it's fixed
             // stops: 6,
-            estimateTimeInMinute: 1
         )
     }
 }
