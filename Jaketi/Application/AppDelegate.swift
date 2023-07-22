@@ -9,8 +9,7 @@ import UIKit
 import BackgroundTasks
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var NotificationVM = NotificationViewModel()
-    
+    // let locationService = LocationService()
     static var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -21,16 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        sendForceCloseNotification()
+        // sendForceCloseNotification()
         return true
     }
     
-    func applicationWillTerminate(_ application: UIApplication) {
-        sendForceCloseNotification()
-    }
+//    func applicationWillTerminate(_ application: UIApplication) {
+//        sendForceCloseNotification()
+//    }
     
-    func sendForceCloseNotification() {
-        NotificationVM.requestPermissionNotifications()
-        NotificationVM.checkIfLocationServicesIsEnabled()
-    }
+//    func sendForceCloseNotification() {
+//        NotificationVM.requestPermissionNotifications()
+//        NotificationVM.checkIfLocationServicesIsEnabled()
+//    }
 }

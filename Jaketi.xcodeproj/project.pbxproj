@@ -29,6 +29,8 @@
 		2C8E1D932A67AB800043FC1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D922A67AB800043FC1F /* ModelData.swift */; };
 		2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */; };
 		2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D972A6814010043FC1F /* DateUtil.swift */; };
+		2CB40F952A6B79BC00D3E504 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40F942A6B79BC00D3E504 /* NotificationService.swift */; };
+		2CB40F972A6B7FEB00D3E504 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40F962A6B7FEB00D3E504 /* LocationService.swift */; };
 		433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499532A68F0AB0034495A /* NotificationViewModel.swift */; };
 		ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		2C8E1D922A67AB800043FC1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStationViewModel.swift; sourceTree = "<group>"; };
 		2C8E1D972A6814010043FC1F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		2CB40F942A6B79BC00D3E504 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2CB40F962A6B7FEB00D3E504 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		433499532A68F0AB0034495A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +125,7 @@
 		2C79D3212A655F95004A5A05 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2CB40F932A6B79A700D3E504 /* Services */,
 				2C8E1D962A6813F60043FC1F /* Utils */,
 				2C79D3382A65620B004A5A05 /* Resources */,
 				2C79D32B2A656067004A5A05 /* Extensions */,
@@ -233,6 +238,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		2CB40F932A6B79A700D3E504 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2CB40F942A6B79BC00D3E504 /* NotificationService.swift */,
+				2CB40F962A6B7FEB00D3E504 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +321,7 @@
 				ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */,
 				2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */,
 				433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */,
+				2CB40F972A6B7FEB00D3E504 /* LocationService.swift in Sources */,
 				2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */,
 				2C79D3352A656129004A5A05 /* Prompt.swift in Sources */,
 				2C79D3312A6560AE004A5A05 /* ExampleViewModel.swift in Sources */,
@@ -316,6 +331,7 @@
 				2C8E1D892A6786AA0043FC1F /* TrainStation.swift in Sources */,
 				2C79D3152A655F2B004A5A05 /* ContentView.swift in Sources */,
 				2C79D32D2A656078004A5A05 /* Example+Extension.swift in Sources */,
+				2CB40F952A6B79BC00D3E504 /* NotificationService.swift in Sources */,
 				2C8E1D8F2A678F430043FC1F /* CurrentStationText.swift in Sources */,
 				2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */,
 				2C79D33B2A656280004A5A05 /* ExamplePresenter+Extension.swift in Sources */,
@@ -453,7 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 3SC4Z3N76K;
+				DEVELOPMENT_TEAM = 63Z24W5HZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Jaketi/Info.plist;
@@ -485,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 3SC4Z3N76K;
+				DEVELOPMENT_TEAM = 63Z24W5HZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Jaketi/Info.plist;
