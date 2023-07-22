@@ -121,7 +121,7 @@ extension LocationService {
                     removeAllPendingNotificationRequest()
 
                     /** set the flag so we can know the user left the station */
-                     UserDefaults.standard.set(false, forKey: identifier)
+                    UserDefaults.standard.set(false, forKey: identifier)
                 }
             }
         }
@@ -137,16 +137,16 @@ extension LocationService {
         let currentStation = ModelData().trainStations[11]
         let currentDate = Date()
         
-        let departureSchedule = trainStationViewModel.filterDepartureSchedule(
+        let departureSchedules = trainStationViewModel.filterDepartureSchedule(
             trainStation: currentStation,
             selectedDate: currentDate,
             isWeekend: isWeekend()
         )
         
         /** guard in case the filter result did not return any schedules */
-        guard departureSchedule.count > 0 else { return }
+        guard departureSchedules.count > 0 else { return }
         
-        let nearestSchedule = departureSchedule.first!
+        let nearestSchedule = departureSchedules.first!
         let timeDepartureString: String = convertDateToString(
             date: nearestSchedule.timeDeparture,
             format: "HH:mm"
@@ -155,13 +155,8 @@ extension LocationService {
         
         /** setup notification content. including: title, body, sound */
         let content = UNMutableNotificationContent()
-        
-        content.title = nearestSchedule.destinationStation == .bundaranHI
-            ? "Bundaran HI Train Arrival"
-            : "Lebak Bulus Train Arrival"
-        
+        content.title = "\(nearestSchedule.destinationStation.getLabel()) Train Arrival"
         content.body = "Your train will arrive at \(timeDepartureString) (\(String(describing: minutesInterval.minute!)) minutes from now). Get ready on the platform. Safe journey!"
-        
         content.sound = UNNotificationSound.default
         
         /** Setup notification trigger */
@@ -189,8 +184,14 @@ extension LocationService {
             isWeekend: isWeekend()
         )
         
-        for i in 0..<currentSchedules.count {
-            let nextSchedule = currentSchedules[i]
+        for index in 0..<currentSchedules.count {
+            
+            /** FIXME: workaround to display first 10 train schedules to prevent Notification request out of limit (max 64).*/
+            if index > 10 {
+                break;
+            }
+            
+            let nextSchedule = currentSchedules[index]
             
             /** set the nofication earlier so the passanger don't miss the train */
             let earlierNotificationTime = nextSchedule.timeDeparture.adding(minutes: 1)
@@ -204,8 +205,8 @@ extension LocationService {
 
             /** setup notification content. including: title, body, sound */
             let content = UNMutableNotificationContent()
-            content.title = "Kereta menuju \(nextSchedule.destinationStation.getLabel())"
-            content.body = "Kereta selanjutnya akan tiba pukul \(Date.timeFormatter.string(from: nextSchedule.timeDeparture))"
+            content.title = "\(nextSchedule.destinationStation.getLabel()) Train Leave"
+            content.body = "The next train will be arrived at \(Date.timeFormatter.string(from: nextSchedule.timeDeparture))"
             content.sound = .default
 
             NotificationService.shared.sendInstantNotification(
