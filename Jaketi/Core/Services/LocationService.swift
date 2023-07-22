@@ -18,7 +18,7 @@ class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
     /** list station region to monitor **/
     private var stationRegions: [CLCircularRegion] = [
         CLCircularRegion(
-            center: CLLocationCoordinate2D(latitude: -6.2171048791205825, longitude: 106.70510689996402), // (GOP)
+            center: CLLocationCoordinate2D(latitude: -6.217127, longitude: 106.705010), // (GOP)
             radius: 20,
             identifier: "Dukuh Atas BNI"),
     ]
@@ -152,12 +152,13 @@ extension LocationService {
         
         content.body = "Your train will arrive at \(timeDepartureString) (\(String(describing: minutesInterval.minute!)) minutes from now). Get ready on the platform. Safe journey!"
         
+        content.sound = UNNotificationSound.default
+        
         /** Setup notification trigger */
         let trigger = UNTimeIntervalNotificationTrigger(
             timeInterval: 1,
             repeats: false
         )
-        
         
         NotificationService.shared.sendInstantNotification(
             identifier: "info.jaketi.notification.region",
@@ -202,6 +203,6 @@ extension LocationService {
     }
     
     func removeAllPendingNotificationRequest() {
-        NotificationService.shared.center.removeAllDeliveredNotifications()
+        NotificationService.shared.removeAllPendingNotification()
     }
 }

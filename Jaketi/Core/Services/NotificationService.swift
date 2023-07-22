@@ -13,7 +13,7 @@ class NotificationService {
     
     private init() {}
     
-    public let center = UNUserNotificationCenter.current()
+    let center = UNUserNotificationCenter.current()
     
     func askPermission() {
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -37,6 +37,10 @@ class NotificationService {
         completionHandler()
     }
     
+    func removeAllPendingNotification() {
+        center.removeAllPendingNotificationRequests()
+    }
+    
     func sendInstantNotification(
         identifier: String,
         content: UNMutableNotificationContent,
@@ -44,10 +48,19 @@ class NotificationService {
     ) {
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         
-        center.add(request) { (error) in
+//        center.add(request) { (error) in
+//            if let error = error {
+//                print("Failed to sent notification:", error.localizedDescription)
+//            }
+//        }
+        center.add(request, withCompletionHandler: { (error) in
             if let error = error {
-                print("Failed to sent notification:", error.localizedDescription)
+                // Something went wrong
+                print(error)
             }
-        }
+            else{
+                print("added")
+            }
+        })
     }
 }
