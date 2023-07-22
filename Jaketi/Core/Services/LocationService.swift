@@ -15,6 +15,8 @@ class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
     /** to detect distance change if move minimal 8 meters */
     private let distanceFilter: Double = 8
     
+    private let trainStationViewModel = TrainStationViewModel()
+    
     /** list station region to monitor **/
     private var stationRegions: [CLCircularRegion] = [
         CLCircularRegion(
@@ -133,9 +135,17 @@ extension LocationService {
         /** Preprare the data before create Notification content */
         // TODO: change to get station dynamically (no hardcode)
         let currentStation = ModelData().trainStations[11]
+        let currentDate = Date()
         
-        // TODO: sort first before accessing it
-        let departureSchedule = currentStation.departureSchedules
+        let departureSchedule = trainStationViewModel.filterDepartureSchedule(
+            trainStation: currentStation,
+            selectedDate: currentDate,
+            isWeekend: isWeekend()
+        )
+        
+        /** guard in case the filter result did not return any schedules */
+        guard departureSchedule.count > 0 else { return }
+        
         let nearestSchedule = departureSchedule.first!
         let timeDepartureString: String = convertDateToString(
             date: nearestSchedule.timeDeparture,
@@ -171,9 +181,13 @@ extension LocationService {
         /** Preprare the data before create Notification content */
         // TODO: change to get station dynamically (no hardcode)
         let currentStation = ModelData().trainStations[11]
+        let currentDate = Date()
         
-        // TODO: sort first before accessing it
-        let currentSchedules = currentStation.departureSchedules
+        let currentSchedules = trainStationViewModel.filterDepartureSchedule(
+            trainStation: currentStation,
+            selectedDate: currentDate,
+            isWeekend: isWeekend()
+        )
         
         for i in 0..<currentSchedules.count {
             let nextSchedule = currentSchedules[i]

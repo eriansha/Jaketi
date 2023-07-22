@@ -100,24 +100,28 @@ class TrainStationViewModel {
     
     func filterDepartureSchedule(
         trainStation: TrainStation,
-        destinationStation: DestinationType,
+        destinationStation: DestinationType? = nil,
         selectedDate: Date,
         isWeekend: Bool
     ) -> [TrainStation.DepartureSchedule] {
+        var filteredDepartureSchedules: [TrainStation.DepartureSchedule] = trainStation.departureSchedules
+        
         /** Filtering departure schedule based on certain criteria */
-        var filteredDepartureSchedules: [TrainStation.DepartureSchedule] {
-            trainStation.departureSchedules.filter { schedule in
-                return schedule.timeDeparture > selectedDate
-                    && schedule.isWeekend == isWeekend
-                    && schedule.destinationStation == destinationStation
+        filteredDepartureSchedules = filteredDepartureSchedules.filter { schedule in
+            return schedule.timeDeparture > selectedDate
+                && schedule.isWeekend == isWeekend
+        }
+        
+        if destinationStation != nil {
+            filteredDepartureSchedules = filteredDepartureSchedules.filter { schedule in
+                return schedule.destinationStation == destinationStation
             }
         }
         
-        /** limiting the filter result by 3 items. if the total of data is less than threshold, we display as it is */
-        let limitedFilteredSchedules = filteredDepartureSchedules.count > 4
-            ? Array(filteredDepartureSchedules[0...3])
-            : filteredDepartureSchedules
+        filteredDepartureSchedules = filteredDepartureSchedules.sorted(by: {
+            $0.timeDeparture < $1.timeDeparture
+        })
         
-        return limitedFilteredSchedules
+        return filteredDepartureSchedules
     }
 }
