@@ -8,25 +8,39 @@
 import SwiftUI
 
 struct CurrentStationText: View {
+    var currentStation: TrainStation
+    @Binding var presentSheet:Bool
+    
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text("Kamu berada di stasiun")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-                
-                Text("Dukuh Atas BNI")
-                    .font(.title3)
-                    .fontWeight(.regular)
-            }
+        Button {
+            presentSheet = true
+        } label: {
+            HStack{
+                Image(systemName: "location.fill")
+                    .foregroundColor(Theme.Colors.green)
+                Text(String(currentStation.name).dropFirst(7))
+                    .foregroundColor(.black)
+                Spacer()
+                Image(systemName: "chevron.up.chevron.down")
+            }.padding()
+                .background(.white)
+            .cornerRadius(16)
+        }.buttonStyle(.plain)
             
-            Spacer()
-        }.padding(.horizontal)
     }
 }
 
 struct CurrentStationText_Previews: PreviewProvider {
+    static let trainStation: TrainStation = .init(
+        stationId: 1,
+        name: "Stasiun Dukuh Atas BNI",
+        stationOrder: 11,
+        departureSchedules: [],
+        estimateDestinations: []
+    )
+    
     static var previews: some View {
-        CurrentStationText()
+        CurrentStationText(currentStation: trainStation, presentSheet: .constant(false))
+            
     }
 }

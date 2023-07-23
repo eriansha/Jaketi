@@ -12,7 +12,12 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             LiveScheduleView()
-                .navigationTitle("Live Schedule")
+                .navigationTitle(Theme.Title.schedule)
+                .background(Theme.Colors.greyBg)
+                .toolbarColorScheme(.dark, for: .navigationBar)
+                .toolbarBackground(Theme.Colors.primary,
+                    for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
         }
         .onAppear {
             locationService.requestAuthorization()
@@ -24,5 +29,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(ModelData())
+            
     }
 }

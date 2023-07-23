@@ -90,12 +90,38 @@ class TrainStationViewModel {
         return timeDepartures
     }
     
+    func transformEstimateDestinations(trainStations: inout [TrainStation]) {
+        for indexTrainStation in trainStations.indices {
+            var currentEstimateDestinations = trainStations[indexTrainStation].estimateDestinations
+            
+            for indexEstimate in currentEstimateDestinations.indices {
+                if let station = trainStations.first(where: {
+                    $0.stationId == currentEstimateDestinations[indexEstimate].stationId
+                }) {
+                    currentEstimateDestinations[indexEstimate].stationName = String(station.name.dropFirst(8))
+                    currentEstimateDestinations[indexEstimate].stationOrder = station.stationOrder
+                }else{
+                    currentEstimateDestinations[indexEstimate].stationName = "-"
+                }
+            }
+            
+            trainStations[indexTrainStation].estimateDestinations = currentEstimateDestinations
+        }
+    }
+    
     func getTimeDifferenceInMinute(_ anotherDate: Date) -> Int {
         let currentDate = Date()
         let timeInterval = anotherDate.timeIntervalSince(currentDate)
         
         let minuteDifference = Int(timeInterval / 60)
         return minuteDifference
+    }
+    
+    func getFirstDepartureScheduleMinutes(_ departureSchedule: [TrainStation.DepartureSchedule]) -> Int {
+        if !departureSchedule.isEmpty {
+            return getTimeDifferenceInMinute(departureSchedule[0].timeDeparture)
+        }
+        return -1000
     }
     
     func filterDepartureSchedule(
@@ -123,5 +149,41 @@ class TrainStationViewModel {
         })
         
         return filteredDepartureSchedules
+    }
+    
+    func getDestinationTime(departureTime: Date, travelEstimation: Int) -> Date{
+        return departureTime.addingTimeInterval(TimeInterval(travelEstimation * 60))
+    }
+    
+    func filterEstimateDestination(
+        stationOrder: Int,
+        estimateDestinations: [TrainStation.EstimateDestinations],
+        destinationStation: DestinationType
+    ) -> [TrainStation.EstimateDestinations]{
+        var filteredEstimateDestination: [TrainStation.EstimateDestinations]{
+            estimateDestinations.filter { est in
+                if destinationStation == .bundaranHI{
+                    return est.stationOrder > stationOrder
+                }else{
+                    return est.stationOrder < stationOrder
+                }
+                
+            }
+        }
+        return destinationStation == .lebakBulus ? filteredEstimateDestination.reversed() : filteredEstimateDestination
+    }
+    
+    func filterSearchStation(
+        trainStations: [TrainStation],
+        searchValue: String
+    ) -> [TrainStation] {
+        var filteredStation: [TrainStation] {
+            if searchValue.isEmpty {
+                return trainStations
+            } else {
+                return trainStations.filter { $0.name.localizedCaseInsensitiveContains(searchValue)}
+            }
+        }
+        return filteredStation
     }
 }
