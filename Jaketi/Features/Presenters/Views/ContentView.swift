@@ -14,6 +14,7 @@ struct ContentView: View {
         NavigationStack {
             LiveScheduleView()
                 .navigationTitle(Theme.Title.schedule)
+                .navigationBarHidden(true)
                 .background(Theme.Colors.background)
                 .toolbarColorScheme(.dark, for: .navigationBar)
                 .toolbarBackground(Theme.Colors.blue,

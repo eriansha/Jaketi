@@ -41,9 +41,9 @@ struct TrainBanner: View {
                         HStack {
                             Spacer()
                             HStack {
-                                Image(systemName:"train.side.front.car").foregroundColor(.white)
+                                Image(systemName:"train.side.front.car").foregroundColor(Theme.Colors.highlightedTag)
                                 Text("Bound for \(destinationStation.getLabel())")
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Theme.Colors.highlightedTag)
                             }
                             .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
                             .background(Theme.Colors.green)

@@ -74,8 +74,8 @@ extension Theme {
 
 extension Theme {
     struct Strings{
-        static let tibaDiPeron: String = "Tiba Di Peron"
-        static let menit: String = "menit"
+        static let tibaDiPeron: String = "Arrived"
+        static let menit: String = "minutes"
     }
 }
 

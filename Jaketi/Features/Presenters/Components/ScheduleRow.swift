@@ -64,7 +64,7 @@ struct ScheduleRow: View {
                         HStack{
                             Text(timeDeparture, style: .time)
                                 .font(.largeTitle)
-                                .foregroundColor(.black)
+                                .foregroundColor(Theme.Colors.highlightedLabel)
                             
                             Spacer()
                             if(!isArrived){
@@ -77,7 +77,7 @@ struct ScheduleRow: View {
                         }
                     }
                 }
-            ).accentColor(Theme.Colors.blue)
+            ).accentColor(Theme.Colors.highlightedLabel)
         }
     }
 }
