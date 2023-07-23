@@ -73,6 +73,8 @@ struct ScheduleRow: View {
                                 .foregroundColor(Theme.Colors.blue)
                         }
                     }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel(isArrived ? "Kereta dengan arah \(destination.getLabel()) sudah berada di Peron, harap bergegas" : "Kereta dengan arah \(destination.getLabel()) akan tiba di pukul \(timeDeparture, style: .time), \(estimateTimeInMinute) menit lagi")
                 }
             ).accentColor(Theme.Colors.blue)
         }
