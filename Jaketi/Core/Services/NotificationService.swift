@@ -40,18 +40,12 @@ class NotificationService: NSObject {
     ) {
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         
-//        center.add(request) { (error) in
-//            if let error = error {
-//                print("Failed to sent notification:", error.localizedDescription)
-//            }
-//        }
         center.add(request, withCompletionHandler: { (error) in
             if let error = error {
-                // Something went wrong
-                print(error)
+                print("Failed to sent notification:", error.localizedDescription)
             }
             else{
-                print("added")
+                print("DEBUG: added notification to the queue")
             }
         })
     }

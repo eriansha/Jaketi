@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct AppConstant {}
+struct AppConstant {
+    static let regionNotificationIdentifier: String = "info.jaketi.notification.region"
+    static let scheduleNotificationIdentifier: String = "info.jaketi.notification.schedules"
+}
 
 // MARK: testing data
 extension AppConstant {

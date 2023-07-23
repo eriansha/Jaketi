@@ -54,7 +54,7 @@ class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
             }
         } else {
             // TODO: send kind of alert to inform user
-            print("Location is not support to track circular region")
+            print("DEBUG: Location is not support to track circular region")
         }
     }
     
@@ -71,26 +71,26 @@ extension LocationService {
 
         switch status {
         case .denied:
-            print("denied")
+            print("DEBUG: denied")
             // TODO: ask user to authorize
             
         case .notDetermined:
-            print("notDetermined")
+            print("DEBUG: notDetermined")
             
         case .restricted:
-            print("restricted")
+            print("DEBUG: restricted")
             //TODO: inform the user
             
         case .authorizedWhenInUse:
-            print("authorizedWhenInUse")
+            print("DEBUG: authorizedWhenInUse")
             startMonitoring()
             
         case .authorizedAlways:
-            print("authorizedAlways")
+            print("DEBUG: authorizedAlways")
             startMonitoring()
             
         default:
-            print("unknown")
+            print("DEBUG: unknown")
             // TODO: inform the user
         }
     }
@@ -111,8 +111,6 @@ extension LocationService {
             
             let identifier = stationRegion.identifier
             let isEnteredStation = UserDefaults.standard.bool(forKey: identifier)
-            
-            print("current location: \(location.coordinate)")
             
             if stationRegion.contains(location.coordinate) {
                 
@@ -180,7 +178,7 @@ extension LocationService {
         )
         
         NotificationService.shared.sendInstantNotification(
-            identifier: "info.jaketi.notification.region",
+            identifier: AppConstant.regionNotificationIdentifier,
             content: content,
             trigger: trigger
         )
@@ -224,7 +222,7 @@ extension LocationService {
             content.sound = .default
 
             NotificationService.shared.sendInstantNotification(
-                identifier: "info.jaketi.notification.schedules.\(index)",
+                identifier: "\(AppConstant.scheduleNotificationIdentifier).\(index)",
                 content: content,
                 trigger: trigger
             )
