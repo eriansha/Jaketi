@@ -9,18 +9,25 @@ import Foundation
 import CoreLocation
 import UserNotifications
 
+
 class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
     
-    /** to detect distance change if move minimal 8 meters */
+    /** to detect distance change if move minimal certain meters */
     private let distanceFilter: Double = 8
+    
+    /** Maximum time-based notification queueing per session */
+    private let maxScheduleNotification: Int = 5
     
     private let trainStationViewModel = TrainStationViewModel()
     
     /** list station region to monitor **/
     private var stationRegions: [CLCircularRegion] = [
         CLCircularRegion(
-            center: CLLocationCoordinate2D(latitude: -6.217127, longitude: 106.705010), // (GOP)
+            center: CLLocationCoordinate2D(
+                latitude: AppConstant.testingCoordinate.latitude,
+                longitude: AppConstant.testingCoordinate.longitude
+            ),
             radius: 20,
             identifier: "Dukuh Atas BNI"),
     ]
@@ -36,13 +43,18 @@ class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     private func startMonitoring() {
-        // locationManager.startMonitoringSignificantLocationChanges()
-        
-        /** Start monitoring every registred regions */
-        for region in stationRegions {
-            region.notifyOnExit = true
-            region.notifyOnEntry = true
-            locationManager.startMonitoring(for: region)
+        /** Make sure the devices supports region monitoring. */
+        if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+            
+            /** Start monitoring every registred regions */
+            for region in stationRegions {
+                region.notifyOnExit = true
+                region.notifyOnEntry = true
+                locationManager.startMonitoring(for: region)
+            }
+        } else {
+            // TODO: send kind of alert to inform user
+            print("Location is not support to track circular region")
         }
     }
     
@@ -99,6 +111,8 @@ extension LocationService {
             
             let identifier = stationRegion.identifier
             let isEnteredStation = UserDefaults.standard.bool(forKey: identifier)
+            
+            print("current location: \(location.coordinate)")
             
             if stationRegion.contains(location.coordinate) {
                 
@@ -186,8 +200,8 @@ extension LocationService {
         
         for index in 0..<currentSchedules.count {
             
-            /** FIXME: workaround to display first 10 train schedules to prevent Notification request out of limit (max 64).*/
-            if index > 10 {
+            /** FIXME: workaround to display first x train schedules to prevent Notification request out of limit (max 64).*/
+            if index > maxScheduleNotification {
                 break;
             }
             
@@ -210,7 +224,7 @@ extension LocationService {
             content.sound = .default
 
             NotificationService.shared.sendInstantNotification(
-                identifier: "info.jaketi.notification.schedules",
+                identifier: "info.jaketi.notification.schedules.\(index)",
                 content: content,
                 trigger: trigger
             )

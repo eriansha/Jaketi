@@ -31,6 +31,7 @@
 		2C8E1D982A6814010043FC1F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E1D972A6814010043FC1F /* DateUtil.swift */; };
 		2CB40F952A6B79BC00D3E504 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40F942A6B79BC00D3E504 /* NotificationService.swift */; };
 		2CB40F972A6B7FEB00D3E504 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40F962A6B7FEB00D3E504 /* LocationService.swift */; };
+		2CBD0ED32A6CF90D0043EDED /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD0ED22A6CF90D0043EDED /* AppConstant.swift */; };
 		433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499532A68F0AB0034495A /* NotificationViewModel.swift */; };
 		ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		2C8E1D972A6814010043FC1F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		2CB40F942A6B79BC00D3E504 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2CB40F962A6B7FEB00D3E504 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		2CBD0ED22A6CF90D0043EDED /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		433499532A68F0AB0034495A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +219,7 @@
 				2C79D3242A655FCD004A5A05 /* Theme.swift */,
 				2C79D3342A656129004A5A05 /* Prompt.swift */,
 				2C79D3362A6561B9004A5A05 /* Error.swift */,
+				2CBD0ED22A6CF90D0043EDED /* AppConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				2C79D32D2A656078004A5A05 /* Example+Extension.swift in Sources */,
 				2CB40F952A6B79BC00D3E504 /* NotificationService.swift in Sources */,
 				2C8E1D8F2A678F430043FC1F /* CurrentStationText.swift in Sources */,
+				2CBD0ED32A6CF90D0043EDED /* AppConstant.swift in Sources */,
 				2C79D3132A655F2B004A5A05 /* JaketiApp.swift in Sources */,
 				2C79D33B2A656280004A5A05 /* ExamplePresenter+Extension.swift in Sources */,
 				2C79D3372A6561B9004A5A05 /* Error.swift in Sources */,
