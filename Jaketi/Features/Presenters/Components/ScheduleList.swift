@@ -40,13 +40,14 @@ struct ScheduleList: View {
                     )
                     .padding(.vertical, 5)
                     .padding(.horizontal, 15)
-                    .background(.white)
+                    .background(Theme.Colors.card)
                     .cornerRadius(10)
                 }
             } else {
                 Text("No schedule")
             }
         }.padding(.horizontal)
+            .foregroundColor(Theme.Colors.highlightedLabel)
     }
 }
 

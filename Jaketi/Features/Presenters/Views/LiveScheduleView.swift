@@ -32,6 +32,7 @@ struct LiveScheduleView: View {
             
             // TODO: Revine custom picker for bound station
             BoundStationPicker(selectedDestination: $selectedDestination)
+                .padding(.bottom, 5)
             
             ScrollView {
                 ScheduleList(

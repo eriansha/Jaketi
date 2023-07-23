@@ -11,13 +11,22 @@ struct BoundStationPicker: View {
     @Binding var selectedDestination: DestinationType
     
     var body: some View {
-        Picker("Select Destination", selection: $selectedDestination) {
-            ForEach(DestinationType.allCases, id: \.self) { destination in
-                Text(destination.getLabel())
-                
+        Form {
+            Section (header: Spacer(minLength: 0)) {
+                Picker("Bound for", selection: $selectedDestination) {
+                    ForEach(DestinationType.allCases, id: \.self) { destination in
+                        Text(destination.getLabel())
+                    }
+                }
+                .pickerStyle(.menu)
+                .tint(Theme.Colors.highlightedLabel)
             }
         }
-        .pickerStyle(.segmented)
+//        .scrollContentBackground(.hidden)
+        .foregroundColor(.gray)
+        .frame(height: 80)
+        .padding(.top, -15)
+        .padding(.horizontal, -5)
     }
 }
 
