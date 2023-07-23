@@ -13,12 +13,39 @@ struct Theme { private init() {} }
 // MARK: Colors
 extension Theme {
     struct Colors {
-        // TODO: change to follow design system
-        static let primary = Color(red: 0.173, green: 0.271, blue: 0.502)
-        static let warning = Color(red: 0.95, green: 0.54, blue: 0)
-        static let lightBlue = Color(red: 0.84, green: 0.91, blue: 0.97)
-        static let green = Color(red: 0.26, green: 0.71, blue: 0.29)
-        static let greyBg = Color(red: 242 / 255.0, green: 242 / 255.0, blue: 247 / 255.0)
+        // Base
+        static let blue = Color("Blue")
+        static let orange = Color("Orange")
+        static let green = Color("Green")
+        
+        // MRT Original
+        static let MRTBlue = Color("MRTBlue")
+        static let MRTGreen = Color("MRTGreen")
+        
+        // Shape
+        static let card = Color("Card")
+        static let cBArrow = Color("CBArrow").opacity(0.6)
+        static let divider = Color("Divider").opacity(0.25)
+        static let line = Color("Line")
+        
+        // Field
+        static let comboBox = Color("ComboBox")
+        static let searchField = Color("SearchField").opacity(0.12)
+        
+        // Label
+        static let label = Color("Label")
+        static let labelInactive = Color("LabelInactive").opacity(0.3)
+        static let whiteLabel = Color("WhiteLabel")
+        
+        // Highlighted
+        static let highlighted = Color("Highlighted")
+        static let highlightedLabel = Color("HighlightedLabel")
+        static let highlightedLabel2 = Color("HighlightedLabel2").opacity(0.5)
+        static let highlightedTag = Color("HighlightedTag")
+        
+        // Background
+        static let background = Color("Background")
+        static let backgroundSheet = Color("BackgroundSheet")
     }
 }
 
