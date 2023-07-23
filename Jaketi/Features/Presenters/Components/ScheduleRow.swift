@@ -49,7 +49,7 @@ struct ScheduleRow: View {
                                 }
                                 HStack {
                                     Circle()
-                                        .strokeBorder(Theme.Colors.primary,lineWidth: 4)
+                                        .strokeBorder(Theme.Colors.blue,lineWidth: 4)
                                         .frame(width: 20, height: 20)
                                     Text("\(dest.stationName)")
                                     Spacer()
@@ -73,11 +73,11 @@ struct ScheduleRow: View {
                             }
                             Text(isArrived ? Theme.Strings.tibaDiPeron : "\(estimateTimeInMinute) \(Theme.Strings.menit)")
                                 .font(.title2)
-                                .foregroundColor(isArrived ? Theme.Colors.warning :Theme.Colors.green)
+                                .foregroundColor(isArrived ? Theme.Colors.orange :Theme.Colors.green)
                         }
                     }
                 }
-            ).accentColor(Theme.Colors.primary)
+            ).accentColor(Theme.Colors.blue)
         }
     }
 }

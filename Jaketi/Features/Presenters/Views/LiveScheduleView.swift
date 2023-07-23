@@ -21,7 +21,7 @@ struct LiveScheduleView: View {
             // TODO: Revine custom picker for current station
             CurrentStationText(currentStation: modelData.trainStations[currentStation], presentSheet: $presentSheet)
                 .padding()
-                .background(Theme.Colors.primary)
+                .background(Theme.Colors.blue)
             
             TrainBanner(destinationStation: selectedDestination, departureSchedules: viewModel.filterDepartureSchedule(
                 trainStation: modelData.trainStations[currentStation],
