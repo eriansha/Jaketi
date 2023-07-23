@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var locationService = LocationService()
+
     var body: some View {
         NavigationStack {
             LiveScheduleView()
                 .navigationTitle(Theme.Title.schedule)
-                .background(Theme.Colors.greyBg)
+                .background(Theme.Colors.background)
                 .toolbarColorScheme(.dark, for: .navigationBar)
-                .toolbarBackground(Theme.Colors.primary,
+                .toolbarBackground(Theme.Colors.blue,
                     for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
         }
