@@ -56,6 +56,8 @@ struct ScheduleRow: View {
                                     Text(timeDeparture.addingTimeInterval(TimeInterval(dest.travelTime * 60)), style: .time)
                                 }
                             }
+                            .accessibilityElement(children: .combine)
+                            .accessibilityLabel("Estimasi tiba di stasiun \(dest.stationName) pukul \(timeDeparture.addingTimeInterval(TimeInterval(dest.travelTime * 60)), style: .time)")
                         }
                     }.padding(.bottom, 10)
                 },
