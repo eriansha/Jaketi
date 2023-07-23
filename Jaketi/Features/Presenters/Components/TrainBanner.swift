@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TrainBanner: View {
-    @State private var isTextVisible = true
+    @State private var isTextVisible = false
         
 //    public var trainStation: TrainStation
     public var destinationStation: DestinationType
@@ -29,12 +29,16 @@ struct TrainBanner: View {
     
     var body: some View {
         VStack {
-            ZStack{
-                Image("Banner")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.horizontal, 16)
+            ZStack {
+                HStack{
+                    Image("stripes")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 100)
+                    Spacer()
+                }
+                .background(Theme.Colors.highlighted)
+                .cornerRadius(10)
                 HStack {
                     Spacer()
                     VStack{
@@ -58,26 +62,37 @@ struct TrainBanner: View {
                                     .font(.title3)
                                     .bold()
                                     .padding(.horizontal, 10)
-                                    .opacity(isTextVisible ? 1.0 : 0.1)
-                                    .foregroundColor(.black)
-    //                                .animation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true))
-    //                                .onAppear {
-    //                                    isTextVisible = false
-    //                                }
+                                    .opacity(isTextVisible ? 1.0 : 0.2)
+                                    .foregroundColor(Theme.Colors.highlightedLabel)
+                                    .animation(isTextVisible ? Animation.easeOut(duration: 0.7)
+                                                    .repeatForever(autoreverses: true) : .default, value: isTextVisible)
+                                    .onAppear {
+                                        isTextVisible = true
+                                    }
+                                    .onDisappear{
+                                        isTextVisible = false
+                                    }
                             } else{
                                 Text("Train Unavailable")
                                     .font(.title3)
                                     .bold()
                                     .padding(.horizontal, 10)
                                     .foregroundColor(.red)
+                                    .opacity(isTextVisible ? 1.0 : 0.2)
+                                    .animation(isTextVisible ? Animation.easeOut(duration: 0.7)
+                                                    .repeatForever(autoreverses: true) : .default, value: isTextVisible)
+                                    .onAppear {
+                                        isTextVisible = true
+                                    }
+                                    .onDisappear{
+                                        isTextVisible = false
+                                    }
                             }
 
                         }
                     }
-                    .padding(.horizontal, 16)
                 }
-                
-            }
+            }.padding(.horizontal, 16)
 
         }
     }
@@ -122,9 +137,9 @@ struct Train_Previews: PreviewProvider {
                 destinationStation: .bundaranHI, departureSchedules: departureSchedules
             )
             
-            TrainBanner(
-                destinationStation: .bundaranHI, departureSchedules: emptyDepartureSchedules
-            )
+//            TrainBanner(
+//                destinationStation: .bundaranHI, departureSchedules: emptyDepartureSchedules
+//            )
 
             
         }
