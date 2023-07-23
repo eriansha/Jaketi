@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = NotificationViewModel()
+    @StateObject var locationService = LocationService()
+
     var body: some View {
         NavigationStack {
             LiveScheduleView()
-                .navigationTitle("Live Schedule")
+                .navigationTitle(Theme.Title.schedule)
+                .background(Theme.Colors.background)
+                .toolbarColorScheme(.dark, for: .navigationBar)
+                .toolbarBackground(Theme.Colors.blue,
+                    for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
         }
         .onAppear {
-            viewModel.requestPermissionNotifications()
-            viewModel.checkIfLocationServicesIsEnabled()
+            locationService.requestAuthorization()
         }
     }
 }
@@ -25,5 +30,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(ModelData())
+            
     }
 }

@@ -90,6 +90,25 @@ class TrainStationViewModel {
         return timeDepartures
     }
     
+    func transformEstimateDestinations(trainStations: inout [TrainStation]) {
+        for indexTrainStation in trainStations.indices {
+            var currentEstimateDestinations = trainStations[indexTrainStation].estimateDestinations
+            
+            for indexEstimate in currentEstimateDestinations.indices {
+                if let station = trainStations.first(where: {
+                    $0.stationId == currentEstimateDestinations[indexEstimate].stationId
+                }) {
+                    currentEstimateDestinations[indexEstimate].stationName = String(station.name.dropFirst(8))
+                    currentEstimateDestinations[indexEstimate].stationOrder = station.stationOrder
+                }else{
+                    currentEstimateDestinations[indexEstimate].stationName = "-"
+                }
+            }
+            
+            trainStations[indexTrainStation].estimateDestinations = currentEstimateDestinations
+        }
+    }
+    
     func getTimeDifferenceInMinute(_ anotherDate: Date) -> Int {
         let currentDate = Date()
         let timeInterval = anotherDate.timeIntervalSince(currentDate)
@@ -98,26 +117,73 @@ class TrainStationViewModel {
         return minuteDifference
     }
     
+    func getFirstDepartureScheduleMinutes(_ departureSchedule: [TrainStation.DepartureSchedule]) -> Int {
+        if !departureSchedule.isEmpty {
+            return getTimeDifferenceInMinute(departureSchedule[0].timeDeparture)
+        }
+        return -1000
+    }
+    
     func filterDepartureSchedule(
         trainStation: TrainStation,
-        destinationStation: DestinationType,
+        destinationStation: DestinationType? = nil,
         selectedDate: Date,
         isWeekend: Bool
     ) -> [TrainStation.DepartureSchedule] {
+        var filteredDepartureSchedules: [TrainStation.DepartureSchedule] = trainStation.departureSchedules
+        
         /** Filtering departure schedule based on certain criteria */
-        var filteredDepartureSchedules: [TrainStation.DepartureSchedule] {
-            trainStation.departureSchedules.filter { schedule in
-                return schedule.timeDeparture > selectedDate
-                    && schedule.isWeekend == isWeekend
-                    && schedule.destinationStation == destinationStation
+        filteredDepartureSchedules = filteredDepartureSchedules.filter { schedule in
+            return schedule.timeDeparture > selectedDate
+                && schedule.isWeekend == isWeekend
+        }
+        
+        if destinationStation != nil {
+            filteredDepartureSchedules = filteredDepartureSchedules.filter { schedule in
+                return schedule.destinationStation == destinationStation
             }
         }
         
-        /** limiting the filter result by 3 items. if the total of data is less than threshold, we display as it is */
-        let limitedFilteredSchedules = filteredDepartureSchedules.count > 4
-            ? Array(filteredDepartureSchedules[0...3])
-            : filteredDepartureSchedules
+        filteredDepartureSchedules = filteredDepartureSchedules.sorted(by: {
+            $0.timeDeparture < $1.timeDeparture
+        })
         
-        return limitedFilteredSchedules
+        return filteredDepartureSchedules
+    }
+    
+    func getDestinationTime(departureTime: Date, travelEstimation: Int) -> Date{
+        return departureTime.addingTimeInterval(TimeInterval(travelEstimation * 60))
+    }
+    
+    func filterEstimateDestination(
+        stationOrder: Int,
+        estimateDestinations: [TrainStation.EstimateDestinations],
+        destinationStation: DestinationType
+    ) -> [TrainStation.EstimateDestinations]{
+        var filteredEstimateDestination: [TrainStation.EstimateDestinations]{
+            estimateDestinations.filter { est in
+                if destinationStation == .bundaranHI{
+                    return est.stationOrder > stationOrder
+                }else{
+                    return est.stationOrder < stationOrder
+                }
+                
+            }
+        }
+        return destinationStation == .lebakBulus ? filteredEstimateDestination.reversed() : filteredEstimateDestination
+    }
+    
+    func filterSearchStation(
+        trainStations: [TrainStation],
+        searchValue: String
+    ) -> [TrainStation] {
+        var filteredStation: [TrainStation] {
+            if searchValue.isEmpty {
+                return trainStations
+            } else {
+                return trainStations.filter { $0.name.localizedCaseInsensitiveContains(searchValue)}
+            }
+        }
+        return filteredStation
     }
 }
