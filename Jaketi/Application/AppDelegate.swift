@@ -8,15 +8,7 @@
 import UIKit
 import BackgroundTasks
 
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    // let locationService = LocationService()
-    static var dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .long
-        return formatter
-    }()
-    
+class AppDelegate: UIResponder, UIApplicationDelegate {    
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
