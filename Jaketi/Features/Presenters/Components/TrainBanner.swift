@@ -78,7 +78,21 @@ struct TrainBanner: View {
                 }
                 
             }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel(getAccesibilityLabel())
 
+        }
+    }
+    
+    func getAccesibilityLabel() -> String {
+        if isAvailable {
+            if isArrived {
+                return "the nearest train to \(destinationStation.getLabel()) arrived at platform"
+            } else {
+                return "the nearest train to \(destinationStation.getLabel()) will arrive in \(estimateTimeInMinute) minutes"
+            }
+        } else {
+            return "the train to \(destinationStation.getLabel()) is no longer available"
         }
     }
 }

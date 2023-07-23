@@ -57,7 +57,7 @@ struct ScheduleRow: View {
                                 }
                             }
                             .accessibilityElement(children: .combine)
-                            .accessibilityLabel("Estimasi tiba di stasiun \(dest.stationName) pukul \(timeDeparture.addingTimeInterval(TimeInterval(dest.travelTime * 60)), style: .time)")
+                            .accessibilityLabel("Estimated arrival at \(dest.stationName) at \(timeDeparture.addingTimeInterval(TimeInterval(dest.travelTime * 60)), style: .time)")
                         }
                     }.padding(.bottom, 10)
                 },
@@ -79,7 +79,7 @@ struct ScheduleRow: View {
                         }
                     }
                     .accessibilityElement(children: .combine)
-                    .accessibilityLabel(isArrived ? "Kereta dengan arah \(destination.getLabel()) sudah berada di Peron, harap bergegas" : "Kereta dengan arah \(destination.getLabel()) akan tiba di pukul \(timeDeparture, style: .time), \(estimateTimeInMinute) menit lagi")
+                    .accessibilityLabel(isArrived ? "The train heading to \(destination.getLabel()) is already at platform, please hurry" : "The train heading to \(destination.getLabel()) will arrive at \(timeDeparture, style: .time), \(estimateTimeInMinute) minutes away")
                 }
             ).accentColor(Theme.Colors.blue)
         }
