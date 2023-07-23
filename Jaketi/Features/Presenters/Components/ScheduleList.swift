@@ -44,7 +44,7 @@ struct ScheduleList: View {
                     .cornerRadius(10)
                 }
             } else {
-                Text("No schedule in this station")
+                Text("No schedule")
             }
         }.padding(.horizontal)
     }

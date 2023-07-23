@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             LiveScheduleView()
-                .navigationTitle("Schedule")
+                .navigationTitle(Theme.Title.schedule)
                 .background(Theme.Colors.greyBg)
                 .toolbarColorScheme(.dark, for: .navigationBar)
                 .toolbarBackground(Theme.Colors.primary,

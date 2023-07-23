@@ -7,13 +7,6 @@
 
 import Foundation
 
-struct Estimate {
-    let stationId: Int
-    var price: Int
-    var travelTime: Int
-    let station: TrainStation
-}
-
 enum DestinationType: CaseIterable {
     case bundaranHI
     case lebakBulus
@@ -26,7 +19,7 @@ enum DestinationType: CaseIterable {
     }
 }
 
-struct TrainStation: Hashable, Decodable {
+struct TrainStation: Hashable, Decodable, Identifiable {
     var id: UUID = UUID()
     var stationId: Int
     var name: String

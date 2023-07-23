@@ -101,7 +101,7 @@ class TrainStationViewModel {
                     currentEstimateDestinations[indexEstimate].stationName = String(station.name.dropFirst(8))
                     currentEstimateDestinations[indexEstimate].stationOrder = station.stationOrder
                 }else{
-                    currentEstimateDestinations[indexEstimate].stationName = "Transform Error"
+                    currentEstimateDestinations[indexEstimate].stationName = "-"
                 }
             }
             
@@ -115,6 +115,13 @@ class TrainStationViewModel {
         
         let minuteDifference = Int(timeInterval / 60)
         return minuteDifference
+    }
+    
+    func getFirstDepartureScheduleMinutes(_ departureSchedule: [TrainStation.DepartureSchedule]) -> Int {
+        if !departureSchedule.isEmpty {
+            return getTimeDifferenceInMinute(departureSchedule[0].timeDeparture)
+        }
+        return -1000
     }
     
     func filterDepartureSchedule(
@@ -160,5 +167,19 @@ class TrainStationViewModel {
             }
         }
         return destinationStation == .lebakBulus ? filteredEstimateDestination.reversed() : filteredEstimateDestination
+    }
+    
+    func filterSearchStation(
+        trainStations: [TrainStation],
+        searchValue: String
+    ) -> [TrainStation] {
+        var filteredStation: [TrainStation] {
+            if searchValue.isEmpty {
+                return trainStations
+            } else {
+                return trainStations.filter { $0.name.localizedCaseInsensitiveContains(searchValue)}
+            }
+        }
+        return filteredStation
     }
 }

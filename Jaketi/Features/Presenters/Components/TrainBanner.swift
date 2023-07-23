@@ -9,26 +9,21 @@ import SwiftUI
 
 struct TrainBanner: View {
     @State private var isTextVisible = true
-    
-    public var trainStation: TrainStation
+        
+//    public var trainStation: TrainStation
     public var destinationStation: DestinationType
-    private var departureSchedules: TrainStation.DepartureSchedule
+    public var departureSchedules: [TrainStation.DepartureSchedule]
     private var estimateTimeInMinute: Int = 0
+    private let isAvailable: Bool
     private let isArrived: Bool
     
-    init(trainStation: TrainStation, destinationStation: DestinationType) {
-        let currentDate = Date()
+    init(destinationStation: DestinationType, departureSchedules: [TrainStation.DepartureSchedule]) {
         let viewModel = TrainStationViewModel()
         
-        self.trainStation = trainStation
         self.destinationStation = destinationStation
-        self.departureSchedules = viewModel.filterDepartureSchedule(
-            trainStation: trainStation,
-            destinationStation: destinationStation,
-            selectedDate: currentDate,
-            isWeekend: isWeekend()
-        )[0]
-        self.estimateTimeInMinute = viewModel.getTimeDifferenceInMinute(departureSchedules.timeDeparture)
+        self.departureSchedules = departureSchedules
+        self.estimateTimeInMinute = viewModel.getFirstDepartureScheduleMinutes(departureSchedules)
+        self.isAvailable = estimateTimeInMinute > -999
         self.isArrived = estimateTimeInMinute <= 0
     }
     
@@ -58,15 +53,25 @@ struct TrainBanner: View {
                         
                         HStack {
                             Spacer()
-                            Text(isArrived ? "Arrived at platform": "Arriving in \(estimateTimeInMinute) Minutes")
-                                .font(.title3)
-                                .bold()
-                                .padding(.horizontal, 10)
-                                .opacity(isTextVisible ? 1.0 : 0.1)
-//                                .animation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true))
-//                                .onAppear {
-//                                    isTextVisible = false
-//                                }
+                            if isAvailable{
+                                Text(isArrived ? "Arrived at platform": "Arriving in \(estimateTimeInMinute) Minutes")
+                                    .font(.title3)
+                                    .bold()
+                                    .padding(.horizontal, 10)
+                                    .opacity(isTextVisible ? 1.0 : 0.1)
+                                    .foregroundColor(.black)
+    //                                .animation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true))
+    //                                .onAppear {
+    //                                    isTextVisible = false
+    //                                }
+                            } else{
+                                Text("Train Unavailable")
+                                    .font(.title3)
+                                    .bold()
+                                    .padding(.horizontal, 10)
+                                    .foregroundColor(.red)
+                            }
+
                         }
                     }
                     .padding(.horizontal, 16)
@@ -102,6 +107,7 @@ struct Train_Previews: PreviewProvider {
             isWeekend: false
         )
     ]
+    static let emptyDepartureSchedules: [TrainStation.DepartureSchedule] = []
     
     static let trainStation: TrainStation = .init(
         stationId: 1,
@@ -111,10 +117,17 @@ struct Train_Previews: PreviewProvider {
         estimateDestinations: []
     )
     static var previews: some View {
-        TrainBanner(
-            trainStation: trainStation,
-            destinationStation: .bundaranHI
-        )
-        
+        VStack {
+            TrainBanner(
+                destinationStation: .bundaranHI, departureSchedules: departureSchedules
+            )
+            
+            TrainBanner(
+                destinationStation: .bundaranHI, departureSchedules: emptyDepartureSchedules
+            )
+
+            
+        }
+
     }
 }

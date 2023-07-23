@@ -37,3 +37,18 @@ extension Theme {
         static let large: Double = 16
     }
 }
+
+
+extension Theme {
+    struct Title{
+        static let schedule: String = "Schedule"
+    }
+}
+
+extension Theme {
+    struct Strings{
+        static let tibaDiPeron: String = "Tiba Di Peron"
+        static let menit: String = "menit"
+    }
+}
+

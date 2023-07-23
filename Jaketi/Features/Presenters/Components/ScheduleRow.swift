@@ -71,7 +71,7 @@ struct ScheduleRow: View {
                                 Image(systemName: "hourglass")
                                     .foregroundColor(Theme.Colors.green)
                             }
-                            Text(isArrived ? "Tiba di Peron" : "\(estimateTimeInMinute) menit")
+                            Text(isArrived ? Theme.Strings.tibaDiPeron : "\(estimateTimeInMinute) \(Theme.Strings.menit)")
                                 .font(.title2)
                                 .foregroundColor(isArrived ? Theme.Colors.warning :Theme.Colors.green)
                         }
@@ -86,7 +86,7 @@ struct ScheduleRow_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleRow(
             stationOrder: 12,
-            timeDeparture: Date.now,
+            timeDeparture: Date.now.addingTimeInterval(TimeInterval(70)),
             destination: DestinationType.bundaranHI,
             // TODO: uncomment once it's fixed
             // stops: 6,
