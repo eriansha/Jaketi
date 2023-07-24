@@ -43,13 +43,13 @@ struct ScheduleRow: View {
                             VStack(spacing: 0) {
                                 HStack {
                                     VerticalLine()
-                                        .stroke(Color.black, lineWidth: 4)
+                                        .stroke(Theme.Colors.line, lineWidth: 4)
                                         .frame(width: 20, height: 20)
                                     Spacer()
                                 }
                                 HStack {
                                     Circle()
-                                        .strokeBorder(Theme.Colors.blue,lineWidth: 4)
+                                        .strokeBorder(Theme.Colors.MRTGreen,lineWidth: 4)
                                         .frame(width: 20, height: 20)
                                     Text("\(dest.stationName)")
                                     Spacer()
