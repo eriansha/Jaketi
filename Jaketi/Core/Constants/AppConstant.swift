@@ -16,7 +16,7 @@ struct AppConstant {
 extension AppConstant {
     /** Use GOP 9 coordinate for prototyping purpose */
     struct testingCoordinate {
-        static let latitude: Double = -6.20078175640807
-        static let longitude: Double = 106.8228013473299
+        static let latitude: Double = -6.302138383355241
+        static let longitude: Double = 106.65226933626776
     }
 }
