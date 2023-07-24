@@ -22,6 +22,7 @@ struct ContentView: View {
                 .toolbarBackground(.visible, for: .navigationBar)
         }
         .onAppear {
+            NotificationService.shared.askPermission()
             locationService.requestAuthorization()
         }
     }
