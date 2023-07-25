@@ -10,7 +10,6 @@ import SwiftUI
 struct TrainBanner: View {
     @State private var isTextVisible = false
         
-//    public var trainStation: TrainStation
     public var destinationStation: DestinationType
     public var departureSchedules: [TrainStation.DepartureSchedule]
     private var estimateTimeInMinute: Int = 0
@@ -91,9 +90,24 @@ struct TrainBanner: View {
 
                         }
                     }
-                }
-            }.padding(.horizontal, 16)
+                }    
+            }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel(getAccesibilityLabel())
+            .padding(.horizontal, 16)
 
+        }
+    }
+    
+    func getAccesibilityLabel() -> String {
+        if isAvailable {
+            if isArrived {
+                return "the nearest train to \(destinationStation.getLabel()) arrived at platform"
+            } else {
+                return "the nearest train to \(destinationStation.getLabel()) will arrive in \(estimateTimeInMinute) minutes"
+            }
+        } else {
+            return "the train to \(destinationStation.getLabel()) is no longer available"
         }
     }
 }
@@ -136,12 +150,6 @@ struct Train_Previews: PreviewProvider {
             TrainBanner(
                 destinationStation: .bundaranHI, departureSchedules: departureSchedules
             )
-            
-//            TrainBanner(
-//                destinationStation: .bundaranHI, departureSchedules: emptyDepartureSchedules
-//            )
-
-            
         }
 
     }

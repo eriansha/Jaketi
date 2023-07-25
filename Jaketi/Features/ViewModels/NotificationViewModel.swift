@@ -236,6 +236,8 @@ extension NotificationViewModel {
         content.title = title
         content.body = body
         content.sound = UNNotificationSound.default
+        content.isAccessibilityElement = true
+        content.accessibilityLabel = "Notification: \(title). \(body)" // Add accessibility label here
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
@@ -285,7 +287,7 @@ extension NotificationViewModel {
     func sendNotification() {
         let currentSchedules = getCurrentSchedule()
         
-        for i in 0..<currentSchedules.count {
+        for i in 0..<40 {
             let nextSchedule = currentSchedules[i]
             
             let timeNotif = nextSchedule.timeDeparture.adding(minutes: 1)
@@ -301,7 +303,13 @@ extension NotificationViewModel {
              let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponentNotif, repeats: false)
 //            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
             let request = UNNotificationRequest(identifier: notificationIdentifier, content: content, trigger: trigger)
-            center.add(request)
+            center.add(request) { error in
+                if let error = error {
+                    print(error)
+                } else {
+                    print("Added time-based notif at \(dateComponentNotif)")
+                }
+            }
         }
     }
     

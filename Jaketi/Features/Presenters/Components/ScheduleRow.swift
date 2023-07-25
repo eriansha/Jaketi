@@ -56,6 +56,8 @@ struct ScheduleRow: View {
                                     Text(timeDeparture.addingTimeInterval(TimeInterval(dest.travelTime * 60)), style: .time)
                                 }
                             }
+                            .accessibilityElement(children: .combine)
+                            .accessibilityLabel("Estimated arrival at \(dest.stationName) at \(timeDeparture.addingTimeInterval(TimeInterval(dest.travelTime * 60)), style: .time)")
                         }
                     }.padding(.bottom, 10)
                 },
@@ -76,6 +78,8 @@ struct ScheduleRow: View {
                                 .foregroundColor(isArrived ? Theme.Colors.orange :Theme.Colors.green)
                         }
                     }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel(isArrived ? "The train heading to \(destination.getLabel()) is already at platform, please hurry" : "The train heading to \(destination.getLabel()) will arrive at \(timeDeparture, style: .time), \(estimateTimeInMinute) minutes away")
                 }
             ).accentColor(Theme.Colors.highlightedLabel)
         }
