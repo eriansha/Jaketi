@@ -9,62 +9,75 @@ import SwiftUI
 
 struct LiveScheduleView: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var currentStation: Int = 0
+    
+    /** hardcoded default index as 11 that indicate Dukuh Atas Station */
+    @State private var currentStationIndex: Int = 11
     @State private var selectedDestination: DestinationType = .bundaranHI
     @State private var presentSheet = false
     @State private var searchStationValue = ""
+    @State private var currentDate = Date()
+    
+    /** FIXME: workaroud to force scroll view rerender everytime call refreshData func */
+    @State private var scrollViewUniqueId = UUID()
+    
     private var viewModel = TrainStationViewModel()
 
+    /** threshold time in second to refetch */
+    private var thresholdRefetch: Double = 60
+    
+    /** Trigger to refresh list schedules every particular interval */
+    private func refreshData() {
+        Timer.scheduledTimer(withTimeInterval: thresholdRefetch, repeats: true) { _ in
+            currentDate = Date()
+            
+            // force ScrollView to rerender every x time interval
+            scrollViewUniqueId = UUID()
+        }
+    }
+    
+    private func filterSchedules() -> [TrainStation.DepartureSchedule] {
+        return viewModel.filterDepartureSchedule(
+            trainStation: modelData.trainStations[currentStationIndex],
+            destinationStation: selectedDestination,
+            selectedDate: currentDate,
+            isWeekend: isWeekend()
+        )
+    }
     
     var body: some View {
-        VStack{
+        VStack {
             // TODO: Revine custom picker for current station
-            CurrentStationText(currentStation: modelData.trainStations[currentStation], presentSheet: $presentSheet)
-                .padding()
-                .background(Theme.Colors.blue)
+            CurrentStationText(
+                currentStation: modelData.trainStations[currentStationIndex],
+                presentSheet: $presentSheet
+            )
+            .padding()
+            .background(Theme.Colors.blue)
             
-            TrainBanner(destinationStation: selectedDestination, departureSchedules: viewModel.filterDepartureSchedule(
-                trainStation: modelData.trainStations[currentStation],
+            TrainBanner(
                 destinationStation: selectedDestination,
-                selectedDate: Date(),
-                isWeekend: isWeekend())
+                departureSchedules: filterSchedules()
             )
             
             // TODO: Revine custom picker for bound station
             BoundStationPicker(selectedDestination: $selectedDestination)
+                .padding(.bottom, 5)
             
-            ScrollView {
+            ScrollView() {
                 ScheduleList(
-                    trainStation: modelData.trainStations[currentStation],
+                    trainStation: modelData.trainStations[currentStationIndex],
+                    departureSchedules: filterSchedules(),
                     destinationStation: selectedDestination
                 )
-                
-            }
+            }.id(scrollViewUniqueId)
         }.sheet(isPresented: $presentSheet) {
-            NavigationStack {
-                    List(viewModel.filterSearchStation(trainStations: modelData.trainStations, searchValue: searchStationValue)) {
-                         station in
-                            
-                            Button{
-                                currentStation = station.stationOrder-1
-                                presentSheet = false
-                            }label: {
-                                Text(String(modelData.trainStations[station.stationOrder-1].name).dropFirst(7))
-                                    .padding(.horizontal)
-                            }
-                        
-                    }.listStyle(.plain)
-                    .navigationTitle("Station")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            Button("Cancel") {
-                                presentSheet = false
-                            }
-                        }
-                    }
-                    .searchable(text: $searchStationValue, prompt: "Search Station")
-            }
+            SelectStationSheet(
+                searchStationValue: $searchStationValue,
+                presentSheet: $presentSheet,
+                indexStation: $currentStationIndex
+            )
+        }.onAppear {
+            refreshData()
         }
     }
 }

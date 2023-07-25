@@ -43,13 +43,13 @@ struct ScheduleRow: View {
                             VStack(spacing: 0) {
                                 HStack {
                                     VerticalLine()
-                                        .stroke(Color.black, lineWidth: 4)
+                                        .stroke(Theme.Colors.line, lineWidth: 4)
                                         .frame(width: 20, height: 20)
                                     Spacer()
                                 }
                                 HStack {
                                     Circle()
-                                        .strokeBorder(Theme.Colors.blue,lineWidth: 4)
+                                        .strokeBorder(Theme.Colors.MRTGreen,lineWidth: 4)
                                         .frame(width: 20, height: 20)
                                     Text("\(dest.stationName)")
                                     Spacer()
@@ -66,7 +66,7 @@ struct ScheduleRow: View {
                         HStack{
                             Text(timeDeparture, style: .time)
                                 .font(.largeTitle)
-                                .foregroundColor(.black)
+                                .foregroundColor(Theme.Colors.highlightedLabel)
                             
                             Spacer()
                             if(!isArrived){
@@ -81,7 +81,7 @@ struct ScheduleRow: View {
                     .accessibilityElement(children: .combine)
                     .accessibilityLabel(isArrived ? "The train heading to \(destination.getLabel()) is already at platform, please hurry" : "The train heading to \(destination.getLabel()) will arrive at \(timeDeparture, style: .time), \(estimateTimeInMinute) minutes away")
                 }
-            ).accentColor(Theme.Colors.blue)
+            ).accentColor(Theme.Colors.highlightedLabel)
         }
     }
 }

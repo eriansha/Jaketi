@@ -9,21 +9,17 @@ import SwiftUI
 
 struct ScheduleList: View {
     public var trainStation: TrainStation
+    public var departureSchedules: [TrainStation.DepartureSchedule]
     public var destinationStation: DestinationType
-    private var departureSchedules: [TrainStation.DepartureSchedule]
     
-    init(trainStation: TrainStation, destinationStation: DestinationType) {
-        let currentDate = Date()
-        let viewModel = TrainStationViewModel()
-        
+    init(
+        trainStation: TrainStation,
+        departureSchedules: [TrainStation.DepartureSchedule],
+        destinationStation: DestinationType
+    ) {
         self.trainStation = trainStation
+        self.departureSchedules = departureSchedules
         self.destinationStation = destinationStation
-        self.departureSchedules = viewModel.filterDepartureSchedule(
-            trainStation: trainStation,
-            destinationStation: destinationStation,
-            selectedDate: currentDate,
-            isWeekend: isWeekend()
-        )
     }
     
     var body: some View {
@@ -40,13 +36,14 @@ struct ScheduleList: View {
                     )
                     .padding(.vertical, 5)
                     .padding(.horizontal, 15)
-                    .background(.white)
+                    .background(Theme.Colors.card)
                     .cornerRadius(10)
                 }
             } else {
                 Text("No schedule")
             }
         }.padding(.horizontal)
+            .foregroundColor(Theme.Colors.highlightedLabel)
     }
 }
 
@@ -86,6 +83,7 @@ struct ScheduleList_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleList(
             trainStation: trainStation,
+            departureSchedules: trainStation.departureSchedules,
             destinationStation: .bundaranHI
         )
     }
