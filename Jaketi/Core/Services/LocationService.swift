@@ -9,17 +9,24 @@ import Foundation
 import CoreLocation
 import UserNotifications
 
+protocol LocationServiceDelegate: AnyObject {
+    func requestAuthorization()
+    func authorizationRestricted()
+    func authorizationUknown()
+    func promptAuthorizationAction()
+    func didAuthorize()
+    func didEntryRegion()
+    func didExitRegion()
+}
+
 
 class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
+    weak var locationServiceDelegate: LocationServiceDelegate?
+    
     private let locationManager = CLLocationManager()
     
     /** to detect distance change if move minimal certain meters */
     private let distanceFilter: Double = 8
-    
-    /** Maximum time-based notification queueing per session */
-    private let maxScheduleNotification: Int = 5
-    
-    private let trainStationViewModel = TrainStationViewModel()
     
     /** list station region to monitor **/
     private var stationRegions: [CLCircularRegion] = [
@@ -42,7 +49,7 @@ class LocationService: NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
-    private func startMonitoring() {
+    public func startMonitoring() {
         /** Make sure the devices supports region monitoring. */
         if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
             
@@ -71,27 +78,28 @@ extension LocationService {
 
         switch status {
         case .denied:
-            print("DEBUG: denied")
-            // TODO: ask user to authorize
+            print("LocationService DEBUG: denied")
+            /** If user denied, we ask again until they accept */
+            locationServiceDelegate?.promptAuthorizationAction()
             
         case .notDetermined:
-            print("DEBUG: notDetermined")
+            print("LocationService DEBUG: notDetermined")
             
         case .restricted:
-            print("DEBUG: restricted")
-            //TODO: inform the user
+            print("LocationService DEBUG: restricted")
+            locationServiceDelegate?.authorizationRestricted()
             
         case .authorizedWhenInUse:
-            print("DEBUG: authorizedWhenInUse")
-            startMonitoring()
+            print("LocationService DEBUG: authorizedWhenInUse")
+            locationServiceDelegate?.didAuthorize()
             
         case .authorizedAlways:
-            print("DEBUG: authorizedAlways")
-            startMonitoring()
+            print("LocationService DEBUG: authorizedAlways")
+            locationServiceDelegate?.didAuthorize()
             
         default:
-            print("DEBUG: unknown")
-            // TODO: inform the user
+            print("LocationService DEBUG: unknown")
+            locationServiceDelegate?.authorizationUknown()
         }
     }
 
@@ -116,120 +124,26 @@ extension LocationService {
                 
                 if !isEnteredStation {
                     /**
-                     If the user has been entered the station, we would like to trigger notication once
-                     since we don't want to spam them
+                        trigger this delegate once user has been entered the station
+                        e.g build location-notification and time-based notification
                      */
-                    triggerLocationBasedNotification()
-                    
-                    /** Build time-based notification based on available schedule */
-                    triggerTimeBasedNotification()
+                    locationServiceDelegate?.didEntryRegion()
                     
                     /** set the flag so we can know the user has been entered the station once */
                     UserDefaults.standard.set(true, forKey: identifier)
                 }
             } else {
                 if isEnteredStation {
-                    /** If the user left from the stations, we will remove all notification from the queue */
-                    removeAllPendingNotificationRequest()
+                    /**
+                        trigger this delegate once user is left from the stations
+                        e.g remove all notification from the queue
+                     */
+                    locationServiceDelegate?.didExitRegion()
 
                     /** set the flag so we can know the user left the station */
                     UserDefaults.standard.set(false, forKey: identifier)
                 }
             }
         }
-    }
-}
-
-// MARK: Notification Builders
-// TODO: we would like to separate the use case with the location service
-extension LocationService {
-    func triggerLocationBasedNotification() {
-        /** Preprare the data before create Notification content */
-        // TODO: change to get station dynamically (no hardcode)
-        let currentStation = ModelData().trainStations[11]
-        let currentDate = Date()
-        
-        let departureSchedules = trainStationViewModel.filterDepartureSchedule(
-            trainStation: currentStation,
-            selectedDate: currentDate,
-            isWeekend: isWeekend()
-        )
-        
-        /** guard in case the filter result did not return any schedules */
-        guard departureSchedules.count > 0 else { return }
-        
-        let nearestSchedule = departureSchedules.first!
-        let timeDepartureString: String = convertDateToString(
-            date: nearestSchedule.timeDeparture,
-            format: "HH:mm"
-        )
-        let minutesInterval = Calendar.current.dateComponents([.minute], from: Date(), to: nearestSchedule.timeDeparture)
-        
-        /** setup notification content. including: title, body, sound */
-        let content = UNMutableNotificationContent()
-        content.title = "\(nearestSchedule.destinationStation.getLabel()) Train Arrival"
-        content.body = "Your train will arrive at \(timeDepartureString) (\(String(describing: minutesInterval.minute!)) minutes from now). Get ready on the platform. Safe journey!"
-        content.sound = UNNotificationSound.default
-        
-        /** Setup notification trigger */
-        let trigger = UNTimeIntervalNotificationTrigger(
-            timeInterval: 1,
-            repeats: false
-        )
-        
-        NotificationService.shared.sendInstantNotification(
-            identifier: AppConstant.regionNotificationIdentifier,
-            content: content,
-            trigger: trigger
-        )
-    }
-    
-    func triggerTimeBasedNotification() {
-        /** Preprare the data before create Notification content */
-        // TODO: change to get station dynamically (no hardcode)
-        let currentStation = ModelData().trainStations[11]
-        let currentDate = Date()
-        
-        let currentSchedules = trainStationViewModel.filterDepartureSchedule(
-            trainStation: currentStation,
-            selectedDate: currentDate,
-            isWeekend: isWeekend()
-        )
-        
-        for index in 0..<currentSchedules.count {
-            
-            /** FIXME: workaround to display first x train schedules to prevent Notification request out of limit (max 64).*/
-            if index > maxScheduleNotification {
-                break;
-            }
-            
-            let nextSchedule = currentSchedules[index]
-            
-            /** set the nofication earlier so the passanger don't miss the train */
-            let earlierNotificationTime = nextSchedule.timeDeparture.adding(minutes: 1)
-            let dateComponent = Calendar.current.dateComponents(
-                [.hour, .minute], from: earlierNotificationTime
-            )
-            let trigger = UNCalendarNotificationTrigger(
-                dateMatching: dateComponent,
-                repeats: false
-            )
-
-            /** setup notification content. including: title, body, sound */
-            let content = UNMutableNotificationContent()
-            content.title = "\(nextSchedule.destinationStation.getLabel()) Train Leave"
-            content.body = "The next train will be arrived at \(Date.timeFormatter.string(from: nextSchedule.timeDeparture))"
-            content.sound = .default
-
-            NotificationService.shared.sendInstantNotification(
-                identifier: "\(AppConstant.scheduleNotificationIdentifier).\(index)",
-                content: content,
-                trigger: trigger
-            )
-        }
-    }
-    
-    func removeAllPendingNotificationRequest() {
-        NotificationService.shared.removeAllPendingNotification()
     }
 }
