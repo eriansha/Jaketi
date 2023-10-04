@@ -32,6 +32,7 @@
 		2CA969DB2A6D5B9E00FCFDED /* SelectStationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA969DA2A6D5B9E00FCFDED /* SelectStationSheet.swift */; };
 		2CB40F952A6B79BC00D3E504 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40F942A6B79BC00D3E504 /* NotificationService.swift */; };
 		2CB40F972A6B7FEB00D3E504 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB40F962A6B7FEB00D3E504 /* LocationService.swift */; };
+		2CBA93CD2A721C11002A2D66 /* DepartureScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA93CC2A721C11002A2D66 /* DepartureScheduleViewModel.swift */; };
 		2CBD0ED32A6CF90D0043EDED /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD0ED22A6CF90D0043EDED /* AppConstant.swift */; };
 		433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433499532A68F0AB0034495A /* NotificationViewModel.swift */; };
 		ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */; };
@@ -69,6 +70,7 @@
 		2CA969DA2A6D5B9E00FCFDED /* SelectStationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStationSheet.swift; sourceTree = "<group>"; };
 		2CB40F942A6B79BC00D3E504 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2CB40F962A6B7FEB00D3E504 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		2CBA93CC2A721C11002A2D66 /* DepartureScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureScheduleViewModel.swift; sourceTree = "<group>"; };
 		2CBD0ED22A6CF90D0043EDED /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		433499532A68F0AB0034495A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		ADFB42442A68E7C2008F0B7B /* VerticalLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLine.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				2C79D3302A6560AE004A5A05 /* ExampleViewModel.swift */,
 				2C8E1D942A680ACF0043FC1F /* TrainStationViewModel.swift */,
 				433499532A68F0AB0034495A /* NotificationViewModel.swift */,
+				2CBA93CC2A721C11002A2D66 /* DepartureScheduleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				ADFB42452A68E7C2008F0B7B /* VerticalLine.swift in Sources */,
 				2C8E1D952A680ACF0043FC1F /* TrainStationViewModel.swift in Sources */,
 				433499542A68F0AB0034495A /* NotificationViewModel.swift in Sources */,
+				2CBA93CD2A721C11002A2D66 /* DepartureScheduleViewModel.swift in Sources */,
 				2CB40F972A6B7FEB00D3E504 /* LocationService.swift in Sources */,
 				2C79D3252A655FCD004A5A05 /* Theme.swift in Sources */,
 				2C79D3352A656129004A5A05 /* Prompt.swift in Sources */,
@@ -494,7 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 7UW53Z6Q89;
+				DEVELOPMENT_TEAM = 63Z24W5HZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Jaketi/Info.plist;
@@ -528,7 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jaketi/Preview Content\"";
-				DEVELOPMENT_TEAM = 7UW53Z6Q89;
+				DEVELOPMENT_TEAM = 63Z24W5HZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Jaketi/Info.plist;

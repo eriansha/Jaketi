@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var locationService = LocationService()
+    @StateObject var vmDepartureSchedule = DepartureScheduleViewModel()
 
     var body: some View {
         NavigationStack {
@@ -23,7 +23,7 @@ struct ContentView: View {
         }
         .onAppear {
             NotificationService.shared.askPermission()
-            locationService.requestAuthorization()
+            vmDepartureSchedule.requestAuthorization()
         }
     }
 }
