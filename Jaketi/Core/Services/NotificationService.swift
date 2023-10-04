@@ -45,7 +45,7 @@ class NotificationService: NSObject {
                 print("Failed to sent notification:", error.localizedDescription)
             }
             else{
-                print("DEBUG: added notification to the queue")
+                print("NotificationService DEBUG: added notification to the queue")
             }
         })
     }
